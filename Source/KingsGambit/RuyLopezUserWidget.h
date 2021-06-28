@@ -85,55 +85,19 @@ protected:
 		void StepEightToNineClicked();
 
 	UFUNCTION()
-		void StepEightToNine_1Clicked();
-
-	UFUNCTION()
-		void StepEightToNine_2Clicked();
-
-	UFUNCTION()
 		void StepNineToEightClicked();
-
-	UFUNCTION()
-		void StepNineToEight_1Clicked();
-
-	UFUNCTION()
-		void StepNineToEight_2Clicked();
 
 	UFUNCTION()
 		void StepNineToTenClicked();
 
 	UFUNCTION()
-		void StepNineToTen_1Clicked();
-
-	UFUNCTION()
 		void StepTenToNineClicked();
-
-	UFUNCTION()
-		void StepTenToNine_1Clicked();
 
 	UFUNCTION()
 		void StepTenTo11Clicked();
 
 	UFUNCTION()
-		void StepTenTo11_1Clicked();
-
-	UFUNCTION()
-		void StepTenTo11_2Clicked();
-
-	UFUNCTION()
-		void StepTenTo11_3Clicked();
-
-	UFUNCTION()
 		void Step11ToTenClicked();
-
-	UFUNCTION()
-		void Step11ToTen_1Clicked();
-
-	UFUNCTION()
-		void Step11ToTen_2Clicked();
-
-	UFUNCTION()
-		void Step11ToTen_3Clicked();
 
 	UFUNCTION()
 		void Step11ToSelectVariationClicked();
@@ -157,67 +121,19 @@ protected:
 		void Step14To15Clicked();
 
 	UFUNCTION()
-		void Step14To15_1Clicked();
-
-	UFUNCTION()
-		void Step14To15_2Clicked();
-
-	UFUNCTION()
-		void Step14To15_3Clicked();
-
-	UFUNCTION()
-		void Step14To15_4Clicked();
-
-	UFUNCTION()
 		void Step15To14Clicked();
-
-	UFUNCTION()
-		void Step15To14_1Clicked();
-
-	UFUNCTION()
-		void Step15To14_2Clicked();
-
-	UFUNCTION()
-		void Step15To14_3Clicked();
-
-	UFUNCTION()
-		void Step15To14_4Clicked();
 
 	UFUNCTION()
 		void Step15To16Clicked();
 
 	UFUNCTION()
-		void Step15To16_1Clicked();
-
-	UFUNCTION()
-		void Step15To16_2Clicked();
-
-	UFUNCTION()
 		void Step16To15Clicked();
-
-	UFUNCTION()
-		void Step16To15_1Clicked();
-
-	UFUNCTION()
-		void Step16To15_2Clicked();
 
 	UFUNCTION()
 		void Step16To17Clicked();
 
 	UFUNCTION()
-		void Step16To17_1Clicked();
-
-	UFUNCTION()
-		void Step16To17_2Clicked();
-
-	UFUNCTION()
 		void Step17To16Clicked();
-
-	UFUNCTION()
-		void Step17To16_1Clicked();
-
-	UFUNCTION()
-		void Step17To16_2Clicked();
 
 	UFUNCTION()
 		void Step17To18Clicked();
@@ -235,13 +151,7 @@ protected:
 		void Step20To21Clicked();
 
 	UFUNCTION()
-		void Step20To21_1Clicked();
-
-	UFUNCTION()
 		void Step21To20Clicked();
-
-	UFUNCTION()
-		void Step21To20_1Clicked();
 
 	UFUNCTION()
 		void Step21To22Clicked();
@@ -271,31 +181,13 @@ protected:
 		void Step25To26Clicked();
 
 	UFUNCTION()
-		void Step25To26_1Clicked();
-
-	UFUNCTION()
 		void Step26To25Clicked();
-
-	UFUNCTION()
-		void Step26To25_1Clicked();
 
 	UFUNCTION()
 		void Step26To27Clicked();
 
 	UFUNCTION()
-		void Step26To27_1Clicked();
-	
-	UFUNCTION()
-		void Step26To27_2Clicked();
-
-	UFUNCTION()
 		void Step27To26Clicked();
-
-	UFUNCTION()
-		void Step27To26_1Clicked();
-
-	UFUNCTION()
-		void Step27To26_2Clicked();
 
 	UFUNCTION()
 		void Step27ToSelectVariationClicked();
@@ -365,55 +257,19 @@ protected:
 		UButton* StepEightToNine;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepEightToNine_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepEightToNine_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepNineToEight;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNineToEight_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNineToEight_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepNineToTen;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNineToTen_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepTenToNine;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTenToNine_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepTenTo11;	
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTenTo11_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTenTo11_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTenTo11_3;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step11ToTen;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step11ToTen_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step11ToTen_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step11ToTen_3;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step11ToSelectVariation;
@@ -437,67 +293,19 @@ protected:
 		UButton* Step14To15;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step14To15_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step14To15_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step14To15_3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step14To15_4;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step15To14;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To14_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To14_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To14_3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To14_4;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step15To16;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To16_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To16_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step16To15;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step16To15_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step16To15_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step16To17;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step16To17_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step16To17_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step17To16;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step17To16_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step17To16_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step17To18;
@@ -515,13 +323,7 @@ protected:
 		UButton* Step20To21;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step20To21_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step21To20;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step21To20_1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step21To22;
@@ -551,31 +353,13 @@ protected:
 		UButton* Step25To26;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step25To26_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step26To25;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step26To25_1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step26To27;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step26To27_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step26To27_2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step27To26;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step27To26_1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step27To26_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Step27ToSelectVariation;
