@@ -32,7 +32,7 @@ void URuyLopezUserWidget::NativeConstruct()
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepThreeToTwoClicked);	
 	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepThreeToSelect_VariationClicked);
 	
-	StepFourToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepFourToSelectVariationClicked);
+	/*StepFourToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepFourToSelectVariationClicked);
 	StepFourToFive->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepFourToFiveClicked);
 	
 	StepFiveToFour->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepFiveToFourClicked);
@@ -106,7 +106,7 @@ void URuyLopezUserWidget::NativeConstruct()
 
 	StepExchangeVariationtoStepFour->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepExchangeVariationtoStepFourClicked);
 	StepArkhangelskDefensetoStep12->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepArkhangelskDefensetoStep12Clicked);
-	StepTheClosedDefenseto20->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepTheClosedDefenseto20Clicked);
+	StepTheClosedDefenseto20->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepTheClosedDefenseto20Clicked);*/
 }
 
 void URuyLopezUserWidget::PauseButtonClicked()
@@ -265,11 +265,11 @@ void URuyLopezUserWidget::StepThreeToSelect_VariationClicked()
 	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
 	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 	
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
+	//StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
+	//StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
+	//StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
+	//StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	//StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	
 	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
 	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
@@ -296,257 +296,257 @@ void URuyLopezUserWidget::StepSelectVariationToThreeClicked()
 
 ///////////////////////////// THE EXCHANGE VARIATION ////////////////////////////////////
 
-void URuyLopezUserWidget::StepExchangeVariationtoStepFourClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Hidden);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Hidden);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Hidden);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
-
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
-
-	EVTxt->SetVisibility(ESlateVisibility::Visible);
-	EV1Txt->SetVisibility(ESlateVisibility::Visible);
-	EV2Txt->SetVisibility(ESlateVisibility::Visible);
-	EV_Main->SetVisibility(ESlateVisibility::Visible);
-	/*EV_WP->SetVisibility(ESlateVisibility::Visible);
-	EV_BP->SetVisibility(ESlateVisibility::Visible);*/
-}
-
-void URuyLopezUserWidget::StepEVNextClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepEVWP1->SetVisibility(ESlateVisibility::Visible);
-	StepEVWP2->SetVisibility(ESlateVisibility::Visible);
-	StepEVWP3->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP1->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP2->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP3->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP4->SetVisibility(ESlateVisibility::Visible);
-	StepEV_WP->SetVisibility(ESlateVisibility::Visible);
-	StepEV_BP->SetVisibility(ESlateVisibility::Visible);
-	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-
-	EVTxt->SetVisibility(ESlateVisibility::Hidden);
-	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
-	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
-	EV_Main->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void URuyLopezUserWidget::StepEVToSelectVariationClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
-
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
-
-	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
-	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
-	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
-	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
-	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
-	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
-	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
-	StepEV_WP->SetVisibility(ESlateVisibility::Hidden);
-	StepEV_BP->SetVisibility(ESlateVisibility::Hidden);
-	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-}
-
-///////////////////////////// ARKHANGELSK DEFENSE VARIATION ////////////////////////////////////
-
-void URuyLopezUserWidget::StepArkhangelskDefensetoStep12Clicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Hidden);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Hidden);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Hidden);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
-
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
-
-	StepADTxt->SetVisibility(ESlateVisibility::Visible);
-	StepAD1Txt->SetVisibility(ESlateVisibility::Visible);
-	StepAD2Txt->SetVisibility(ESlateVisibility::Visible);
-	StepAD_Main->SetVisibility(ESlateVisibility::Visible);
-}
-
-void URuyLopezUserWidget::StepADNextClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	Step12ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	Step12Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step12To13->SetVisibility(ESlateVisibility::Hidden);
-
-	StepADBP1->SetVisibility(ESlateVisibility::Visible);
-	StepADBP2->SetVisibility(ESlateVisibility::Visible);
-	StepADBP3->SetVisibility(ESlateVisibility::Visible);
-	StepADWP1->SetVisibility(ESlateVisibility::Visible);
-	StepADWP2->SetVisibility(ESlateVisibility::Visible);
-	StepADWP3->SetVisibility(ESlateVisibility::Visible);
-	StepADToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	StepAD_WP->SetVisibility(ESlateVisibility::Visible);
-	StepAD_BP->SetVisibility(ESlateVisibility::Visible);
-}
-
-void URuyLopezUserWidget::StepADToSelectVariationClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
-
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
-
-	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
-	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
-	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
-	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
-	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
-	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
-	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	StepAD_WP->SetVisibility(ESlateVisibility::Hidden);
-	StepAD_BP->SetVisibility(ESlateVisibility::Hidden);
-}
-
-///////////////////////////// THE CLOSED DEFENSE VARIATION ////////////////////////////////////
-
-void URuyLopezUserWidget::StepTheClosedDefenseto20Clicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
-
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Hidden);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Hidden);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Hidden);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
-
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
-
-	StepCDTxt->SetVisibility(ESlateVisibility::Visible);
-	StepCD1Txt->SetVisibility(ESlateVisibility::Visible);
-	StepCDNext->SetVisibility(ESlateVisibility::Visible);
-	StepCD_Main->SetVisibility(ESlateVisibility::Visible);
-}
-
-void URuyLopezUserWidget::Step20ToSelectVariationClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
-
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
-	
-	StepCDBP1->SetVisibility(ESlateVisibility::Visible);
-	StepCDBP2->SetVisibility(ESlateVisibility::Visible);
-	StepCDBP3->SetVisibility(ESlateVisibility::Visible);
-	StepCDWP1->SetVisibility(ESlateVisibility::Visible);
-	StepCDWP2->SetVisibility(ESlateVisibility::Visible);
-	StepCD_WP->SetVisibility(ESlateVisibility::Visible);
-	StepCD_BP->SetVisibility(ESlateVisibility::Visible);
-	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-}
-
-void URuyLopezUserWidget::StepCDToSelectVariationClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
-	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
-	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
-
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
-
-	StepCDBP1->SetVisibility(ESlateVisibility::Hidden);
-	StepCDBP2->SetVisibility(ESlateVisibility::Hidden);
-	StepCDBP3->SetVisibility(ESlateVisibility::Hidden);
-	StepCDWP1->SetVisibility(ESlateVisibility::Hidden);
-	StepCDWP2->SetVisibility(ESlateVisibility::Hidden);
-	StepCD_WP->SetVisibility(ESlateVisibility::Hidden);
-	StepCD_BP->SetVisibility(ESlateVisibility::Hidden);
-	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-}
+//void URuyLopezUserWidget::StepExchangeVariationtoStepFourClicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Hidden);
+//	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Hidden);
+//	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Hidden);
+//	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
+//	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
+//
+//	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
+//
+//	EVTxt->SetVisibility(ESlateVisibility::Visible);
+//	EV1Txt->SetVisibility(ESlateVisibility::Visible);
+//	EV2Txt->SetVisibility(ESlateVisibility::Visible);
+//	EV_Main->SetVisibility(ESlateVisibility::Visible);
+//	/*EV_WP->SetVisibility(ESlateVisibility::Visible);
+//	EV_BP->SetVisibility(ESlateVisibility::Visible);*/
+//}
+//
+//void URuyLopezUserWidget::StepEVNextClicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepEVWP1->SetVisibility(ESlateVisibility::Visible);
+//	StepEVWP2->SetVisibility(ESlateVisibility::Visible);
+//	StepEVWP3->SetVisibility(ESlateVisibility::Visible);
+//	StepEVBP1->SetVisibility(ESlateVisibility::Visible);
+//	StepEVBP2->SetVisibility(ESlateVisibility::Visible);
+//	StepEVBP3->SetVisibility(ESlateVisibility::Visible);
+//	StepEVBP4->SetVisibility(ESlateVisibility::Visible);
+//	StepEV_WP->SetVisibility(ESlateVisibility::Visible);
+//	StepEV_BP->SetVisibility(ESlateVisibility::Visible);
+//	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+//
+//	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+//	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+//	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+//	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+//}
+//
+//void URuyLopezUserWidget::StepEVToSelectVariationClicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
+//	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
+//	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
+//	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+//	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
+//
+//	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
+//
+//	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+//	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+//	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+//	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+//	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+//	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+//	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+//	StepEV_WP->SetVisibility(ESlateVisibility::Hidden);
+//	StepEV_BP->SetVisibility(ESlateVisibility::Hidden);
+//	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//}
+//
+/////////////////////////////// ARKHANGELSK DEFENSE VARIATION ////////////////////////////////////
+//
+//void URuyLopezUserWidget::StepArkhangelskDefensetoStep12Clicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Hidden);
+//	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Hidden);
+//	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Hidden);
+//	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
+//	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
+//
+//	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepADTxt->SetVisibility(ESlateVisibility::Visible);
+//	StepAD1Txt->SetVisibility(ESlateVisibility::Visible);
+//	StepAD2Txt->SetVisibility(ESlateVisibility::Visible);
+//	StepAD_Main->SetVisibility(ESlateVisibility::Visible);
+//}
+//
+//void URuyLopezUserWidget::StepADNextClicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	Step12ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+//	Step12Txt->SetVisibility(ESlateVisibility::Hidden);
+//	Step12To13->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepADBP1->SetVisibility(ESlateVisibility::Visible);
+//	StepADBP2->SetVisibility(ESlateVisibility::Visible);
+//	StepADBP3->SetVisibility(ESlateVisibility::Visible);
+//	StepADWP1->SetVisibility(ESlateVisibility::Visible);
+//	StepADWP2->SetVisibility(ESlateVisibility::Visible);
+//	StepADWP3->SetVisibility(ESlateVisibility::Visible);
+//	StepADToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+//	StepAD_WP->SetVisibility(ESlateVisibility::Visible);
+//	StepAD_BP->SetVisibility(ESlateVisibility::Visible);
+//}
+//
+//void URuyLopezUserWidget::StepADToSelectVariationClicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
+//	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
+//	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
+//	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+//	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
+//
+//	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
+//
+//	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
+//	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
+//	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
+//	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
+//	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
+//	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
+//	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//	StepAD_WP->SetVisibility(ESlateVisibility::Hidden);
+//	StepAD_BP->SetVisibility(ESlateVisibility::Hidden);
+//}
+//
+/////////////////////////////// THE CLOSED DEFENSE VARIATION ////////////////////////////////////
+//
+//void URuyLopezUserWidget::StepTheClosedDefenseto20Clicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
+//
+//	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Hidden);
+//	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Hidden);
+//	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Hidden);
+//	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
+//	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
+//
+//	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepCDTxt->SetVisibility(ESlateVisibility::Visible);
+//	StepCD1Txt->SetVisibility(ESlateVisibility::Visible);
+//	StepCDNext->SetVisibility(ESlateVisibility::Visible);
+//	StepCD_Main->SetVisibility(ESlateVisibility::Visible);
+//}
+//
+//void URuyLopezUserWidget::Step20ToSelectVariationClicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
+//	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
+//	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
+//	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+//	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
+//
+//	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
+//	
+//	StepCDBP1->SetVisibility(ESlateVisibility::Visible);
+//	StepCDBP2->SetVisibility(ESlateVisibility::Visible);
+//	StepCDBP3->SetVisibility(ESlateVisibility::Visible);
+//	StepCDWP1->SetVisibility(ESlateVisibility::Visible);
+//	StepCDWP2->SetVisibility(ESlateVisibility::Visible);
+//	StepCD_WP->SetVisibility(ESlateVisibility::Visible);
+//	StepCD_BP->SetVisibility(ESlateVisibility::Visible);
+//	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+//}
+//
+//void URuyLopezUserWidget::StepCDToSelectVariationClicked()
+//{
+//	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+//	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+//	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+//	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+//	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+//
+//	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
+//	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
+//	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
+//	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+//	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
+//
+//	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
+//	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
+//
+//	StepCDBP1->SetVisibility(ESlateVisibility::Hidden);
+//	StepCDBP2->SetVisibility(ESlateVisibility::Hidden);
+//	StepCDBP3->SetVisibility(ESlateVisibility::Hidden);
+//	StepCDWP1->SetVisibility(ESlateVisibility::Hidden);
+//	StepCDWP2->SetVisibility(ESlateVisibility::Hidden);
+//	StepCD_WP->SetVisibility(ESlateVisibility::Hidden);
+//	StepCD_BP->SetVisibility(ESlateVisibility::Hidden);
+//	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+//}

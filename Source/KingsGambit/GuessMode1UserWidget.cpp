@@ -8,6 +8,7 @@
 #include "Components/TextBlock.h"
 #include "Components/VerticalBox.h"
 #include "Components/CanvasPanel.h"
+#include "Components/EditableTextBox.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
 
@@ -22,16 +23,22 @@ void UGuessMode1UserWidget::NativeConstruct()
 	MainMenuButton->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::MainMenuButtonClicked);
 	QuitButton->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::QuitButtonClicked);
 	OKToNotationsMode->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::OKToNotationsModeClicked);
+
+	GameOverToMenu->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::MainMenuButtonClicked);
 }
 
 void UGuessMode1UserWidget::PauseButtonClicked()
 {
 	Super::PauseButtonClicked();
+
+	GuessModeHUD->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UGuessMode1UserWidget::ResumeButtonClicked()
 {
 	Super::ResumeButtonClicked();
+
+	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UGuessMode1UserWidget::MainMenuButtonClicked()
@@ -47,12 +54,10 @@ void UGuessMode1UserWidget::QuitButtonClicked()
 void UGuessMode1UserWidget::OKToNotationsModeClicked()
 {
 	UGameplayStatics::SetGamePaused(GetWorld(), false);
-	OptionsPanel->SetVisibility(ESlateVisibility::Hidden);
 	UserGuide_1->SetVisibility(ESlateVisibility::Hidden);
 	UserGuideInterface_1->SetVisibility(ESlateVisibility::Hidden);
 
-	Level1txt->SetVisibility(ESlateVisibility::Visible);
-	Enter->SetVisibility(ESlateVisibility::Visible);
+	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
 
 	//White's Pawn Moves 2 steps forward
 	TrainerController->Move(TrainerController->WhitePawns[3], FVector(1200.f, 1200.f, 0.5f));

@@ -10,6 +10,7 @@ class UButton;
 class UBorder;
 class UTextBlock;
 class UImage;
+class UCanvasPanel;
 
 /**
  * Inherits from PauseMenuUserWidget because pause menu elements remain the same
@@ -43,19 +44,31 @@ protected:
 		UButton* Enter;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* TryAgain;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* GameOverToMenu;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UBorder* UserGuide_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UBorder* GameOverHUD;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UVerticalBox* UserGuideInterface_1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		class UCanvasPanel* OptionsPanel;
+		UTextBlock* Leveltxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UImage* GuessImage;
+		UTextBlock* Attemptstxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Level1txt;
+		UTextBlock* LevelNo;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* AttemptsNo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* Correct;
@@ -65,5 +78,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UEditableTextBox* Answer1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UCanvasPanel* GuessModeHUD;
 
 };

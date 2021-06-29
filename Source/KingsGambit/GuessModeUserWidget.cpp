@@ -47,7 +47,6 @@ void UGuessModeUserWidget::QuitButtonClicked()
 void UGuessModeUserWidget::OKToMovesModeClicked()
 {
 	UGameplayStatics::SetGamePaused(GetWorld(), false);
-	OptionsPanel->SetVisibility(ESlateVisibility::Hidden);
 	UserGuide->SetVisibility(ESlateVisibility::Hidden);
 	UserGuideInterface->SetVisibility(ESlateVisibility::Hidden);
 }
