@@ -25,6 +25,9 @@ public:
 	UFUNCTION()
 		void Move(AActorBase* PieceToMove, FVector MoveTo);
 
+	UFUNCTION()
+		void ResetAllPieces();
+
 	TArray<AActorBase*>WhitePawns;
 	TArray<AActorBase*>BlackPawns;
 	TArray<AActorBase*>WhiteRooks;
@@ -44,6 +47,8 @@ public:
 	AActorBase* Bishop2;
 	AActorBase* WhiteKing;
 	AActorBase* BlackKing;
+	AActorBase* WhiteQueen;
+	AActorBase* BlackQueen;
 
 
 protected:

@@ -25,6 +25,7 @@ void UGuessMode1UserWidget::NativeConstruct()
 	OKToNotationsMode->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::OKToNotationsModeClicked);
 
 	GameOverToMenu->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::MainMenuButtonClicked);
+	
 }
 
 void UGuessMode1UserWidget::PauseButtonClicked()
@@ -59,8 +60,53 @@ void UGuessMode1UserWidget::OKToNotationsModeClicked()
 
 	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
 
-	//White's Pawn Moves 2 steps forward
-	TrainerController->Move(TrainerController->WhitePawns[3], FVector(1200.f, 1200.f, 0.5f));
+	SetLevel(1);
+}
+
+void UGuessMode1UserWidget::SetLevel(int32 level)
+{
+	switch (level) {
+		case 1:
+			//TrainerController->ResetAllPieces();
+			TrainerController->Move(TrainerController->WhitePawns[3], FVector(1200.f, 1200.f, 0.5f));
+			Answer1->SetVisibility(ESlateVisibility::Visible);
+			Enter1->SetVisibility(ESlateVisibility::Visible);
+			break;
+
+		case 2:
+			//TrainerController->ResetAllPieces();
+
+			//Reset pieces moved from lvl 1
+			TrainerController->Move(TrainerController->WhitePawns[3], TrainerController->WhitePawns[3]->OriginalSpawnLocation);
+			TrainerController->Move(TrainerController->WhiteKnights[1], FVector(800.f, 2000.f, 0.5f));
+			Answer1->SetVisibility(ESlateVisibility::Hidden);
+			Enter1->SetVisibility(ESlateVisibility::Hidden);
+			Answer2->SetVisibility(ESlateVisibility::Visible);
+			Enter2->SetVisibility(ESlateVisibility::Visible);
+			break;
+
+		case 3:
+			//Reset Pieces moved from lvl 2
+			TrainerController->Move(TrainerController->WhiteKnights[1], TrainerController->WhiteKnights[1]->OriginalSpawnLocation);
+
+			TrainerController->Move(TrainerController->BlackBishops[0], FVector(1200.f, 2400.f, 0.5f));
+			TrainerController->Move(TrainerController->BlackPawns[3], FVector(1600.f, 1200.f, 0.5f));
+			Answer2->SetVisibility(ESlateVisibility::Hidden);
+			Enter2->SetVisibility(ESlateVisibility::Hidden);
+			Answer3->SetVisibility(ESlateVisibility::Visible);
+			Enter3->SetVisibility(ESlateVisibility::Visible);
+			break;
+
+		case 4:
+			//Reset Pieces moved from lvl 3
+			TrainerController->Move(TrainerController->BlackBishops[0], TrainerController->BlackBishops[0]->OriginalSpawnLocation);
+			TrainerController->Move(TrainerController->BlackPawns[3], TrainerController->BlackPawns[3]->OriginalSpawnLocation);
+
+
+			Answer3->SetVisibility(ESlateVisibility::Hidden);
+			Enter3->SetVisibility(ESlateVisibility::Hidden);
+			break;
+	}
 }
 
 

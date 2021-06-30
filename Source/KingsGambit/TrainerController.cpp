@@ -42,6 +42,7 @@ void ATrainerController::SpawnWhiteActors()
 		FVector(0.f, 1600.f, 200.f),
 		FRotator::ZeroRotator
 		);
+	WhiteKing->OriginalSpawnLocation = FVector(0.f, 1600.f, 200.f);
 	SpawnedPieces.Add(WhiteKing);
 
 	Rook1 = GetWorld()->SpawnActor<ACastlePiece>(
@@ -92,10 +93,12 @@ void ATrainerController::SpawnWhiteActors()
 	SpawnedPieces.Add(Bishop2);
 	WhiteBishops.Add(Bishop2);
 
-	SpawnedPieces.Add(GetWorld()->SpawnActor<AQueenPiece>(
+	WhiteQueen = GetWorld()->SpawnActor<AQueenPiece>(
 		FVector(0.f, 1200.f, 200.f),
 		FRotator::ZeroRotator
-		));
+		);
+	WhiteQueen->OriginalSpawnLocation = FVector(0.f, 1200.f, 200.f);
+	SpawnedPieces.Add(WhiteQueen);
 
 	for (auto Piece : SpawnedPieces) {
 		Piece->bIsWhite = true;
@@ -123,6 +126,7 @@ void ATrainerController::SpawnBlackActors()
 		FVector(2800.f, 1600.f, 200.f),
 		FRotator::ZeroRotator
 		);
+	BlackKing->OriginalSpawnLocation = FVector(2800.f, 1600.f, 200.f);
 	SpawnedPieces.Add(WhiteKing);
 
 	Rook1 = GetWorld()->SpawnActor<ACastlePiece>(
@@ -173,10 +177,12 @@ void ATrainerController::SpawnBlackActors()
 	SpawnedPieces.Add(Bishop2);
 	BlackBishops.Add(Bishop2);
 
-	SpawnedPieces.Add(GetWorld()->SpawnActor<AQueenPiece>(
+	BlackQueen = GetWorld()->SpawnActor<AQueenPiece>(
 		FVector(2800.f, 1200.f, 200.f),
 		FRotator::ZeroRotator
-		));
+		);
+	BlackQueen->OriginalSpawnLocation = FVector(2800.f, 1200.f, 200.f);
+	SpawnedPieces.Add(BlackQueen);
 
 	for (auto Piece : SpawnedPieces) {
 		Piece->bIsWhite = false;
@@ -189,4 +195,37 @@ void ATrainerController::SpawnBlackActors()
 void ATrainerController::Move(AActorBase* PieceToMove, FVector MoveTo)
 {
 	PieceToMove->MovePiece(MoveTo);
+}
+
+//Causes Memory Leak DON'T USE
+void ATrainerController::ResetAllPieces()
+{
+	for (auto Piece : WhitePawns) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	for (auto Piece : BlackPawns) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	for (auto Piece : WhiteRooks) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	for (auto Piece : BlackRooks) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	for (auto Piece : WhiteKnights) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	for (auto Piece : BlackKnights) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	for (auto Piece : WhiteBishops) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	for (auto Piece : BlackBishops) {
+		Move(Piece, Piece->OriginalSpawnLocation);
+	}
+	Move(WhiteKing, WhiteKing->OriginalSpawnLocation);
+	Move(BlackKing, BlackKing->OriginalSpawnLocation);
+	Move(WhiteQueen, WhiteQueen->OriginalSpawnLocation);
+	Move(BlackQueen, BlackQueen->OriginalSpawnLocation);
 }

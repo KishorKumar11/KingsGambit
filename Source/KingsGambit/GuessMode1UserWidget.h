@@ -37,11 +37,20 @@ protected:
 	UFUNCTION()
 		void OKToNotationsModeClicked();
 
+	UFUNCTION(BlueprintCallable)
+		void SetLevel(int32 level);
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* OKToNotationsMode;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Enter;
+		UButton* Enter1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* Enter2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* Enter3;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* TryAgain;
@@ -78,6 +87,33 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UEditableTextBox* Answer1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UEditableTextBox* Answer2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UEditableTextBox* Answer3;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	//	class UEditableTextBox* Answer4;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	//	class UEditableTextBox* Answer5;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	//	class UEditableTextBox* Answer6;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	//	class UEditableTextBox* Answer7;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	//	class UEditableTextBox* Answer8;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	//	class UEditableTextBox* Answer9;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	//	class UEditableTextBox* Answer10;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UCanvasPanel* GuessModeHUD;
