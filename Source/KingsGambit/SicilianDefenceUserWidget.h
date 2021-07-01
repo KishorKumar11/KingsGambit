@@ -48,7 +48,22 @@ protected:
 		void StepTwoToThreeClicked();
 
 	UFUNCTION()
-		void StepThreeToTwoClicked();
+		void StepThreeToVariationClicked();
+
+	UFUNCTION()
+		void StepSelectVariationToThreeClicked();
+
+	UFUNCTION()
+		void StepVariationToMainMenuClicked();
+
+	UFUNCTION()
+		void NVNextClicked();
+
+	UFUNCTION()
+		void DVNextClicked();
+
+	UFUNCTION()
+		void CVNextClicked();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepZeroToOne;
@@ -75,6 +90,21 @@ protected:
 		class UCanvasPanel* ExplanationPanel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* SDBasic;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* SelectVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* Najdorf;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* Dragon;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* Classical;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepZeroTxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
@@ -85,4 +115,22 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepThreeTxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepNVTxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepNV1Txt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepDVTxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepDV1Txt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepCVTxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepCV1Txt;
 };

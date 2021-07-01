@@ -35,27 +35,45 @@ void URuyLopezUserWidget::NativeConstruct()
 
 	EVNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVNextClicked);
 	StepEVWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP1Clicked);
+	StepEVWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP1ToBackClicked);
 	StepEVWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP2Clicked);
+	StepEVWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP2ToBackClicked);
 	StepEVWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP3Clicked);
+	StepEVWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP3ToBackClicked);
 	StepEVBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP1Clicked);
+	StepEVBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP1ToBackClicked);
 	StepEVBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP2Clicked);
+	StepEVBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP2ToBackClicked);
 	StepEVBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP3Clicked);
+	StepEVBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP3ToBackClicked);
 	StepEVBP4->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP4Clicked);
+	StepEVBP4ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP4ToBackClicked);
 
 	ADNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADNextClicked);
 	StepADWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1Clicked);
+	StepADWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1ToBackClicked);
 	StepADWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2Clicked);
+	StepADWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2ToBackClicked);
 	StepADWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3Clicked);
+	StepADWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3ToBackClicked);
 	StepADBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1Clicked);
+	StepADBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1ToBackClicked);
 	StepADBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2Clicked);
+	StepADBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2ToBackClicked);
 	StepADBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3Clicked);
+	StepADBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3ToBackClicked);
 
 	CDNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDNextClicked);
 	StepCDWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1Clicked);
+	StepCDWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1ToBackClicked);
 	StepCDWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2Clicked);
+	StepCDWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2ToBackClicked);
 	StepCDBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1Clicked);
+	StepCDBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1ToBackClicked);
 	StepCDBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2Clicked);
+	StepCDBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2ToBackClicked);
 	StepCDBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3Clicked);
+	StepCDBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3ToBackClicked);
 
 	StepEVToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVToSelectVariationClicked);
 	StepADToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADToSelectVariationClicked);
@@ -325,7 +343,57 @@ void URuyLopezUserWidget::StepEVWP1Clicked()
 	EV_Main->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepEVWP1ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+	EV_WP->SetVisibility(ESlateVisibility::Hidden);
+	EV_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepEVWP2Clicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+	EV_WP->SetVisibility(ESlateVisibility::Hidden);
+	EV_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void URuyLopezUserWidget::StepEVWP2ToBackClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
@@ -375,7 +443,57 @@ void URuyLopezUserWidget::StepEVWP3Clicked()
 	EV_Main->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepEVWP3ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+	EV_WP->SetVisibility(ESlateVisibility::Hidden);
+	EV_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepEVBP1Clicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+	EV_WP->SetVisibility(ESlateVisibility::Hidden);
+	EV_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void URuyLopezUserWidget::StepEVBP1ToBackClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
@@ -425,6 +543,31 @@ void URuyLopezUserWidget::StepEVBP2Clicked()
 	EV_Main->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepEVBP2ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+	EV_WP->SetVisibility(ESlateVisibility::Hidden);
+	EV_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepEVBP3Clicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
@@ -450,7 +593,57 @@ void URuyLopezUserWidget::StepEVBP3Clicked()
 	EV_Main->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepEVBP3ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+	EV_WP->SetVisibility(ESlateVisibility::Hidden);
+	EV_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepEVBP4Clicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepEVWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepEVBP4->SetVisibility(ESlateVisibility::Hidden);
+	EV_WP->SetVisibility(ESlateVisibility::Hidden);
+	EV_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	EVTxt->SetVisibility(ESlateVisibility::Hidden);
+	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
+	EV_Main->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void URuyLopezUserWidget::StepEVBP4ToBackClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
@@ -588,6 +781,32 @@ void URuyLopezUserWidget::StepADWP1Clicked()
 	AD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepADWP1ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	ADTxt->SetVisibility(ESlateVisibility::Hidden);
+	AD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD2Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD_Main->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepADWP2Clicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
@@ -614,7 +833,59 @@ void URuyLopezUserWidget::StepADWP2Clicked()
 	AD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepADWP2ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	ADTxt->SetVisibility(ESlateVisibility::Hidden);
+	AD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD2Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD_Main->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepADWP3Clicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	ADTxt->SetVisibility(ESlateVisibility::Hidden);
+	AD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD2Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD_Main->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void URuyLopezUserWidget::StepADWP3ToBackClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
@@ -667,6 +938,33 @@ void URuyLopezUserWidget::StepADBP1Clicked()
 	AD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepADBP1ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	ADTxt->SetVisibility(ESlateVisibility::Hidden);
+	AD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD2Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD_Main->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepADBP2Clicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
@@ -693,7 +991,59 @@ void URuyLopezUserWidget::StepADBP2Clicked()
 	AD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepADBP2ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	ADTxt->SetVisibility(ESlateVisibility::Hidden);
+	AD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD2Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD_Main->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepADBP3Clicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepADWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADWP3->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepADBP3->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	ADTxt->SetVisibility(ESlateVisibility::Hidden);
+	AD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD2Txt->SetVisibility(ESlateVisibility::Hidden);
+	AD_Main->SetVisibility(ESlateVisibility::Hidden);
+	AD_WP->SetVisibility(ESlateVisibility::Hidden);
+	AD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void URuyLopezUserWidget::StepADBP3ToBackClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
@@ -820,7 +1170,49 @@ void URuyLopezUserWidget::StepCDWP1Clicked()
 	CD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepCDWP1ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
+
+	StepCDBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	CDTxt->SetVisibility(ESlateVisibility::Hidden);
+	CD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	CD_WP->SetVisibility(ESlateVisibility::Hidden);
+	CD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepCDWP2Clicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
+
+	StepCDBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	CDTxt->SetVisibility(ESlateVisibility::Hidden);
+	CD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	CD_WP->SetVisibility(ESlateVisibility::Hidden);
+	CD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void URuyLopezUserWidget::StepCDWP2ToBackClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
@@ -862,6 +1254,27 @@ void URuyLopezUserWidget::StepCDBP1Clicked()
 	CD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepCDBP1ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
+
+	StepCDBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	CDTxt->SetVisibility(ESlateVisibility::Hidden);
+	CD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	CD_WP->SetVisibility(ESlateVisibility::Hidden);
+	CD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepCDBP2Clicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
@@ -883,7 +1296,49 @@ void URuyLopezUserWidget::StepCDBP2Clicked()
 	CD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
+void URuyLopezUserWidget::StepCDBP2ToBackClicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
+
+	StepCDBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	CDTxt->SetVisibility(ESlateVisibility::Hidden);
+	CD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	CD_WP->SetVisibility(ESlateVisibility::Hidden);
+	CD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void URuyLopezUserWidget::StepCDBP3Clicked()
+{
+	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
+	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
+	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
+
+	StepCDBP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDBP3->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP1->SetVisibility(ESlateVisibility::Hidden);
+	StepCDWP2->SetVisibility(ESlateVisibility::Hidden);
+	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	CDTxt->SetVisibility(ESlateVisibility::Hidden);
+	CD1Txt->SetVisibility(ESlateVisibility::Hidden);
+	CD_WP->SetVisibility(ESlateVisibility::Hidden);
+	CD_BP->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void URuyLopezUserWidget::StepCDBP3ToBackClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
