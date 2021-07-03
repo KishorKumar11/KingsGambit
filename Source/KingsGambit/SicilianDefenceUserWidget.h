@@ -47,23 +47,23 @@ protected:
 	UFUNCTION()
 		void StepTwoToThreeClicked();
 
-	UFUNCTION()
-		void StepThreeToVariationClicked();
+	//UFUNCTION()
+	//	void StepThreeToVariationClicked();
 
-	UFUNCTION()
-		void StepSelectVariationToThreeClicked();
+	//UFUNCTION()
+	//	void StepSelectVariationToThreeClicked();
 
-	UFUNCTION()
-		void StepVariationToMainMenuClicked();
+	//UFUNCTION()
+	//	void StepVariationToMainMenuClicked();
 
-	UFUNCTION()
-		void NVNextClicked();
+	//UFUNCTION()
+	//	void NVNextClicked();
 
-	UFUNCTION()
-		void DVNextClicked();
+	//UFUNCTION()
+	//	void DVNextClicked();
 
-	UFUNCTION()
-		void CVNextClicked();
+	//UFUNCTION()
+	//	void CVNextClicked();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepZeroToOne;

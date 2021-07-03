@@ -63,18 +63,41 @@ void UGuessMode1UserWidget::OKToNotationsModeClicked()
 	SetLevel(1);
 }
 
+void UGuessMode1UserWidget::ResetTextboxesAndEnterButtons()
+{
+	Answer1->SetVisibility(ESlateVisibility::Visible);
+	Enter1->SetVisibility(ESlateVisibility::Visible);
+	Answer2->SetVisibility(ESlateVisibility::Hidden);
+	Enter2->SetVisibility(ESlateVisibility::Hidden);
+	Answer3->SetVisibility(ESlateVisibility::Hidden);
+	Enter3->SetVisibility(ESlateVisibility::Hidden);
+	Answer4->SetVisibility(ESlateVisibility::Hidden);
+	Enter4->SetVisibility(ESlateVisibility::Hidden);
+	Answer5->SetVisibility(ESlateVisibility::Hidden);
+	Enter5->SetVisibility(ESlateVisibility::Hidden);
+	Answer6->SetVisibility(ESlateVisibility::Hidden);
+	Enter6->SetVisibility(ESlateVisibility::Hidden);
+	Answer7->SetVisibility(ESlateVisibility::Hidden);
+	Enter7->SetVisibility(ESlateVisibility::Hidden);
+	Answer8->SetVisibility(ESlateVisibility::Hidden);
+	Enter8->SetVisibility(ESlateVisibility::Hidden);
+	Answer9->SetVisibility(ESlateVisibility::Hidden);
+	Enter9->SetVisibility(ESlateVisibility::Hidden);
+	Answer10->SetVisibility(ESlateVisibility::Hidden);
+	Enter10->SetVisibility(ESlateVisibility::Hidden);
+}
+
 void UGuessMode1UserWidget::SetLevel(int32 level)
 {
 	switch (level) {
 		case 1:
-			//TrainerController->ResetAllPieces();
+			TrainerController->ResetAllPieces();
 			TrainerController->Move(TrainerController->WhitePawns[3], FVector(1200.f, 1200.f, 0.5f));
 			Answer1->SetVisibility(ESlateVisibility::Visible);
 			Enter1->SetVisibility(ESlateVisibility::Visible);
 			break;
 
 		case 2:
-			//TrainerController->ResetAllPieces();
 
 			//Reset pieces moved from lvl 1
 			TrainerController->Move(TrainerController->WhitePawns[3], TrainerController->WhitePawns[3]->OriginalSpawnLocation);
@@ -102,10 +125,37 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 			TrainerController->Move(TrainerController->BlackBishops[0], TrainerController->BlackBishops[0]->OriginalSpawnLocation);
 			TrainerController->Move(TrainerController->BlackPawns[3], TrainerController->BlackPawns[3]->OriginalSpawnLocation);
 
+			TrainerController->Move(TrainerController->WhitePawns[4], FVector(1200.f, 1600.f, 0.5f));
+			TrainerController->Move(TrainerController->BlackPawns[3], FVector(1600.f, 1200.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteQueen, FVector(1600.f, 2800.f, 0.5f));
+
 
 			Answer3->SetVisibility(ESlateVisibility::Hidden);
 			Enter3->SetVisibility(ESlateVisibility::Hidden);
+			Answer4->SetVisibility(ESlateVisibility::Visible);
+			Enter4->SetVisibility(ESlateVisibility::Visible);
 			break;
+
+		case 5:
+			break;
+
+		case 6:
+			break;
+
+		case 7:
+			break;
+
+		case 8:
+			break;
+
+		case 9:
+			break;
+
+		case 10:
+			break;
+		
+		default:
+			return;
 	}
 }
 

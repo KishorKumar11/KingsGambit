@@ -57,7 +57,7 @@ void ATrainerController::SpawnWhiteActors()
 		FVector(0.f, 2800.f, 200.f),
 		FRotator::ZeroRotator
 		);
-	Rook2->OriginalSpawnLocation = FVector(0.f, 0.f, 200.f);
+	Rook2->OriginalSpawnLocation = FVector(0.f, 2800.f, 200.f);
 	SpawnedPieces.Add(Rook2);
 	WhiteRooks.Add(Rook2);
 
@@ -224,8 +224,9 @@ void ATrainerController::ResetAllPieces()
 	for (auto Piece : BlackBishops) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 	}
-	Move(WhiteKing, WhiteKing->OriginalSpawnLocation);
-	Move(BlackKing, BlackKing->OriginalSpawnLocation);
+
 	Move(WhiteQueen, WhiteQueen->OriginalSpawnLocation);
 	Move(BlackQueen, BlackQueen->OriginalSpawnLocation);
+	Move(WhiteKing, WhiteKing->OriginalSpawnLocation);
+	Move(BlackKing, BlackKing->OriginalSpawnLocation);
 }
