@@ -105,6 +105,8 @@ void ATrainerController::SpawnWhiteActors()
 		Piece->SetDefaultMaterial();
 	}
 
+	WhiteKing->SetDefaultMaterial();
+
 	SpawnedPieces.Empty();
 }
 
@@ -127,7 +129,7 @@ void ATrainerController::SpawnBlackActors()
 		FRotator::ZeroRotator
 		);
 	BlackKing->OriginalSpawnLocation = FVector(2800.f, 1600.f, 200.f);
-	SpawnedPieces.Add(WhiteKing);
+	SpawnedPieces.Add(BlackKing);
 
 	Rook1 = GetWorld()->SpawnActor<ACastlePiece>(
 		FVector(2800.f, 0.f, 200.f),
@@ -197,7 +199,6 @@ void ATrainerController::Move(AActorBase* PieceToMove, FVector MoveTo)
 	PieceToMove->MovePiece(MoveTo);
 }
 
-//Causes Memory Leak DON'T USE
 void ATrainerController::ResetAllPieces()
 {
 	for (auto Piece : WhitePawns) {
