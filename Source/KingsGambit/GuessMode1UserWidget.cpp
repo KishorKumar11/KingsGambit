@@ -25,7 +25,7 @@ void UGuessMode1UserWidget::NativeConstruct()
 	OKToNotationsMode->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::OKToNotationsModeClicked);
 
 	GameOverToMenu->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::MainMenuButtonClicked);
-	
+	YouWonToMenu_1->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::MainMenuButtonClicked);
 }
 
 void UGuessMode1UserWidget::PauseButtonClicked()
@@ -137,21 +137,57 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 			break;
 
 		case 5:
+			TrainerController->ResetAllPieces();
+
+			Answer4->SetVisibility(ESlateVisibility::Hidden);
+			Enter4->SetVisibility(ESlateVisibility::Hidden);
+			Answer5->SetVisibility(ESlateVisibility::Visible);
+			Enter5->SetVisibility(ESlateVisibility::Visible);
 			break;
 
 		case 6:
+			TrainerController->ResetAllPieces();
+
+			Answer5->SetVisibility(ESlateVisibility::Hidden);
+			Enter5->SetVisibility(ESlateVisibility::Hidden);
+			Answer6->SetVisibility(ESlateVisibility::Visible);
+			Enter6->SetVisibility(ESlateVisibility::Visible);
 			break;
 
 		case 7:
+			TrainerController->ResetAllPieces();
+
+			Answer6->SetVisibility(ESlateVisibility::Hidden);
+			Enter6->SetVisibility(ESlateVisibility::Hidden);
+			Answer7->SetVisibility(ESlateVisibility::Visible);
+			Enter7->SetVisibility(ESlateVisibility::Visible);
 			break;
 
 		case 8:
+			TrainerController->ResetAllPieces();
+
+			Answer7->SetVisibility(ESlateVisibility::Hidden);
+			Enter7->SetVisibility(ESlateVisibility::Hidden);
+			Answer8->SetVisibility(ESlateVisibility::Visible);
+			Enter8->SetVisibility(ESlateVisibility::Visible);
 			break;
 
 		case 9:
+			TrainerController->ResetAllPieces();
+
+			Answer8->SetVisibility(ESlateVisibility::Hidden);
+			Enter8->SetVisibility(ESlateVisibility::Hidden);
+			Answer9->SetVisibility(ESlateVisibility::Visible);
+			Enter9->SetVisibility(ESlateVisibility::Visible);
 			break;
 
 		case 10:
+			TrainerController->ResetAllPieces();
+
+			Answer9->SetVisibility(ESlateVisibility::Hidden);
+			Enter9->SetVisibility(ESlateVisibility::Hidden);
+			Answer10->SetVisibility(ESlateVisibility::Visible);
+			Enter10->SetVisibility(ESlateVisibility::Visible);
 			break;
 		
 		default:
