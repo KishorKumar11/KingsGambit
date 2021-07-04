@@ -26,7 +26,7 @@ void USicilianDefenceUserWidget::NativeConstruct()
 	StepOneToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepOneToTwoClicked);
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepTwoToThreeClicked);
-	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToTwoClicked);
+	//StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToTwoClicked);
 	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::MainMenuButtonClicked);
 
 	NVNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVNextClicked);
@@ -165,6 +165,7 @@ void USicilianDefenceUserWidget::StepTwoToThreeClicked()
 
 }
 
+<<<<<<< HEAD
 void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 {
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
@@ -177,3 +178,18 @@ void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 	//Black's Pawn Moves 2 steps forward
 	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
 }
+=======
+//void USicilianDefenceUserWidget::StepThreeToTwoClicked()
+//{
+//	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
+//	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
+//	StepTwoTxt->SetVisibility(ESlateVisibility::Visible);
+//	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
+//	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
+//	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Hidden);
+//
+//	//Black's Pawn Moves 2 steps forward
+//	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
+//
+//}
+>>>>>>> 4b264fb531173c8ac4dfdd70fa0d95bd8d1e1a0e
