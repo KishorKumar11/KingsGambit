@@ -9,6 +9,7 @@
 #include "KnightPiece.h"
 #include "CastlePiece.h"
 #include "PawnPiece.h"
+#include "ActorBase.h"
 #include "ChessBoard.h"
 
 void ATrainerController::BeginPlay()
@@ -203,31 +204,48 @@ void ATrainerController::ResetAllPieces()
 {
 	for (auto Piece : WhitePawns) {
 		Move(Piece, Piece->OriginalSpawnLocation);
+		Piece->SetDefaultMaterial();
 	}
 	for (auto Piece : BlackPawns) {
 		Move(Piece, Piece->OriginalSpawnLocation);
+		Piece->SetDefaultMaterial();
 	}
 	for (auto Piece : WhiteRooks) {
 		Move(Piece, Piece->OriginalSpawnLocation);
+		Piece->SetDefaultMaterial();
 	}
 	for (auto Piece : BlackRooks) {
 		Move(Piece, Piece->OriginalSpawnLocation);
+		Piece->SetDefaultMaterial();
 	}
 	for (auto Piece : WhiteKnights) {
 		Move(Piece, Piece->OriginalSpawnLocation);
+		Piece->SetDefaultMaterial();
 	}
 	for (auto Piece : BlackKnights) {
 		Move(Piece, Piece->OriginalSpawnLocation);
+		Piece->SetDefaultMaterial();
 	}
 	for (auto Piece : WhiteBishops) {
-		Move(Piece, Piece->OriginalSpawnLocation);
+		Move(Piece, Piece->OriginalSpawnLocation); 
+		Piece->SetDefaultMaterial();
 	}
 	for (auto Piece : BlackBishops) {
 		Move(Piece, Piece->OriginalSpawnLocation);
+		Piece->SetDefaultMaterial();
 	}
 
 	Move(WhiteQueen, WhiteQueen->OriginalSpawnLocation);
+	WhiteQueen->SetDefaultMaterial();
 	Move(BlackQueen, BlackQueen->OriginalSpawnLocation);
+	BlackQueen->SetDefaultMaterial();
 	Move(WhiteKing, WhiteKing->OriginalSpawnLocation);
+	WhiteKing->SetDefaultMaterial();
 	Move(BlackKing, BlackKing->OriginalSpawnLocation);
+	BlackKing->SetDefaultMaterial();
+}
+
+void ATrainerController::HighlightPiece(AActorBase* Piece)
+{
+	Piece->SetHighlightedMaterial();
 }

@@ -28,6 +28,9 @@ public:
 	UFUNCTION()
 		void ResetAllPieces();
 
+	UFUNCTION()
+		void HighlightPiece(AActorBase* Piece);
+
 	TArray<AActorBase*>WhitePawns;
 	TArray<AActorBase*>BlackPawns;
 	TArray<AActorBase*>WhiteRooks;

@@ -47,16 +47,15 @@ protected:
 	UFUNCTION()
 		void StepTwoToThreeClicked();
 
-<<<<<<< HEAD
 	UFUNCTION()
 		void StepThreeToTwoClicked();
 
-	UFUNCTION()
-		void StepThreeToVariationClicked();
-=======
 	//UFUNCTION()
 	//	void StepThreeToVariationClicked();
->>>>>>> 4b264fb531173c8ac4dfdd70fa0d95bd8d1e1a0e
+
+	//UFUNCTION()
+	//	void StepThreeToVariationClicked();
+
 
 	//UFUNCTION()
 	//	void StepSelectVariationToThreeClicked();

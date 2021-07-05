@@ -29,47 +29,47 @@ void USicilianDefenceUserWidget::NativeConstruct()
 	//StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToTwoClicked);
 	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::MainMenuButtonClicked);
 
-	NVNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVNextClicked);
-	StepNVWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP1Clicked);
-	StepNVWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP1ToBackClicked);
-	StepNVWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP2Clicked);
-	StepNVWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP2ToBackClicked);
-	StepNVWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP3Clicked);
-	StepNVWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP3ToBackClicked);
-	StepNVBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP1Clicked);
-	StepNVBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP1ToBackClicked);
-	StepNVBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP2Clicked);
-	StepNVBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP2ToBackClicked);
-	StepNVBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP3Clicked);
-	StepNVBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP3ToBackClicked);
-	StepNVBP4->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP4Clicked);
-	StepNVBP4ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP4ToBackClicked);
+	//NVNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVNextClicked);
+	//StepNVWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP1Clicked);
+	//StepNVWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP1ToBackClicked);
+	//StepNVWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP2Clicked);
+	//StepNVWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP2ToBackClicked);
+	//StepNVWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP3Clicked);
+	//StepNVWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP3ToBackClicked);
+	//StepNVBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP1Clicked);
+	//StepNVBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP1ToBackClicked);
+	//StepNVBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP2Clicked);
+	//StepNVBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP2ToBackClicked);
+	//StepNVBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP3Clicked);
+	//StepNVBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP3ToBackClicked);
+	//StepNVBP4->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP4Clicked);
+	//StepNVBP4ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP4ToBackClicked);
 
-	ADNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADNextClicked);
-	StepADWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1Clicked);
-	StepADWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1ToBackClicked);
-	StepADWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2Clicked);
-	StepADWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2ToBackClicked);
-	StepADWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3Clicked);
-	StepADWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3ToBackClicked);
-	StepADBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1Clicked);
-	StepADBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1ToBackClicked);
-	StepADBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2Clicked);
-	StepADBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2ToBackClicked);
-	StepADBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3Clicked);
-	StepADBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3ToBackClicked);
+	//ADNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADNextClicked);
+	//StepADWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1Clicked);
+	//StepADWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1ToBackClicked);
+	//StepADWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2Clicked);
+	//StepADWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2ToBackClicked);
+	//StepADWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3Clicked);
+	//StepADWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3ToBackClicked);
+	//StepADBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1Clicked);
+	//StepADBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1ToBackClicked);
+	//StepADBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2Clicked);
+	//StepADBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2ToBackClicked);
+	//StepADBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3Clicked);
+	//StepADBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3ToBackClicked);
 
-	CDNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDNextClicked);
-	StepCDWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1Clicked);
-	StepCDWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1ToBackClicked);
-	StepCDWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2Clicked);
-	StepCDWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2ToBackClicked);
-	StepCDBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1Clicked);
-	StepCDBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1ToBackClicked);
-	StepCDBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2Clicked);
-	StepCDBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2ToBackClicked);
-	StepCDBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3Clicked);
-	StepCDBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3ToBackClicked);
+	//CDNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDNextClicked);
+	//StepCDWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1Clicked);
+	//StepCDWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1ToBackClicked);
+	//StepCDWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2Clicked);
+	//StepCDWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2ToBackClicked);
+	//StepCDBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1Clicked);
+	//StepCDBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1ToBackClicked);
+	//StepCDBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2Clicked);
+	//StepCDBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2ToBackClicked);
+	//StepCDBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3Clicked);
+	//StepCDBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3ToBackClicked);
 }
 
 void USicilianDefenceUserWidget::PauseButtonClicked()
@@ -165,7 +165,7 @@ void USicilianDefenceUserWidget::StepTwoToThreeClicked()
 
 }
 
-<<<<<<< HEAD
+
 void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 {
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
@@ -178,7 +178,7 @@ void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 	//Black's Pawn Moves 2 steps forward
 	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
 }
-=======
+
 //void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 //{
 //	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
@@ -192,4 +192,4 @@ void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 //	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
 //
 //}
->>>>>>> 4b264fb531173c8ac4dfdd70fa0d95bd8d1e1a0e
+
