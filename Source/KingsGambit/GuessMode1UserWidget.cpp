@@ -24,6 +24,9 @@ void UGuessMode1UserWidget::NativeConstruct()
 	QuitButton->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::QuitButtonClicked);
 	OKToNotationsMode->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::OKToNotationsModeClicked);
 
+	ManualButton->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::ManualButtonClicked);
+	OKToNotationsMode_2->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::OKToNotationsMode2Clicked);
+
 	GameOverToMenu->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::MainMenuButtonClicked);
 	YouWonToMenu_1->OnClicked.AddUniqueDynamic(this, &UGuessMode1UserWidget::MainMenuButtonClicked);
 }
@@ -52,6 +55,18 @@ void UGuessMode1UserWidget::QuitButtonClicked()
 	Super::QuitButtonClicked();
 }
 
+void UGuessMode1UserWidget::ManualButtonClicked()
+{
+	UGameplayStatics::SetGamePaused(GetWorld(), true);
+
+	ManualButton->SetVisibility(ESlateVisibility::Hidden);
+	PauseButton->SetVisibility(ESlateVisibility::Hidden);
+	GuessModeHUD->SetVisibility(ESlateVisibility::Hidden);
+
+	UserGuide_2->SetVisibility(ESlateVisibility::Visible);
+
+}
+
 void UGuessMode1UserWidget::OKToNotationsModeClicked()
 {
 	UGameplayStatics::SetGamePaused(GetWorld(), false);
@@ -59,8 +74,20 @@ void UGuessMode1UserWidget::OKToNotationsModeClicked()
 	UserGuideInterface_1->SetVisibility(ESlateVisibility::Hidden);
 
 	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
+	ManualButton->SetVisibility(ESlateVisibility::Visible);
 
 	SetLevel(1);
+}
+
+void UGuessMode1UserWidget::OKToNotationsMode2Clicked()
+{
+	UGameplayStatics::SetGamePaused(GetWorld(), false);
+
+	ManualButton->SetVisibility(ESlateVisibility::Visible);
+	PauseButton->SetVisibility(ESlateVisibility::Visible);
+	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
+
+	UserGuide_2->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UGuessMode1UserWidget::ResetTextboxesAndEnterButtons()

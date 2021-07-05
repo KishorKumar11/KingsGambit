@@ -35,7 +35,13 @@ protected:
 	virtual void QuitButtonClicked();
 
 	UFUNCTION()
+		void ManualButtonClicked();
+
+	UFUNCTION()
 		void OKToNotationsModeClicked();
+
+	UFUNCTION()
+		void OKToNotationsMode2Clicked();
 
 	UFUNCTION(BlueprintCallable)
 		void SetLevel(int32 level);
@@ -44,7 +50,13 @@ protected:
 		void ResetTextboxesAndEnterButtons();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* ManualButton;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* OKToNotationsMode;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* OKToNotationsMode_2;
 
 	//Enter Buttons in guess mode
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
@@ -85,6 +97,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UBorder* UserGuide_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UBorder* UserGuide_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UBorder* GameOverHUD;
