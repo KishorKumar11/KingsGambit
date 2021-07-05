@@ -41,65 +41,65 @@ void ATrainerController::SpawnWhiteActors()
 	}
 
 	WhiteKing = GetWorld()->SpawnActor<AKingPiece>(
-		FVector(0.f, 1600.f, 200.f),
+		FVector(0.f, 1600.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	WhiteKing->OriginalSpawnLocation = FVector(0.f, 1600.f, 200.f);
+	WhiteKing->OriginalSpawnLocation = FVector(0.f, 1600.f, 150.f);
 	SpawnedPieces.Add(WhiteKing);
 
 	Rook1 = GetWorld()->SpawnActor<ACastlePiece>(
-		FVector(0.f, 0.f, 200.f),
+		FVector(0.f, 0.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Rook1->OriginalSpawnLocation = FVector(0.f, 0.f, 200.f);
+	Rook1->OriginalSpawnLocation = FVector(0.f, 0.f, 150.f);
 	SpawnedPieces.Add(Rook1);
 	WhiteRooks.Add(Rook1);
 
 	Rook2 = GetWorld()->SpawnActor<ACastlePiece>(
-		FVector(0.f, 2800.f, 200.f),
+		FVector(0.f, 2800.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Rook2->OriginalSpawnLocation = FVector(0.f, 2800.f, 200.f);
+	Rook2->OriginalSpawnLocation = FVector(0.f, 2800.f, 150.f);
 	SpawnedPieces.Add(Rook2);
 	WhiteRooks.Add(Rook2);
 
 	Knight1 = GetWorld()->SpawnActor<AKnightPiece>(
-		FVector(0.f, 400.f, 200.f),
+		FVector(0.f, 400.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Knight1->OriginalSpawnLocation = FVector(0.f, 400.f, 200.f);
+	Knight1->OriginalSpawnLocation = FVector(0.f, 400.f, 150.f);
 	SpawnedPieces.Add(Knight1);
 	WhiteKnights.Add(Knight1);
 
 	Knight2 = GetWorld()->SpawnActor<AKnightPiece>(
-		FVector(0.f, 2400.f, 200.f),
+		FVector(0.f, 2400.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Knight2->OriginalSpawnLocation = FVector(0.f, 2400.f, 200.f);
+	Knight2->OriginalSpawnLocation = FVector(0.f, 2400.f, 150.f);
 	SpawnedPieces.Add(Knight2);
 	WhiteKnights.Add(Knight2);
 
 	Bishop1 = GetWorld()->SpawnActor<ABishopPiece>(
-		FVector(0.f, 800.f, 200.f),
+		FVector(0.f, 800.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Bishop1->OriginalSpawnLocation = FVector(0.f, 800.f, 200.f);
+	Bishop1->OriginalSpawnLocation = FVector(0.f, 800.f, 150.f);
 	SpawnedPieces.Add(Bishop1);
 	WhiteBishops.Add(Bishop1);
 
 	Bishop2 = GetWorld()->SpawnActor<ABishopPiece>(
-		FVector(0.f, 2000.f, 200.f),
+		FVector(0.f, 2000.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Bishop2->OriginalSpawnLocation = FVector(0.f, 2000.f, 200.f);
+	Bishop2->OriginalSpawnLocation = FVector(0.f, 2000.f, 150.f);
 	SpawnedPieces.Add(Bishop2);
 	WhiteBishops.Add(Bishop2);
 
 	WhiteQueen = GetWorld()->SpawnActor<AQueenPiece>(
-		FVector(0.f, 1200.f, 200.f),
+		FVector(0.f, 1200.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	WhiteQueen->OriginalSpawnLocation = FVector(0.f, 1200.f, 200.f);
+	WhiteQueen->OriginalSpawnLocation = FVector(0.f, 1200.f, 150.f);
 	SpawnedPieces.Add(WhiteQueen);
 
 	for (auto Piece : SpawnedPieces) {
@@ -127,65 +127,65 @@ void ATrainerController::SpawnBlackActors()
 	}
 
 	BlackKing = GetWorld()->SpawnActor<AKingPiece>(
-		FVector(2800.f, 1600.f, 200.f),
+		FVector(2800.f, 1600.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	BlackKing->OriginalSpawnLocation = FVector(2800.f, 1600.f, 200.f);
+	BlackKing->OriginalSpawnLocation = FVector(2800.f, 1600.f, 150.f);
 	SpawnedPieces.Add(BlackKing);
 
 	Rook1 = GetWorld()->SpawnActor<ACastlePiece>(
-		FVector(2800.f, 0.f, 200.f),
+		FVector(2800.f, 0.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Rook1->OriginalSpawnLocation = FVector(2800.f, 0.f, 200.f);
+	Rook1->OriginalSpawnLocation = FVector(2800.f, 0.f, 150.f);
 	SpawnedPieces.Add(Rook1);
 	BlackRooks.Add(Rook1);
 
 	Rook2 = GetWorld()->SpawnActor<ACastlePiece>(
-		FVector(2800.f, 2800.f, 200.f),
+		FVector(2800.f, 2800.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Rook2->OriginalSpawnLocation = FVector(2800.f, 2800.f, 200.f);
+	Rook2->OriginalSpawnLocation = FVector(2800.f, 2800.f, 150.f);
 	SpawnedPieces.Add(Rook2);
 	BlackRooks.Add(Rook2);
 
 	Knight1 = GetWorld()->SpawnActor<AKnightPiece>(
-		FVector(2800.f, 400.f, 200.f),
+		FVector(2800.f, 400.f, 150.f),
 		FRotator(0.f, 180.f, 0.f)
 		);
-	Knight1->OriginalSpawnLocation = FVector(2800.f, 400.f, 200.f);
+	Knight1->OriginalSpawnLocation = FVector(2800.f, 400.f, 150.f);
 	SpawnedPieces.Add(Knight1);
 	BlackKnights.Add(Knight1);
 
 	Knight2 = GetWorld()->SpawnActor<AKnightPiece>(
-		FVector(2800.f, 2400.f, 200.f),
+		FVector(2800.f, 2400.f, 150.f),
 		FRotator(0.f, 180.f, 0.f)
 		);
-	Knight2->OriginalSpawnLocation = FVector(2800.f, 2400.f, 200.f);
+	Knight2->OriginalSpawnLocation = FVector(2800.f, 2400.f, 150.f);
 	SpawnedPieces.Add(Knight2);
 	BlackKnights.Add(Knight2);
 
 	Bishop1 = GetWorld()->SpawnActor<ABishopPiece>(
-		FVector(2800.f, 800.f, 200.f),
+		FVector(2800.f, 800.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Bishop1->OriginalSpawnLocation = FVector(2800.f, 800.f, 200.f);
+	Bishop1->OriginalSpawnLocation = FVector(2800.f, 800.f, 150.f);
 	SpawnedPieces.Add(Bishop1);
 	BlackBishops.Add(Bishop1);
 
 	Bishop2 = GetWorld()->SpawnActor<ABishopPiece>(
-		FVector(2800.f, 2000.f, 200.f),
+		FVector(2800.f, 2000.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	Bishop2->OriginalSpawnLocation = FVector(2800.f, 2000.f, 200.f);
+	Bishop2->OriginalSpawnLocation = FVector(2800.f, 2000.f, 150.f);
 	SpawnedPieces.Add(Bishop2);
 	BlackBishops.Add(Bishop2);
 
 	BlackQueen = GetWorld()->SpawnActor<AQueenPiece>(
-		FVector(2800.f, 1200.f, 200.f),
+		FVector(2800.f, 1200.f, 150.f),
 		FRotator::ZeroRotator
 		);
-	BlackQueen->OriginalSpawnLocation = FVector(2800.f, 1200.f, 200.f);
+	BlackQueen->OriginalSpawnLocation = FVector(2800.f, 1200.f, 150.f);
 	SpawnedPieces.Add(BlackQueen);
 
 	for (auto Piece : SpawnedPieces) {
@@ -206,44 +206,80 @@ void ATrainerController::ResetAllPieces()
 	for (auto Piece : WhitePawns) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 	for (auto Piece : BlackPawns) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 	for (auto Piece : WhiteRooks) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 	for (auto Piece : BlackRooks) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 	for (auto Piece : WhiteKnights) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 	for (auto Piece : BlackKnights) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 	for (auto Piece : WhiteBishops) {
 		Move(Piece, Piece->OriginalSpawnLocation); 
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 	for (auto Piece : BlackBishops) {
 		Move(Piece, Piece->OriginalSpawnLocation);
 		Piece->SetDefaultMaterial();
+		if (Piece->IsHidden()) {
+			ShowPiece(Piece);
+		}
 	}
 
 	Move(WhiteQueen, WhiteQueen->OriginalSpawnLocation);
 	WhiteQueen->SetDefaultMaterial();
+	if (WhiteQueen->IsHidden()) {
+		ShowPiece(WhiteQueen);
+	}
 	Move(BlackQueen, BlackQueen->OriginalSpawnLocation);
 	BlackQueen->SetDefaultMaterial();
+	if (BlackQueen->IsHidden()) {
+		ShowPiece(BlackQueen);
+	}
 	Move(WhiteKing, WhiteKing->OriginalSpawnLocation);
 	WhiteKing->SetDefaultMaterial();
+	if (WhiteKing->IsHidden()) {
+		ShowPiece(WhiteKing);
+	}
 	Move(BlackKing, BlackKing->OriginalSpawnLocation);
 	BlackKing->SetDefaultMaterial();
+	if (BlackKing->IsHidden()) {
+		ShowPiece(BlackKing);
+	}
 }
 
 void ATrainerController::HidePiece(AActorBase* Piece)

@@ -181,9 +181,19 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 			break;
 
 		case 6:
-			TrainerController->ShowPiece(TrainerController->WhitePawns[0]);
-			TrainerController->ShowPiece(TrainerController->BlackPawns[0]);
 			TrainerController->ResetAllPieces();
+
+			//Hides pieces interfering Castling and shift them to other areas of board
+			TrainerController->HidePiece(TrainerController->WhiteKnights[1]);
+			TrainerController->HidePiece(TrainerController->WhiteBishops[1]);
+			TrainerController->Move(TrainerController->WhiteKnights[1], FVector(800.f, 2000.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteBishops[1], FVector(1200.f, 2400.f, 0.5f));
+
+			//Moves Pieces to Castle
+			TrainerController->Move(TrainerController->WhiteRooks[1], FVector(0.f, 2000.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteKing, FVector(0.f, 2400.f, 0.5f));
+			TrainerController->HighlightPiece(TrainerController->WhiteRooks[1]);
+			TrainerController->HighlightPiece(TrainerController->WhiteKing);
 
 			Answer5->SetVisibility(ESlateVisibility::Hidden);
 			Enter5->SetVisibility(ESlateVisibility::Hidden);
