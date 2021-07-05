@@ -3,6 +3,7 @@
 
 #include "TrainerController.h"
 #include "Blueprint/UserWidget.h"
+#include "GameFramework/Actor.h"
 #include "KingPiece.h"
 #include "QueenPiece.h"
 #include "BishopPiece.h"
@@ -243,6 +244,16 @@ void ATrainerController::ResetAllPieces()
 	WhiteKing->SetDefaultMaterial();
 	Move(BlackKing, BlackKing->OriginalSpawnLocation);
 	BlackKing->SetDefaultMaterial();
+}
+
+void ATrainerController::HidePiece(AActorBase* Piece)
+{
+	Piece->SetActorHiddenInGame(true);
+}
+
+void ATrainerController::ShowPiece(AActorBase* Piece)
+{
+	Piece->SetActorHiddenInGame(false);
 }
 
 void ATrainerController::HighlightPiece(AActorBase* Piece)

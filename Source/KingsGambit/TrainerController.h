@@ -29,6 +29,12 @@ public:
 		void ResetAllPieces();
 
 	UFUNCTION()
+		void HidePiece(AActorBase* Piece);
+
+	UFUNCTION()
+		void ShowPiece(AActorBase* Piece);
+
+	UFUNCTION()
 		void HighlightPiece(AActorBase* Piece);
 
 	TArray<AActorBase*>WhitePawns;

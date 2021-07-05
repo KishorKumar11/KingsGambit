@@ -143,6 +143,10 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 		case 5:
 			TrainerController->ResetAllPieces();
 
+			TrainerController->HidePiece(TrainerController->WhitePawns[0]);
+			TrainerController->HidePiece(TrainerController->BlackPawns[0]);
+			TrainerController->HighlightPiece(TrainerController->BlackRooks[0]);
+
 			Answer4->SetVisibility(ESlateVisibility::Hidden);
 			Enter4->SetVisibility(ESlateVisibility::Hidden);
 			Answer5->SetVisibility(ESlateVisibility::Visible);
@@ -150,6 +154,8 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 			break;
 
 		case 6:
+			TrainerController->ShowPiece(TrainerController->WhitePawns[0]);
+			TrainerController->ShowPiece(TrainerController->BlackPawns[0]);
 			TrainerController->ResetAllPieces();
 
 			Answer5->SetVisibility(ESlateVisibility::Hidden);
