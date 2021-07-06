@@ -112,6 +112,8 @@ void UGuessMode1UserWidget::ResetTextboxesAndEnterButtons()
 	Enter9->SetVisibility(ESlateVisibility::Hidden);
 	Answer10->SetVisibility(ESlateVisibility::Hidden);
 	Enter10->SetVisibility(ESlateVisibility::Hidden);
+
+	Lvl10Hint->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UGuessMode1UserWidget::SetLevel(int32 level)
@@ -172,7 +174,13 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 
 			TrainerController->HidePiece(TrainerController->WhitePawns[0]);
 			TrainerController->HidePiece(TrainerController->BlackPawns[0]);
-			TrainerController->HighlightPiece(TrainerController->BlackRooks[0]);
+			TrainerController->HidePiece(TrainerController->WhiteRooks[0]);
+			TrainerController->Move(TrainerController->WhiteRooks[0], FVector(1600.f, 2800.f, 0.5f));
+			TrainerController->Move(TrainerController->WhitePawns[0], FVector(800.f, 2000.f, 0.5f));
+			TrainerController->Move(TrainerController->BlackPawns[0], FVector(1200.f, 2400.f, 0.5f));
+
+			//TrainerController->HighlightPiece(TrainerController->BlackRooks[0]);
+			TrainerController->Move(TrainerController->BlackRooks[0], FVector(0.f, 0.f, 150.f));
 
 			Answer4->SetVisibility(ESlateVisibility::Hidden);
 			Enter4->SetVisibility(ESlateVisibility::Hidden);
@@ -190,8 +198,8 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 			TrainerController->Move(TrainerController->WhiteBishops[1], FVector(1200.f, 2400.f, 0.5f));
 
 			//Moves Pieces to Castle
-			TrainerController->Move(TrainerController->WhiteRooks[1], FVector(0.f, 2000.f, 0.5f));
-			TrainerController->Move(TrainerController->WhiteKing, FVector(0.f, 2400.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteRooks[1], FVector(0.f, 2000.f, 150.f));
+			TrainerController->Move(TrainerController->WhiteKing, FVector(0.f, 2400.f, 150.f));
 			TrainerController->HighlightPiece(TrainerController->WhiteRooks[1]);
 			TrainerController->HighlightPiece(TrainerController->WhiteKing);
 
@@ -204,6 +212,20 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 		case 7:
 			TrainerController->ResetAllPieces();
 
+			//Hides pieces interfering Castling and shift them to other areas of board
+			TrainerController->HidePiece(TrainerController->WhiteKnights[0]);
+			TrainerController->HidePiece(TrainerController->WhiteBishops[0]);
+			TrainerController->HidePiece(TrainerController->WhiteQueen);
+			TrainerController->Move(TrainerController->WhiteKnights[0], FVector(800.f, 2000.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteBishops[0], FVector(1200.f, 2400.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteQueen, FVector(1600.f, 2800.f, 0.5f));
+
+			//Moves Pieces to Castle
+			TrainerController->Move(TrainerController->WhiteRooks[0], FVector(0.f, 1200.f, 150.5f));
+			TrainerController->Move(TrainerController->WhiteKing, FVector(0.f, 800.f, 150.f));
+			TrainerController->HighlightPiece(TrainerController->WhiteRooks[0]);
+			TrainerController->HighlightPiece(TrainerController->WhiteKing);
+
 			Answer6->SetVisibility(ESlateVisibility::Hidden);
 			Enter6->SetVisibility(ESlateVisibility::Hidden);
 			Answer7->SetVisibility(ESlateVisibility::Visible);
@@ -212,6 +234,13 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 
 		case 8:
 			TrainerController->ResetAllPieces();
+
+			TrainerController->Move(TrainerController->BlackBishops[1], FVector(1200.f, 400.f, 0.5f));
+			TrainerController->Move(TrainerController->WhitePawns[3], FVector(1200.f, 1200.f, 0.5f));
+			TrainerController->Move(TrainerController->BlackPawns[4], FVector(1600.f, 1600.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteKnights[1], FVector(800.f, 2000.f, 0.5f));
+
+			TrainerController->HighlightPiece(TrainerController->WhiteKing);
 
 			Answer7->SetVisibility(ESlateVisibility::Hidden);
 			Enter7->SetVisibility(ESlateVisibility::Hidden);
@@ -222,6 +251,15 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 		case 9:
 			TrainerController->ResetAllPieces();
 
+			TrainerController->Move(TrainerController->WhiteQueen, FVector(2400.f, 2000.f, 0.5f));
+			TrainerController->Move(TrainerController->WhiteBishops[1], FVector(1200.f, 800.f, 0.5f));
+			TrainerController->Move(TrainerController->BlackPawns[5], FVector(2000.f, 1200.f, 0.5f));
+			TrainerController->Move(TrainerController->BlackKnights[0], FVector(2000.f, 800.f, 0.5f));
+			TrainerController->Move(TrainerController->BlackPawns[4], FVector(1600.f, 1600.f, 0.5f));
+			//TrainerController->Move(TrainerController->BlackPawns[7], FVector(2000.f, 2800.f, 0.5f));
+
+			TrainerController->HighlightPiece(TrainerController->BlackKing);
+
 			Answer8->SetVisibility(ESlateVisibility::Hidden);
 			Enter8->SetVisibility(ESlateVisibility::Hidden);
 			Answer9->SetVisibility(ESlateVisibility::Visible);
@@ -230,6 +268,8 @@ void UGuessMode1UserWidget::SetLevel(int32 level)
 
 		case 10:
 			TrainerController->ResetAllPieces();
+
+			Lvl10Hint->SetVisibility(ESlateVisibility::Visible);
 
 			Answer9->SetVisibility(ESlateVisibility::Hidden);
 			Enter9->SetVisibility(ESlateVisibility::Hidden);
