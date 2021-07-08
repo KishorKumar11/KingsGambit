@@ -8,7 +8,7 @@
 
 class UButton;
 class UTextBlock;
-class UCanvasPanel;
+class UCaSDasPanel;
 class ATrainerController;
 
 /**
@@ -53,187 +53,271 @@ protected:
 	UFUNCTION()
 		void StepThreeToTwoClicked();
 
-	/********** Functions for Select Variation Screen **************/
 	UFUNCTION()
-		void Step3ToSelectVariationClicked();
+		void StepThreeToSelectVariationClicked();
 
 	UFUNCTION()
-		void SelectVariationToStep3Clicked();
+		void SelectVariationToThreeClicked();
 
 	UFUNCTION()
-		void StepSlavDefencetoStepFourClicked();
+		void StepSlavDefenceClicked();
 
 	UFUNCTION()
-		void StepQueensGambitDeclinedtoStep12Clicked();
+		void StepQueensGambitDeclinedClicked();
 
 	UFUNCTION()
-		void StepQueensGambitAcceptedtoStep20Clicked();
-
-	/********** Functions for Slav Defence **************/
-	UFUNCTION()
-		void StepFourToSelectVariationClicked();
+		void StepQueensGambitAcceptedClicked();
 
 	UFUNCTION()
-		void StepFourToFiveClicked();
+		void StepSDToSelectVariationClicked();
 
 	UFUNCTION()
-		void StepFiveToFourClicked();
+		void StepACToSelectVariationClicked();
 
 	UFUNCTION()
-		void StepFiveToSixClicked();
+		void StepQGAToSelectVariationClicked();
 
 	UFUNCTION()
-		void StepSixToFiveClicked();
+		void StepSlavDefenseClicked();
 
 	UFUNCTION()
-		void StepSixToSevenClicked();
+		void StepAlbinCounterGambitClicked();
 
 	UFUNCTION()
-		void StepSevenToSixClicked();
+		void StepQueensGambitAcceptedClicked();
 
 	UFUNCTION()
-		void StepSevenToEightClicked();
+		void StepSDWP1Clicked();
 
 	UFUNCTION()
-		void StepEightToSevenClicked();
+		void StepSDWP1ToBackClicked();
 
 	UFUNCTION()
-		void StepEightToNineClicked();
+		void StepSDWP2Clicked();
 
 	UFUNCTION()
-		void StepNineToEightClicked();
+		void StepSDWP2ToBackClicked();
 
 	UFUNCTION()
-		void StepNineToTenClicked();
+		void StepSDWP3Clicked();
 
 	UFUNCTION()
-		void StepTenToNineClicked();
+		void StepSDWP3ToBackClicked();
 
 	UFUNCTION()
-		void StepTenTo11Clicked();
+		void StepSDBP1Clicked();
 
 	UFUNCTION()
-		void Step11ToTenClicked();
+		void StepSDBP1ToBackClicked();
 
 	UFUNCTION()
-		void Step11ToSelectVariationClicked();
-
-	/********** Functions for Queen's Gambit Declined **************/
-	UFUNCTION()
-		void Step12ToSelectVariationClicked();
+		void StepSDBP2Clicked();
 
 	UFUNCTION()
-		void Step12To13Clicked();
+		void StepSDBP2ToBackClicked();
 
 	UFUNCTION()
-		void Step13To12Clicked();
+		void StepSDBP3Clicked();
 
 	UFUNCTION()
-		void Step13To14Clicked();
+		void StepSDBP3ToBackClicked();
 
 	UFUNCTION()
-		void Step14To13Clicked();
+		void StepSDToSelectVariationClicked();
 
 	UFUNCTION()
-		void Step14To15Clicked();
+		void StepACWP1Clicked();
 
 	UFUNCTION()
-		void Step15To14Clicked();
+		void StepACWP1ToBackClicked();
 
 	UFUNCTION()
-		void Step15To16Clicked();
+		void StepACWP2Clicked();
 
 	UFUNCTION()
-		void Step16To15Clicked();
+		void StepACWP2ToBackClicked();
 
 	UFUNCTION()
-		void Step16To17Clicked();
+		void StepACBP1Clicked();
 
 	UFUNCTION()
-		void Step17To16Clicked();
+		void StepACBP1ToBackClicked();
 
 	UFUNCTION()
-		void Step17To18Clicked();
+		void StepACBP2Clicked();
 
 	UFUNCTION()
-		void Step18To17Clicked();
+		void StepACBP2ToBackClicked();
 
 	UFUNCTION()
-		void Step18ToSelectVariationClicked();
-
-	/********** Functions for Queen's Gambit Accepted **************/
-	UFUNCTION()
-		void Step20ToSelectVariationClicked();
+		void StepACBP3Clicked();
 
 	UFUNCTION()
-		void Step20To21Clicked();
+		void StepACBP3ToBackClicked();
 
 	UFUNCTION()
-		void Step21To20Clicked();
+		void StepACToSelectVariationClicked();
 
 	UFUNCTION()
-		void Step21To22Clicked();
+		void StepQGAWP1Clicked();
 
 	UFUNCTION()
-		void Step22To21Clicked();
+		void StepQGAWP1ToBackClicked();
 
 	UFUNCTION()
-		void Step22To23Clicked();
+		void StepQGAWP2Clicked();
 
 	UFUNCTION()
-		void Step23To22Clicked();
+		void StepQGAWP2ToBackClicked();
 
 	UFUNCTION()
-		void Step23To24Clicked();
+		void StepQGAWP3Clicked();
 
 	UFUNCTION()
-		void Step24To23Clicked();
+		void StepQGAWP3ToBackClicked();
 
 	UFUNCTION()
-		void Step24To25Clicked();
+		void StepQGABP1Clicked();
 
 	UFUNCTION()
-		void Step25To24Clicked();
+		void StepQGABP1ToBackClicked();
 
 	UFUNCTION()
-		void Step25To26Clicked();
+		void StepQGABP2Clicked();
 
 	UFUNCTION()
-		void Step26To25Clicked();
+		void StepQGABP2ToBackClicked();
 
 	UFUNCTION()
-		void Step26To27Clicked();
+		void StepQGABP3Clicked();
 
 	UFUNCTION()
-		void Step27To26Clicked();
+		void StepQGABP3ToBackClicked();
 
 	UFUNCTION()
-		void Step27ToSelectVariationClicked();
-
+		void StepQGAToSelectVariationClicked();
 
 	/********** Queen's Gambit Basic Buttons **************/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepZeroToOne;
+		UButton* StepSlavDefense;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepOneToZero;
+		UButton* StepAlbinCounterGambit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepOneToTwo;
+		UButton* StepQueensGambitAccepted;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTwoToOne;
+		UButton* ACToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTwoToThree;
+		UButton* SDToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepThreeToTwo;
+		UButton* QGAToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepThreeToSelectVariation;
+		UButton* StepACWP1;
 
-	/********** Variation Screen Buttons **************/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACWP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACWP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACWP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACBP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACBP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACBP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACBP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACBP3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepACBP3ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGAWP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGAWP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGAWP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGAWP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGAWP3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGAWP3ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGABP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGABP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGABP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGABP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGABP3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepQGABP3ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDWP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDWP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDWP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDWP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDWP3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDWP3ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDBP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDBP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDBP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDBP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDBP3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSDBP3ToBack;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepSelectVariationToThree;
 
@@ -241,175 +325,50 @@ protected:
 		UButton* StepVariationToMainMenu;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepSlavDefencetoStepFour;
+		class UCanvasPanel* ExplanationPanel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepQueensGambitDeclinedtoStep12;
+		class UCanvasPanel* SDBasic;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepQueensGambitAcceptedtoStep20;
-
-	/********** Slav Defence Buttons **************/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepFourToSelectVariation;
+		class UCanvasPanel* SelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepFourToFive;
+		class UCanvasPanel* SlavDefense;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepFiveToFour;
+		class UCanvasPanel* AlbinCounterGambit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepFiveToSix;
+		class UCanvasPanel* QueensGambitAccepted;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepSixToFive;
+		class UImage* SD_Main;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepSixToSeven;
+		class UImage* SD_WHITEMOVES;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepSevenToSix;
+		class UImage* SD_BLACKMOVES;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepSevenToEight;
+		class UImage* AC_Main;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepEightToSeven;
+		class UImage* AC_WHITEMOVES;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepEightToNine;
+		class UImage* AC_BLACKMOVES;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNineToEight;
+		class UImage* QGA_Main;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNineToTen;
+		class UImage* QGA_WHITEMOVES;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTenToNine;
+		class UImage* QGA_BLACKMOVES;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepTenTo11;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step11ToTen;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step11ToSelectVariation;
-
-	/********** Queen's Gambit Declined Buttons **************/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step12ToSelectVariation;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step12To13;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step13To12;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step13To14;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step14To13;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step14To15;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To14;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step15To16;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step16To15;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step16To17;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step17To16;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step17To18;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step18To17;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step18ToSelectVariation;
-
-	/********** Queen's Gambit Accepted Buttons **************/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step20ToSelectVariation;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step20To21;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step21To20;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step21To22;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step22To21;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step22To23;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step23To22;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step23To24;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step24To23;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step24To25;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step25To24;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step25To26;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step26To25;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step26To27;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step27To26;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Step27ToSelectVariation;
-
-	/********** Panels **************/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UCanvasPanel* ExplanationPanel;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UCanvasPanel* QueensGambitBasic;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UCanvasPanel* SelectVariation;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UCanvasPanel* SlavDefence;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UCanvasPanel* QueensGambitDeclined;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UCanvasPanel* QueensGambitAccepted;
-
-	/********** Text blocks **************/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepZeroTxt;
 
@@ -423,77 +382,20 @@ protected:
 		UTextBlock* StepThreeTxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* SelectVariationTxt;
-
-	/********** Text blocks for Slave Defence **************/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* StepFourTxt;
+		UTextBlock* StepSDTxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* StepFiveTxt;
+		UTextBlock* StepSD1Txt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* StepSixTxt;
+		UTextBlock* StepQGATxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* StepSevenTxt;
+		UTextBlock* StepQGA1Txt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* StepEightTxt;
+		UTextBlock* StepACTxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* StepNineTxt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* StepTenTxt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step11Txt;
-
-	/********** Text blocks for Queens Gambit Declined **************/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step12Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step13Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step14Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step15Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step16Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step17Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step18Txt;
-
-	/********** Text blocks for Queens Gambit Accepted **************/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step20Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step21Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step22Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step23Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step24Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step25Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step26Txt;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UTextBlock* Step27Txt;
+		UTextBlock* StepAC1Txt;
 };

@@ -69,6 +69,9 @@ protected:
 		void DragonVariationClicked();
 
 	UFUNCTION()
+		void ClassicalVariationClicked();
+
+	UFUNCTION()
 		void StepNVWP1Clicked();
 
 	UFUNCTION()
@@ -177,29 +180,7 @@ protected:
 		void StepCVWP4ToBackClicked();
 
 	UFUNCTION()
-		void StepBVWP1Clicked();
-
-	UFUNCTION()
-		void StepBVWP1ToBackClicked();
-
-	UFUNCTION()
-		void StepBVWP2Clicked();
-
-	UFUNCTION()
-		void StepBVWP2ToBackClicked();
-
-	UFUNCTION()
-		void StepBVWP3Clicked();
-
-	UFUNCTION()
-		void StepBVWP3ToBackClicked();
-
-	UFUNCTION()
-		void StepBVWP4Clicked();
-
-	UFUNCTION()
-		void StepBVWP4ToBackClicked();
-
+		void StepCVToSelectVariationClicked();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepZeroToOne;
@@ -235,6 +216,12 @@ protected:
 		UButton* CVToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* NVToSelectVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* DVToSelectVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepCVWP1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
@@ -265,19 +252,19 @@ protected:
 		UButton* StepCVBP1ToBack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP1;
+		UButton* StepCVBP2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepCVBP2ToBack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP1;
+		UButton* StepCVBP3;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepCVBP3ToBack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP1;
+		UButton* StepCVBP4;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepCVBP4ToBack;
@@ -293,24 +280,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepDVWP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP3ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP2ToBack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepDVBP3;
@@ -359,6 +328,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepNVBP3ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSelectVariationToThree;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepVariationToMainMenu;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UCanvasPanel* ExplanationPanel;

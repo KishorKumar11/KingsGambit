@@ -50,6 +50,111 @@ protected:
 	UFUNCTION()
 		void StepThreeToTwoClicked();
 
+	UFUNCTION()
+		void StepThreeToSelect_VariationClicked();
+
+	UFUNCTION()
+		void StepSelectVariationToThreeClicked();
+
+	UFUNCTION()
+		void StepPVToSelectVariationClicked();
+
+	UFUNCTION()
+		void StepSVToSelectVariationClicked();
+
+	UFUNCTION()
+		void StepFPAToSelectVariationClicked();
+
+	UFUNCTION()
+		void StepPetrosianVariationClicked();
+
+	UFUNCTION()
+		void StepSamischVariationClicked();
+
+	UFUNCTION()
+		void StepFourPawnsAttackClicked();
+
+	UFUNCTION()
+		void StepPVWP1Clicked();
+
+	UFUNCTION()
+		void StepPVWP1ToBackClicked();
+
+	UFUNCTION()
+		void StepPVWP2Clicked();
+
+	UFUNCTION()
+		void StepPVWP2ToBackClicked();
+
+	UFUNCTION()
+		void StepPVBP1Clicked();
+
+	UFUNCTION()
+		void StepPVBP1ToBackClicked();
+
+	UFUNCTION()
+		void StepPVBP2Clicked();
+
+	UFUNCTION()
+		void StepPVBP2ToBackClicked();
+
+	UFUNCTION()
+		void StepPVToSelectVariationClicked();
+
+	UFUNCTION()
+		void StepSVWP1Clicked();
+
+	UFUNCTION()
+		void StepSVWP1ToBackClicked();
+
+	UFUNCTION()
+		void StepSVWP2Clicked();
+
+	UFUNCTION()
+		void StepSVWP2ToBackClicked();
+
+	UFUNCTION()
+		void StepSVBP1Clicked();
+
+	UFUNCTION()
+		void StepSVBP1ToBackClicked();
+
+	UFUNCTION()
+		void StepSVBP2Clicked();
+
+	UFUNCTION()
+		void StepSVBP2ToBackClicked();
+
+	UFUNCTION()
+		void StepSVToSelectVariationClicked();
+
+	UFUNCTION()
+		void StepFPAWP1Clicked();
+
+	UFUNCTION()
+		void StepFPAWP1ToBackClicked();
+
+	UFUNCTION()
+		void StepFPAWP2Clicked();
+
+	UFUNCTION()
+		void StepFPAWP2ToBackClicked();
+
+	UFUNCTION()
+		void StepFPABP1Clicked();
+
+	UFUNCTION()
+		void StepFPABP1ToBackClicked();
+
+	UFUNCTION()
+		void StepFPABP2Clicked();
+
+	UFUNCTION()
+		void StepFPABP2ToBackClicked();
+
+	UFUNCTION()
+		void StepFPAToSelectVariationClicked();
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepZeroToOne;
 
@@ -72,7 +177,139 @@ protected:
 		UButton* StepThreeToMainMenu;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPetrosianVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFourPawnsAttack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSamischVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* PVToSelectVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVWP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVWP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVWP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVWP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVBP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVBP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVBP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepPVBP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVWP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVWP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVWP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVWP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVBP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVBP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVBP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSVBP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPAWP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPAWP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPAWP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPAWP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPABP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPABP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPABP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepFPABP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepSelectVariationToThree;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepVariationToMainMenu;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UCanvasPanel* ExplanationPanel;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* LondonSystemBasic;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* SelectVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* PetrosianVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* SamischVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UCanvasPanel* FourPawnsAttack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* PV_Main;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* PV_WHITEMOVES;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* PV_BLACKMOVES;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* SV_Main;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* SV_WHITEMOVES;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* SV_BLACKMOVES;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* FPA_Main;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* FPA_WHITEMOVES;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* FPA_BLACKMOVES;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepZeroTxt;
@@ -85,4 +322,22 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepThreeTxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepPVTxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepPV1Txt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepSVTxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepSV1Txt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepFPATxt;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* StepFPA1Txt;
 };
