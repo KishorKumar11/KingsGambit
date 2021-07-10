@@ -185,133 +185,288 @@ void UKingsIndianDefenceUserWidget::StepThreeToTwoClicked()
 void UKingsIndianDefenceUserWidget::StepThreeToSelect_VariationClicked()
 {
 	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void UKingsIndianDefenceUserWidget::StepSelectVariationToThreeClicked()
+{
+	KIDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void UKingsIndianDefenceUserWidget::StepPVToSelectVariationClicked()
+{
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void UKingsIndianDefenceUserWidget::StepSVWP1Clicked()
+{
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
 	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
 	SamischVariation->SetVisibility(ESlateVisibility::Visible);
 	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UKingsIndianDefenceUserWidget::StepSelectVariationToThreeClicked()
-{
-}
-
-void UKingsIndianDefenceUserWidget::StepPVToSelectVariationClicked()
-{
-}
-
-void UKingsIndianDefenceUserWidget::StepSVWP1Clicked()
-{
-}
-
 void UKingsIndianDefenceUserWidget::StepSVWP1ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVWP2Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVWP2ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVBP1Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVBP1ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVBP2Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVBP2ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVToSelectVariationClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPAWP1Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPAWP1ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPAWP2Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPAWP2ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPABP1Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPABP1ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPABP2Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPABP2ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPAToSelectVariationClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPetrosianVariationClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSamischVariationClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepFourPawnsAttackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVWP1Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVWP1ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVWP2Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVWP2ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVBP1Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVBP1ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVBP2Clicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepPVBP2ToBackClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 

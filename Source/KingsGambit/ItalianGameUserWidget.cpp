@@ -181,182 +181,397 @@ void UItalianGameUserWidget::StepThreeToTwoClicked()
 void UItalianGameUserWidget::StepThreeToSelect_VariationClicked()
 {
 	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible); 
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void UItalianGameUserWidget::StepSelectVariationToThreeClicked()
+{
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void UItalianGameUserWidget::GiuocoVariationClicked()
+{
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+}
+
+void UItalianGameUserWidget::TwoKnightsDefenseVariationClicked()
+{
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
 	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UItalianGameUserWidget::StepSelectVariationToThreeClicked()
-{
-}
-
-void UItalianGameUserWidget::GiuocoVariationClicked()
-{
-}
-
-void UItalianGameUserWidget::TwoKnightsDefenseVariationClicked()
-{
-}
-
 void UItalianGameUserWidget::HungarianDefenseVariationClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepGPWP1Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPWP1ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPWP2Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPWP2ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPWP3Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPWP3ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP1Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP1ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP2Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP2ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP3Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP3ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP4Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPBP4ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepGPToSelectVariationClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDWP1Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDWP1ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDWP2Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDWP2ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDWP3Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDWP3ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDBP1Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDBP1ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDBP2Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDBP2ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDBP3Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDBP3ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepTKDToSelectVariationClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepHDWP1Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDWP1ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDWP2Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDWP2ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDBP1Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDBP1ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDBP2Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDBP2ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDBP3Clicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDBP3ToBackClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDToSelectVariationClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 
