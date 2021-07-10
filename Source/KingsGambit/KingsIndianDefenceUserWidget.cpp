@@ -27,6 +27,36 @@ void UKingsIndianDefenceUserWidget::NativeConstruct()
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepThreeToTwoClicked);
 	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::MainMenuButtonClicked);
+
+	//StepPVWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP1Clicked);
+	//StepPVWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP1ToBackClicked);
+	//StepPVWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP2Clicked);
+	//StepPVWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP2ToBackClicked);
+	//StepPVBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP1Clicked);
+	//StepPVBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP1ToBackClicked);
+	//StepPVBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP2Clicked);
+	//StepPVBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP2ToBackClicked);
+	//StepPVToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVToSelectVariationClicked);
+
+	//StepSVWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP1Clicked);
+	//StepSVWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP1ToBackClicked);
+	//StepSVWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP2Clicked);
+	//StepSVWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP2ToBackClicked);
+	//StepSVBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP1Clicked);
+	//StepSVBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP1ToBackClicked);
+	//StepSVBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP2Clicked);
+	//StepSVBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP2ToBackClicked);
+	//StepSVToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::SVToSelectVariationClicked);
+
+	//StepFPAWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP1Clicked);
+	//StepFPAWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP1ToBackClicked);
+	//StepFPAWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP2Clicked);
+	//StepFPAWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP2ToBackClicked);
+	//StepFPABP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP1Clicked);
+	//StepFPABP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP1ToBackClicked);
+	//StepFPABP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP2Clicked);
+	//StepFPABP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP2ToBackClicked);
+	//StepFPAToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::FPAToSelectVariationClicked);
 }
 
 void UKingsIndianDefenceUserWidget::PauseButtonClicked()
@@ -154,6 +184,11 @@ void UKingsIndianDefenceUserWidget::StepThreeToTwoClicked()
 
 void UKingsIndianDefenceUserWidget::StepThreeToSelect_VariationClicked()
 {
+	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
+	SamischVariation->SetVisibility(ESlateVisibility::Visible);
+	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UKingsIndianDefenceUserWidget::StepSelectVariationToThreeClicked()

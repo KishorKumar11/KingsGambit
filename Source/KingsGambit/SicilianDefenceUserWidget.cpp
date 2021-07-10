@@ -27,49 +27,56 @@ void USicilianDefenceUserWidget::NativeConstruct()
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToTwoClicked);
-	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::MainMenuButtonClicked);
+	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::MainMenuButtonClicked);
+	StepThreeToVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToVariationClicked);
 
-	//NVNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVNextClicked);
-	//StepNVWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP1Clicked);
-	//StepNVWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP1ToBackClicked);
-	//StepNVWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP2Clicked);
-	//StepNVWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP2ToBackClicked);
-	//StepNVWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP3Clicked);
-	//StepNVWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVWP3ToBackClicked);
-	//StepNVBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP1Clicked);
-	//StepNVBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP1ToBackClicked);
-	//StepNVBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP2Clicked);
-	//StepNVBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP2ToBackClicked);
-	//StepNVBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP3Clicked);
-	//StepNVBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP3ToBackClicked);
-	//StepNVBP4->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP4Clicked);
-	//StepNVBP4ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVBP4ToBackClicked);
+	//StepNVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1Clicked);
+	//StepNVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1ToBackClicked);
+	//StepNVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP2Clicked);
+	//StepNVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP2ToBackClicked);
+	//StepNVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP3Clicked);
+	//StepNVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP3ToBackClicked);
+	//StepNVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP1Clicked);
+	//StepNVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP1ToBackClicked);
+	//StepNVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP2Clicked);
+	//StepNVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP2ToBackClicked);
+	//StepNVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP3Clicked);
+	//StepNVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP3ToBackClicked);
+	//StepNVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVToSelectVariationClicked);
 
-	//ADNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADNextClicked);
-	//StepADWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1Clicked);
-	//StepADWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1ToBackClicked);
-	//StepADWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2Clicked);
-	//StepADWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2ToBackClicked);
-	//StepADWP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3Clicked);
-	//StepADWP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP3ToBackClicked);
-	//StepADBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1Clicked);
-	//StepADBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP1ToBackClicked);
-	//StepADBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2Clicked);
-	//StepADBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2ToBackClicked);
-	//StepADBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3Clicked);
-	//StepADBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3ToBackClicked);
+	//StepDVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP1Clicked);
+	//StepDVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP1ToBackClicked);
+	//StepDVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP2Clicked);
+	//StepDVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP2ToBackClicked);
+	//StepDVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP3Clicked);
+	//StepDVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepADWP3ToBackClicked);
+	//StepDVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP1Clicked);
+	//StepDVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP1ToBackClicked);
+	//StepDVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP2Clicked);
+	//StepDVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP2ToBackClicked);
+	//StepDVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP3Clicked);
+	//StepDVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP3ToBackClicked);
+	//StepDVBP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP4Clicked);
+	//StepDVBP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP4ToBackClicked);
+	//StepDVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::DVToSelectVariationClicked);
 
-	//CDNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDNextClicked);
-	//StepCDWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1Clicked);
-	//StepCDWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1ToBackClicked);
-	//StepCDWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2Clicked);
-	//StepCDWP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2ToBackClicked);
-	//StepCDBP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1Clicked);
-	//StepCDBP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP1ToBackClicked);
-	//StepCDBP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2Clicked);
-	//StepCDBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2ToBackClicked);
-	//StepCDBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3Clicked);
-	//StepCDBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3ToBackClicked);
+	//StepCVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP1Clicked);
+	//StepCVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP1ToBackClicked);
+	//StepCVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP2Clicked);
+	//StepCVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP2ToBackClicked);
+	//StepCVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP3Clicked);
+	//StepCVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP3ToBackClicked);
+	//StepCVWP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP4Clicked);
+	//StepCVWP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP4ToBackClicked);
+	//StepCVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP1Clicked);
+	//StepCVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP1ToBackClicked);
+	//StepCVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP2Clicked);
+	//StepCVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP2ToBackClicked);
+	//StepCVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP3Clicked);
+	//StepCVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP3ToBackClicked);
+	//StepCVBP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP4Clicked);
+	//StepCVBP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP4ToBackClicked);
+	//StepCVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::CVToSelectVariationClicked);
 }
 
 void USicilianDefenceUserWidget::PauseButtonClicked()
@@ -156,15 +163,13 @@ void USicilianDefenceUserWidget::StepTwoToThreeClicked()
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Visible);
+	StepThreeToVariation->SetVisibility(ESlateVisibility::Visible);
 
 	//Black's Pawn Moves 2 steps forward
 	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1200.f, 1200.f, 0.5f));
-
 }
-
 
 void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 {
@@ -173,7 +178,7 @@ void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 	StepTwoTxt->SetVisibility(ESlateVisibility::Visible);
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToVariation->SetVisibility(ESlateVisibility::Hidden);
 
 	//Black's Pawn Moves 2 steps forward
 	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
@@ -181,174 +186,469 @@ void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 
 void USicilianDefenceUserWidget::StepThreeToVariationClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
+	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	NajdorfVariation->SetVisibility(ESlateVisibility::Visible);
+	DragonVariation->SetVisibility(ESlateVisibility::Visible);
+	ClassicalVariation->SetVisibility(ESlateVisibility::Visible);
+	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepSelectVariationToThreeClicked()
 {
-}
+	SDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 
-void USicilianDefenceUserWidget::StepVariationToMainMenuClicked()
-{
+	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
+	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
+	StepTwoTxt->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToVariation->SetVisibility(ESlateVisibility::Visible);
+	StepThreeToTwo->SetVisibility(ESlateVisibility::Visible);
+	StepThreeTxt->SetVisibility(ESlateVisibility::Visible);
+
+	//Black's Pawn Moves 2 steps forward
+	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1200.f, 1200.f, 0.5f));
 }
 
 void USicilianDefenceUserWidget::NajdorfVariationClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
+	StepNVTxt->SetVisibility(ESlateVisibility::Visible);
+	StepNV1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepNVWP1->SetVisibility(ESlateVisibility::Visible);
+	StepNVWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepNVWP2->SetVisibility(ESlateVisibility::Visible);
+	StepNVWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepNVWP3->SetVisibility(ESlateVisibility::Visible);
+	StepNVWP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepNVBP1->SetVisibility(ESlateVisibility::Visible);
+	StepNVBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepNVBP2->SetVisibility(ESlateVisibility::Visible);
+	StepNVBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepNVBP3->SetVisibility(ESlateVisibility::Visible);
+	StepNVBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepNVToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	NV_Main->SetVisibility(ESlateVisibility::Visible);
+	NV_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	NV_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::DragonVariationClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
+	StepDVTxt->SetVisibility(ESlateVisibility::Visible);
+	StepDV1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepDVWP1->SetVisibility(ESlateVisibility::Visible);
+	StepDVWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepDVWP2->SetVisibility(ESlateVisibility::Visible);
+	StepDVWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepDVWP3->SetVisibility(ESlateVisibility::Visible);
+	StepDVWP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepDVBP1->SetVisibility(ESlateVisibility::Visible);
+	StepDVBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepDVBP2->SetVisibility(ESlateVisibility::Visible);
+	StepDVBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepDVBP3->SetVisibility(ESlateVisibility::Visible);
+	StepDVBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepDVBP4->SetVisibility(ESlateVisibility::Visible);
+	StepDVBP4ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepDVToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	DV_Main->SetVisibility(ESlateVisibility::Visible);
+	DV_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	DV_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::ClassicalVariationClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+
+	StepCVTxt->SetVisibility(ESlateVisibility::Visible);
+	StepCV1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepCVWP1->SetVisibility(ESlateVisibility::Visible);
+	StepCVWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVWP2->SetVisibility(ESlateVisibility::Visible);
+	StepCVWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVWP3->SetVisibility(ESlateVisibility::Visible);
+	StepCVWP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVWP4->SetVisibility(ESlateVisibility::Visible);
+	StepCVWP4ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVBP1->SetVisibility(ESlateVisibility::Visible);
+	StepCVBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVBP2->SetVisibility(ESlateVisibility::Visible);
+	StepCVBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVBP3->SetVisibility(ESlateVisibility::Visible);
+	StepCVBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVBP4->SetVisibility(ESlateVisibility::Visible);
+	StepCVBP4ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepCVToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	CV_Main->SetVisibility(ESlateVisibility::Visible);
+	CV_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	CV_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
+
+///////////////////////////// NAJDORF VARIATION ////////////////////////////////////
 
 void USicilianDefenceUserWidget::StepNVWP1Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVWP1ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVWP2Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVWP2ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVWP3Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVWP3ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVBP1Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVBP1ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVBP2Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVBP2ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVBP3Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVBP3ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Visible);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepNVToSelectVariationClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
+
+///////////////////////////// DRAGON VARIATION ////////////////////////////////////
 
 void USicilianDefenceUserWidget::StepDVWP1Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVWP1ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVWP2Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVWP2ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVWP3Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVWP3ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP1Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP1ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP2Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP2ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP3Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP3ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP4Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVBP4ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void USicilianDefenceUserWidget::StepDVToSelectVariationClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
+
+///////////////////////////// CLASSICAL VARIATION ////////////////////////////////////
 
 void USicilianDefenceUserWidget::StepCVWP1Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVWP1ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVWP2Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVWP2ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVWP3Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVWP3ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVWP4Clicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVWP4ToBackClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepCVToSelectVariationClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
 }
 
 

@@ -27,6 +27,48 @@ void UItalianGameUserWidget::NativeConstruct()
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepThreeToTwoClicked);
 	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::MainMenuButtonClicked);
+
+	//StepGPWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP1Clicked);
+	//StepGPWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP1ToBackClicked);
+	//StepGPWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP2Clicked);
+	//StepGPWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP2ToBackClicked);
+	//StepGPWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP3Clicked);
+	//StepGPWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP3ToBackClicked);
+	//StepGPBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP1Clicked);
+	//StepGPBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP1ToBackClicked);
+	//StepGPBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP2Clicked);
+	//StepGPBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP2ToBackClicked);
+	//StepGPBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3Clicked);
+	//StepGPBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3ToBackClicked);
+	//StepGPBP4->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3Clicked);
+	//StepGPBP4ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3ToBackClicked);
+	//StepGPToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPToSelectVariationClicked);
+
+	//StepTKDWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP1Clicked);
+	//StepTKDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP1ToBackClicked);
+	//StepTKDWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2Clicked);
+	//StepTKDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2ToBackClicked);
+	//StepTKDWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2Clicked);
+	//StepTKDWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2ToBackClicked);
+	//StepTKDBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP1Clicked);
+	//StepTKDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP1ToBackClicked);
+	//StepTKDBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP2Clicked);
+	//StepTKDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP2ToBackClicked);
+	//StepTKDBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepDVBP3Clicked);
+	//StepTKDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP3ToBackClicked);
+	//StepTKDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::TKDToSelectVariationClicked);
+
+	//StepHDWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP1Clicked);
+	//StepHDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP1ToBackClicked);
+	//StepHDWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP2Clicked);
+	//StepHDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP2ToBackClicked);
+	//StepHDBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP1Clicked);
+	//StepHDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP1ToBackClicked);
+	//StepHDBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP2Clicked);
+	//StepHDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP2ToBackClicked);
+	//StepHDBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP3Clicked);
+	//StepHDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP3ToBackClicked);
+	//StepHDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::HDToSelectVariationClicked);
 }
 
 void UItalianGameUserWidget::PauseButtonClicked()
@@ -138,6 +180,11 @@ void UItalianGameUserWidget::StepThreeToTwoClicked()
 
 void UItalianGameUserWidget::StepThreeToSelect_VariationClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UItalianGameUserWidget::StepSelectVariationToThreeClicked()

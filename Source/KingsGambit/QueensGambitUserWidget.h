@@ -338,7 +338,7 @@ protected:
 		class UCanvasPanel* ExplanationPanel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		class UCanvasPanel* SDBasic;
+		class UCanvasPanel* QueensGambitBasic;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UCanvasPanel* SelectVariation;

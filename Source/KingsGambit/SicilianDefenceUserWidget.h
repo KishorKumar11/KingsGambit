@@ -201,6 +201,9 @@ protected:
 		UButton* StepThreeToMainMenu;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepThreeToVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* NajdorfVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
