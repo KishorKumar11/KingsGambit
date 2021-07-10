@@ -26,7 +26,7 @@ void USicilianDefenceUserWidget::NativeConstruct()
 	StepOneToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepOneToTwoClicked);
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepTwoToThreeClicked);
-	//StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToTwoClicked);
+	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToTwoClicked);
 	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::MainMenuButtonClicked);
 
 	//NVNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepNVNextClicked);
@@ -179,17 +179,219 @@ void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
 }
 
-//void USicilianDefenceUserWidget::StepThreeToTwoClicked()
-//{
-//	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
-//	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
-//	StepTwoTxt->SetVisibility(ESlateVisibility::Visible);
-//	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
-//	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-//	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Hidden);
-//
-//	//Black's Pawn Moves 2 steps forward
-//	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
-//
-//}
+void USicilianDefenceUserWidget::StepThreeToVariationClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepSelectVariationToThreeClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepVariationToMainMenuClicked()
+{
+}
+
+void USicilianDefenceUserWidget::NajdorfVariationClicked()
+{
+}
+
+void USicilianDefenceUserWidget::DragonVariationClicked()
+{
+}
+
+void USicilianDefenceUserWidget::ClassicalVariationClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVWP1Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVWP1ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVWP2Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVWP2ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVWP3Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVWP3ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVBP1Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVBP1ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVBP2Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVBP2ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVBP3Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVBP3ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepNVToSelectVariationClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVWP1Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVWP1ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVWP2Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVWP2ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVWP3Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVWP3ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP1Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP1ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP2Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP2ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP3Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP3ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP4Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVBP4ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepDVToSelectVariationClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP1Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP1ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP2Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP2ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP3Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP3ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP4Clicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVWP4ToBackClicked()
+{
+}
+
+void USicilianDefenceUserWidget::StepCVToSelectVariationClicked()
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

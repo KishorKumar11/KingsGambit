@@ -136,3 +136,181 @@ void UItalianGameUserWidget::StepThreeToTwoClicked()
 	TrainerController->Move(TrainerController->WhiteBishops[1], TrainerController->WhiteBishops[1]->OriginalSpawnLocation);
 }
 
+void UItalianGameUserWidget::StepThreeToSelect_VariationClicked()
+{
+}
+
+void UItalianGameUserWidget::StepSelectVariationToThreeClicked()
+{
+}
+
+void UItalianGameUserWidget::GiuocoVariationClicked()
+{
+}
+
+void UItalianGameUserWidget::TwoKnightsDefenseVariationClicked()
+{
+}
+
+void UItalianGameUserWidget::HungarianDefenseVariationClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPWP1Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPWP1ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPWP2Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPWP2ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPWP3Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPWP3ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP1Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP1ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP2Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP2ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP3Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP3ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP4Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPBP4ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepGPToSelectVariationClicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDWP1Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDWP1ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDWP2Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDWP2ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDWP3Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDWP3ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDBP1Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDBP1ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDBP2Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDBP2ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDBP3Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDBP3ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepTKDToSelectVariationClicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDWP1Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDWP1ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDWP2Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDWP2ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDBP1Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDBP1ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDBP2Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDBP2ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDBP3Clicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDBP3ToBackClicked()
+{
+}
+
+void UItalianGameUserWidget::StepHDToSelectVariationClicked()
+{
+}
+
+
+

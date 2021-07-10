@@ -29,66 +29,12 @@ void UQueensGambitUserWidget::NativeConstruct()
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepThreeToTwoClicked);
-	StepThreeToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step3ToSelectVariationClicked);
+	StepThreeToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepThreeToSelectVariationClicked);
 
 	/********** Select Variation Buttons **************/
-	StepSelectVariationToThree->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::SelectVariationToStep3Clicked);
+	StepSelectVariationToThree->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::SelectVariationToThreeClicked);
 	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::MainMenuButtonClicked);
-	StepSlavDefencetoStepFour->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSlavDefencetoStepFourClicked);
-	StepQueensGambitDeclinedtoStep12->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQueensGambitDeclinedtoStep12Clicked);
-	StepQueensGambitAcceptedtoStep20->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQueensGambitAcceptedtoStep20Clicked);
 
-	/********** Slav Defence Buttons **************/ 
-	StepFourToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFourToSelectVariationClicked);
-	StepFourToFive->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFourToFiveClicked);
-	StepFiveToFour->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFiveToFourClicked);
-	StepFiveToSix->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFiveToSixClicked);
-	StepSixToFive->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSixToFiveClicked);
-	StepSixToSeven->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSixToSevenClicked);
-	StepSevenToSix->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSevenToSixClicked);
-	StepSevenToEight->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSevenToEightClicked);
-	StepEightToSeven->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepEightToSevenClicked);
-	StepEightToNine->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepEightToNineClicked);
-	StepNineToEight->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepNineToEightClicked);
-	StepNineToTen->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepNineToTenClicked);
-	StepTenToNine->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTenToNineClicked);
-	StepTenTo11->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTenTo11Clicked);
-	Step11ToTen->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step11ToTenClicked);
-	Step11ToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step11ToSelectVariationClicked);
-
-	/********** Queen's Gambit Declined Buttons **************/
-	Step12ToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step12ToSelectVariationClicked);
-	Step12To13->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step12To13Clicked);
-	Step13To12->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step13To12Clicked);
-	Step13To14->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step13To14Clicked);
-	Step14To13->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step14To13Clicked);
-	Step14To15->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step14To15Clicked);
-	Step15To14->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step15To14Clicked);
-	Step15To16->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step15To16Clicked);
-	Step16To15->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step16To15Clicked);
-	Step16To17->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step16To17Clicked);
-	Step17To16->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step17To16Clicked);
-	Step17To18->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step17To18Clicked);
-	Step18To17->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step18To17Clicked);
-	Step18ToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step18ToSelectVariationClicked);
-
-	/********** Queen's Gambit Accepted Buttons **************/
-	Step20ToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step20ToSelectVariationClicked);
-	Step20To21->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step20To21Clicked);
-	Step21To20->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step21To20Clicked);
-	Step21To22->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step21To22Clicked);
-	Step22To21->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step22To21Clicked);
-	Step22To23->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step22To23Clicked);
-	Step23To22->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step23To22Clicked);
-	Step23To24->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step23To24Clicked);
-	Step24To23->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step24To23Clicked);
-	Step24To25->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step24To25Clicked);
-	Step25To24->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step25To24Clicked);
-	Step25To26->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step25To26Clicked);
-	Step26To25->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step26To25Clicked);
-	Step26To27->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step26To27Clicked);
-	Step27To26->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step27To26Clicked);
-	Step27ToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::Step27ToSelectVariationClicked);
 }
 
 /********** Inherited Functions for pause **************/
@@ -192,577 +138,179 @@ void UQueensGambitUserWidget::StepThreeToTwoClicked()
 	StepThreeToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step3ToSelectVariationClicked() 
+void UQueensGambitUserWidget::StepThreeToSelectVariationClicked()
 {
-	QueensGambitBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-
-	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-
-	StepSlavDefencetoStepFour->SetVisibility(ESlateVisibility::Visible);
-	StepQueensGambitDeclinedtoStep12->SetVisibility(ESlateVisibility::Visible);
-	StepQueensGambitAcceptedtoStep20->SetVisibility(ESlateVisibility::Visible);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::SelectVariationToStep3Clicked()
+void UQueensGambitUserWidget::SelectVariationToThreeClicked()
 {
-	QueensGambitBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-
-	StepThreeToTwo->SetVisibility(ESlateVisibility::Visible);
-	StepThreeTxt->SetVisibility(ESlateVisibility::Visible);
-	StepThreeToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
 }
 
-/******************** Slav Defence ******************/
-void UQueensGambitUserWidget::StepSlavDefencetoStepFourClicked()
+void UQueensGambitUserWidget::StepSlavDefenceClicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	SlavDefence->SetVisibility(ESlateVisibility::Visible);
-	
-	StepFourToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	StepFourTxt->SetVisibility(ESlateVisibility::Visible);
-	StepFourToFive->SetVisibility(ESlateVisibility::Visible);
-
 }
 
-void UQueensGambitUserWidget::StepFourToSelectVariationClicked()
+void UQueensGambitUserWidget::StepQueensGambitDeclinedClicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	SlavDefence->SetVisibility(ESlateVisibility::Hidden);
-
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	StepSlavDefencetoStepFour->SetVisibility(ESlateVisibility::Visible);
-	StepQueensGambitDeclinedtoStep12->SetVisibility(ESlateVisibility::Visible);
-	StepQueensGambitAcceptedtoStep20->SetVisibility(ESlateVisibility::Visible);
-	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
-	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::StepFourToFiveClicked()
+void UQueensGambitUserWidget::StepQueensGambitAcceptedClicked()
 {
-	StepFourToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	StepFourTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepFourToFive->SetVisibility(ESlateVisibility::Hidden);
-
-	StepFiveTxt->SetVisibility(ESlateVisibility::Visible);
-	StepFiveToFour->SetVisibility(ESlateVisibility::Visible);
-	StepFiveToSix->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::StepFiveToFourClicked()
+void UQueensGambitUserWidget::StepSDWP1Clicked()
 {
-	StepFiveTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepFiveToFour->SetVisibility(ESlateVisibility::Hidden);
-	StepFiveToSix->SetVisibility(ESlateVisibility::Hidden);
-
-	StepFourToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	StepFourTxt->SetVisibility(ESlateVisibility::Visible);
-	StepFourToFive->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::StepFiveToSixClicked()
+void UQueensGambitUserWidget::StepSDWP1ToBackClicked()
 {
-	StepFiveTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepFiveToFour->SetVisibility(ESlateVisibility::Hidden);
-	StepFiveToSix->SetVisibility(ESlateVisibility::Hidden);
-
-	StepSixTxt->SetVisibility(ESlateVisibility::Visible);
-	StepSixToFive->SetVisibility(ESlateVisibility::Visible);
-	StepSixToSeven->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::StepSixToFiveClicked()
+void UQueensGambitUserWidget::StepSDWP2Clicked()
 {
-	StepSixTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepSixToFive->SetVisibility(ESlateVisibility::Hidden);
-	StepSixToSeven->SetVisibility(ESlateVisibility::Hidden);
-
-	StepFiveTxt->SetVisibility(ESlateVisibility::Visible);
-	StepFiveToFour->SetVisibility(ESlateVisibility::Visible);
-	StepFiveToSix->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::StepSixToSevenClicked()
+void UQueensGambitUserWidget::StepSDWP2ToBackClicked()
 {
-	StepSevenTxt->SetVisibility(ESlateVisibility::Visible);
-	StepSevenToSix->SetVisibility(ESlateVisibility::Visible);
-	StepSevenToEight->SetVisibility(ESlateVisibility::Visible);
-
-	StepSixTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepSixToFive->SetVisibility(ESlateVisibility::Hidden);
-	StepSixToSeven->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepSevenToSixClicked()
+void UQueensGambitUserWidget::StepSDWP3Clicked()
 {
-	StepSixTxt->SetVisibility(ESlateVisibility::Visible);
-	StepSixToFive->SetVisibility(ESlateVisibility::Visible);
-	StepSixToSeven->SetVisibility(ESlateVisibility::Visible);
-
-	StepSevenTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepSevenToSix->SetVisibility(ESlateVisibility::Hidden);
-	StepSevenToEight->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepSevenToEightClicked()
+void UQueensGambitUserWidget::StepSDWP3ToBackClicked()
 {
-	StepEightTxt->SetVisibility(ESlateVisibility::Visible);
-	StepEightToSeven->SetVisibility(ESlateVisibility::Visible);
-	StepEightToNine->SetVisibility(ESlateVisibility::Visible);
-
-	StepSevenTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepSevenToSix->SetVisibility(ESlateVisibility::Hidden);
-	StepSevenToEight->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepEightToSevenClicked()
+void UQueensGambitUserWidget::StepSDBP1Clicked()
 {
-	StepSevenTxt->SetVisibility(ESlateVisibility::Visible);
-	StepSevenToSix->SetVisibility(ESlateVisibility::Visible);
-	StepSevenToEight->SetVisibility(ESlateVisibility::Visible);
-
-	StepEightTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepEightToSeven->SetVisibility(ESlateVisibility::Hidden);
-	StepEightToNine->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepEightToNineClicked()
+void UQueensGambitUserWidget::StepSDBP1ToBackClicked()
 {
-	StepNineTxt->SetVisibility(ESlateVisibility::Visible);
-	StepNineToEight->SetVisibility(ESlateVisibility::Visible);
-	StepNineToTen->SetVisibility(ESlateVisibility::Visible);
-
-	StepEightTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepEightToSeven->SetVisibility(ESlateVisibility::Hidden);
-	StepEightToNine->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepNineToEightClicked()
+void UQueensGambitUserWidget::StepSDBP2Clicked()
 {
-	StepEightTxt->SetVisibility(ESlateVisibility::Visible);
-	StepEightToSeven->SetVisibility(ESlateVisibility::Visible);
-	StepEightToNine->SetVisibility(ESlateVisibility::Visible);
-
-	StepNineTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepNineToEight->SetVisibility(ESlateVisibility::Hidden);
-	StepNineToTen->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepNineToTenClicked()
+void UQueensGambitUserWidget::StepSDBP2ToBackClicked()
 {
-	StepTenTxt->SetVisibility(ESlateVisibility::Visible);
-	StepTenTo11->SetVisibility(ESlateVisibility::Visible);
-	StepTenToNine->SetVisibility(ESlateVisibility::Visible);
-
-	StepNineTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepNineToEight->SetVisibility(ESlateVisibility::Hidden);
-	StepNineToTen->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepTenToNineClicked()
+void UQueensGambitUserWidget::StepSDBP3Clicked()
 {
-	StepNineTxt->SetVisibility(ESlateVisibility::Visible);
-	StepNineToEight->SetVisibility(ESlateVisibility::Visible);
-	StepNineToTen->SetVisibility(ESlateVisibility::Visible);
-
-	StepTenTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepTenTo11->SetVisibility(ESlateVisibility::Hidden);
-	StepTenToNine->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepTenTo11Clicked()
+void UQueensGambitUserWidget::StepSDBP3ToBackClicked()
 {
-	Step11Txt->SetVisibility(ESlateVisibility::Visible);
-	Step11ToTen->SetVisibility(ESlateVisibility::Visible);
-	Step11ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-
-	StepTenTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepTenTo11->SetVisibility(ESlateVisibility::Hidden);
-	StepTenToNine->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step11ToTenClicked()
+void UQueensGambitUserWidget::StepSDToSelectVariationClicked()
 {
-	StepTenTxt->SetVisibility(ESlateVisibility::Visible);
-	StepTenTo11->SetVisibility(ESlateVisibility::Visible);
-	StepTenToNine->SetVisibility(ESlateVisibility::Visible);
-
-	Step11Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step11ToTen->SetVisibility(ESlateVisibility::Hidden);
-	Step11ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step11ToSelectVariationClicked()
+void UQueensGambitUserWidget::StepACWP1Clicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	SlavDefence->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-
-	Step11Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step11ToTen->SetVisibility(ESlateVisibility::Hidden);
-	Step11ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
 }
 
-/******************** Queen's Gambit Declined ******************/
-void UQueensGambitUserWidget::StepQueensGambitDeclinedtoStep12Clicked()
+void UQueensGambitUserWidget::StepACWP1ToBackClicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	QueensGambitDeclined->SetVisibility(ESlateVisibility::Visible);
-
-	Step12ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	Step12Txt->SetVisibility(ESlateVisibility::Visible);
-	Step12To13->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::Step12ToSelectVariationClicked()
+void UQueensGambitUserWidget::StepACWP2Clicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	QueensGambitDeclined->SetVisibility(ESlateVisibility::Hidden);
-
-	Step12ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Step12Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step12To13->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step12To13Clicked()
+void UQueensGambitUserWidget::StepACWP2ToBackClicked()
 {
-	Step12ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Step12Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step12To13->SetVisibility(ESlateVisibility::Hidden);
-
-	Step13Txt->SetVisibility(ESlateVisibility::Visible);
-	Step13To12->SetVisibility(ESlateVisibility::Visible);
-	Step13To14->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::Step13To12Clicked()
+void UQueensGambitUserWidget::StepACBP1Clicked()
 {
-	Step12ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	Step12Txt->SetVisibility(ESlateVisibility::Visible);
-	Step12To13->SetVisibility(ESlateVisibility::Visible);
-
-	Step13Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step13To12->SetVisibility(ESlateVisibility::Hidden);
-	Step13To14->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step13To14Clicked()
+void UQueensGambitUserWidget::StepACBP1ToBackClicked()
 {
-	Step13Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step13To12->SetVisibility(ESlateVisibility::Hidden);
-	Step13To14->SetVisibility(ESlateVisibility::Hidden);
-
-	Step14Txt->SetVisibility(ESlateVisibility::Visible);
-	Step14To13->SetVisibility(ESlateVisibility::Visible);
-	Step14To15->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::Step14To13Clicked()
+void UQueensGambitUserWidget::StepACBP2Clicked()
 {
-	Step13Txt->SetVisibility(ESlateVisibility::Visible);
-	Step13To12->SetVisibility(ESlateVisibility::Visible);
-	Step13To14->SetVisibility(ESlateVisibility::Visible);
-
-	Step14Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step14To13->SetVisibility(ESlateVisibility::Hidden);
-	Step14To15->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step14To15Clicked()
+void UQueensGambitUserWidget::StepACBP2ToBackClicked()
 {
-	Step15Txt->SetVisibility(ESlateVisibility::Visible);
-	Step15To14->SetVisibility(ESlateVisibility::Visible);
-	Step15To16->SetVisibility(ESlateVisibility::Visible);
-
-	Step14Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step14To13->SetVisibility(ESlateVisibility::Hidden);
-	Step14To15->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step15To14Clicked()
+void UQueensGambitUserWidget::StepACBP3Clicked()
 {
-	Step14Txt->SetVisibility(ESlateVisibility::Visible);
-	Step14To13->SetVisibility(ESlateVisibility::Visible);
-	Step14To15->SetVisibility(ESlateVisibility::Visible);
-
-	Step15Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step15To14->SetVisibility(ESlateVisibility::Hidden);
-	Step15To16->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step15To16Clicked()
+void UQueensGambitUserWidget::StepACBP3ToBackClicked()
 {
-	Step16Txt->SetVisibility(ESlateVisibility::Visible);
-	Step16To17->SetVisibility(ESlateVisibility::Visible);
-	Step16To15->SetVisibility(ESlateVisibility::Visible);
-
-	Step15Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step15To14->SetVisibility(ESlateVisibility::Hidden);
-	Step15To16->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step16To15Clicked()
+void UQueensGambitUserWidget::StepACToSelectVariationClicked()
 {
-	Step15Txt->SetVisibility(ESlateVisibility::Visible);
-	Step15To14->SetVisibility(ESlateVisibility::Visible);
-	Step15To16->SetVisibility(ESlateVisibility::Visible);
-
-	Step16Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step16To17->SetVisibility(ESlateVisibility::Hidden);
-	Step16To15->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step16To17Clicked()
+void UQueensGambitUserWidget::StepQGAWP1Clicked()
 {
-	Step17Txt->SetVisibility(ESlateVisibility::Visible);
-	Step17To18->SetVisibility(ESlateVisibility::Visible);
-	Step17To16->SetVisibility(ESlateVisibility::Visible);
-
-	Step16Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step16To17->SetVisibility(ESlateVisibility::Hidden);
-	Step16To15->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step17To16Clicked()
+void UQueensGambitUserWidget::StepQGAWP1ToBackClicked()
 {
-	Step16Txt->SetVisibility(ESlateVisibility::Visible);
-	Step16To17->SetVisibility(ESlateVisibility::Visible);
-	Step16To15->SetVisibility(ESlateVisibility::Visible);
-
-	Step17Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step17To18->SetVisibility(ESlateVisibility::Hidden);
-	Step17To16->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step17To18Clicked()
+void UQueensGambitUserWidget::StepQGAWP2Clicked()
 {
-	Step18Txt->SetVisibility(ESlateVisibility::Visible);
-	Step18ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	Step18To17->SetVisibility(ESlateVisibility::Visible);
-
-	Step17Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step17To18->SetVisibility(ESlateVisibility::Hidden);
-	Step17To16->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step18To17Clicked()
+void UQueensGambitUserWidget::StepQGAWP2ToBackClicked()
 {
-	Step17Txt->SetVisibility(ESlateVisibility::Visible);
-	Step17To18->SetVisibility(ESlateVisibility::Visible);
-	Step17To16->SetVisibility(ESlateVisibility::Visible);
-
-	Step18Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step18ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Step18To17->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step18ToSelectVariationClicked()
+void UQueensGambitUserWidget::StepQGAWP3Clicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	QueensGambitDeclined->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-
-	Step18Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step18ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Step18To17->SetVisibility(ESlateVisibility::Hidden);
 }
 
-/******************** Queen's Gambit Accepted ******************/
-void UQueensGambitUserWidget::StepQueensGambitAcceptedtoStep20Clicked()
+void UQueensGambitUserWidget::StepQGAWP3ToBackClicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	QueensGambitAccepted->SetVisibility(ESlateVisibility::Visible);
-
-	Step20ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	Step20Txt->SetVisibility(ESlateVisibility::Visible);
-	Step20To21->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::Step20ToSelectVariationClicked()
+void UQueensGambitUserWidget::StepQGABP1Clicked()
 {
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
-
-	Step20ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Step20Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step20To21->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step20To21Clicked()
+void UQueensGambitUserWidget::StepQGABP1ToBackClicked()
 {
-	Step20ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Step20Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step20To21->SetVisibility(ESlateVisibility::Hidden);
-
-	Step21Txt->SetVisibility(ESlateVisibility::Visible);
-	Step21To20->SetVisibility(ESlateVisibility::Visible);
-	Step21To22->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::Step21To20Clicked()
+void UQueensGambitUserWidget::StepQGABP2Clicked()
 {
-	Step20ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	Step20Txt->SetVisibility(ESlateVisibility::Visible);
-	Step20To21->SetVisibility(ESlateVisibility::Visible);
-
-	Step21Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step21To20->SetVisibility(ESlateVisibility::Hidden);
-	Step21To22->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step21To22Clicked()
+void UQueensGambitUserWidget::StepQGABP2ToBackClicked()
 {
-	Step22Txt->SetVisibility(ESlateVisibility::Visible);
-	Step22To21->SetVisibility(ESlateVisibility::Visible);
-	Step22To23->SetVisibility(ESlateVisibility::Visible);
-
-	Step21Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step21To20->SetVisibility(ESlateVisibility::Hidden);
-	Step21To22->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step22To21Clicked()
+void UQueensGambitUserWidget::StepQGABP3Clicked()
 {
-	Step22Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step22To21->SetVisibility(ESlateVisibility::Hidden);
-	Step22To23->SetVisibility(ESlateVisibility::Hidden);
-
-	Step21Txt->SetVisibility(ESlateVisibility::Visible);
-	Step21To20->SetVisibility(ESlateVisibility::Visible);
-	Step21To22->SetVisibility(ESlateVisibility::Visible);
 }
 
-void UQueensGambitUserWidget::Step22To23Clicked()
+void UQueensGambitUserWidget::StepQGABP3ToBackClicked()
 {
-	Step23Txt->SetVisibility(ESlateVisibility::Visible);
-	Step23To22->SetVisibility(ESlateVisibility::Visible);
-	Step23To24->SetVisibility(ESlateVisibility::Visible);
-
-	Step22Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step22To21->SetVisibility(ESlateVisibility::Hidden);
-	Step22To23->SetVisibility(ESlateVisibility::Hidden);
-
 }
 
-void UQueensGambitUserWidget::Step23To22Clicked()
+void UQueensGambitUserWidget::StepQGAToSelectVariationClicked()
 {
-	Step22Txt->SetVisibility(ESlateVisibility::Visible);
-	Step22To21->SetVisibility(ESlateVisibility::Visible);
-	Step22To23->SetVisibility(ESlateVisibility::Visible);
-
-	Step23Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step23To22->SetVisibility(ESlateVisibility::Hidden);
-	Step23To24->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step23To24Clicked()
+void UQueensGambitUserWidget::StepSlavDefenseClicked()
 {
-	Step24Txt->SetVisibility(ESlateVisibility::Visible);
-	Step24To23->SetVisibility(ESlateVisibility::Visible);
-	Step24To25->SetVisibility(ESlateVisibility::Visible);
-
-	Step23Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step23To22->SetVisibility(ESlateVisibility::Hidden);
-	Step23To24->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::Step24To23Clicked()
+void UQueensGambitUserWidget::StepAlbinCounterGambitClicked()
 {
-	Step23Txt->SetVisibility(ESlateVisibility::Visible);
-	Step23To22->SetVisibility(ESlateVisibility::Visible);
-	Step23To24->SetVisibility(ESlateVisibility::Visible);
-
-	Step24Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step24To23->SetVisibility(ESlateVisibility::Hidden);
-	Step24To25->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UQueensGambitUserWidget::Step24To25Clicked()
-{
-	Step25Txt->SetVisibility(ESlateVisibility::Visible);
-	Step25To24->SetVisibility(ESlateVisibility::Visible);
-	Step25To26->SetVisibility(ESlateVisibility::Visible);
-
-	Step24Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step24To23->SetVisibility(ESlateVisibility::Hidden);
-	Step24To25->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UQueensGambitUserWidget::Step25To24Clicked()
-{
-	Step24Txt->SetVisibility(ESlateVisibility::Visible);
-	Step24To23->SetVisibility(ESlateVisibility::Visible);
-	Step24To25->SetVisibility(ESlateVisibility::Visible);
-
-	Step25Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step25To24->SetVisibility(ESlateVisibility::Hidden);
-	Step25To26->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UQueensGambitUserWidget::Step25To26Clicked()
-{
-	Step26Txt->SetVisibility(ESlateVisibility::Visible);
-	Step26To25->SetVisibility(ESlateVisibility::Visible);
-	Step26To27->SetVisibility(ESlateVisibility::Visible);
-
-	Step25Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step25To24->SetVisibility(ESlateVisibility::Hidden);
-	Step25To26->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UQueensGambitUserWidget::Step26To25Clicked()
-{
-	Step25Txt->SetVisibility(ESlateVisibility::Visible);
-	Step25To24->SetVisibility(ESlateVisibility::Visible);
-	Step25To26->SetVisibility(ESlateVisibility::Visible);
-
-	Step26Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step26To27->SetVisibility(ESlateVisibility::Hidden);
-	Step26To25->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UQueensGambitUserWidget::Step26To27Clicked()
-{
-	Step27Txt->SetVisibility(ESlateVisibility::Visible);
-	Step27To26->SetVisibility(ESlateVisibility::Visible);
-	Step27ToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-
-	Step26Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step26To27->SetVisibility(ESlateVisibility::Hidden);
-	Step26To25->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UQueensGambitUserWidget::Step27To26Clicked()
-{
-	Step26Txt->SetVisibility(ESlateVisibility::Visible);
-	Step26To25->SetVisibility(ESlateVisibility::Visible);
-	Step26To27->SetVisibility(ESlateVisibility::Visible);
-
-	Step27Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step27To26->SetVisibility(ESlateVisibility::Hidden);
-	Step27ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-
-}
-
-void UQueensGambitUserWidget::Step27ToSelectVariationClicked()
-{
-	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-
-	Step27Txt->SetVisibility(ESlateVisibility::Hidden);
-	Step27ToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Step27To26->SetVisibility(ESlateVisibility::Hidden);
 }
 

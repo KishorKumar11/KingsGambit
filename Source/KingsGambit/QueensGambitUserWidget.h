@@ -84,9 +84,6 @@ protected:
 		void StepAlbinCounterGambitClicked();
 
 	UFUNCTION()
-		void StepQueensGambitAcceptedClicked();
-
-	UFUNCTION()
 		void StepSDWP1Clicked();
 
 	UFUNCTION()
@@ -123,9 +120,6 @@ protected:
 		void StepSDBP3ToBackClicked();
 
 	UFUNCTION()
-		void StepSDToSelectVariationClicked();
-
-	UFUNCTION()
 		void StepACWP1Clicked();
 
 	UFUNCTION()
@@ -154,9 +148,6 @@ protected:
 
 	UFUNCTION()
 		void StepACBP3ToBackClicked();
-
-	UFUNCTION()
-		void StepACToSelectVariationClicked();
 
 	UFUNCTION()
 		void StepQGAWP1Clicked();
@@ -194,10 +185,29 @@ protected:
 	UFUNCTION()
 		void StepQGABP3ToBackClicked();
 
-	UFUNCTION()
-		void StepQGAToSelectVariationClicked();
 
 	/********** Queen's Gambit Basic Buttons **************/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepZeroToOne;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepOneToZero;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepOneToTwo;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepTwoToOne;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepTwoToThree;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepThreeToTwo;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepThreeToSelectVariation;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepSlavDefense;
 

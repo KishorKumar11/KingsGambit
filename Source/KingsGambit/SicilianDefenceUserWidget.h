@@ -54,9 +54,6 @@ protected:
 		void StepThreeToVariationClicked();
 
 	UFUNCTION()
-		void StepThreeToVariationClicked();
-
-	UFUNCTION()
 		void StepSelectVariationToThreeClicked();
 
 	UFUNCTION()

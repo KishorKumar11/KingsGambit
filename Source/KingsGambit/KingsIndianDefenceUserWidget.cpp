@@ -151,3 +151,132 @@ void UKingsIndianDefenceUserWidget::StepThreeToTwoClicked()
 	TrainerController->Move(TrainerController->WhitePawns[3], TrainerController->WhitePawns[3]->OriginalSpawnLocation);
 
 }
+
+void UKingsIndianDefenceUserWidget::StepThreeToSelect_VariationClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSelectVariationToThreeClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVToSelectVariationClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVWP1Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVWP1ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVWP2Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVWP2ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVBP1Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVBP1ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVBP2Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVBP2ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSVToSelectVariationClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPAWP1Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPAWP1ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPAWP2Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPAWP2ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPABP1Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPABP1ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPABP2Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPABP2ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFPAToSelectVariationClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPetrosianVariationClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepSamischVariationClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepFourPawnsAttackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVWP1Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVWP1ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVWP2Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVWP2ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVBP1Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVBP1ToBackClicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVBP2Clicked()
+{
+}
+
+void UKingsIndianDefenceUserWidget::StepPVBP2ToBackClicked()
+{
+}
+

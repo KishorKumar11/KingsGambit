@@ -99,9 +99,6 @@ protected:
 		void Stepg6BP2ToBackClicked();
 
 	UFUNCTION()
-		void Stepg6ToSelectVariationClicked();
-
-	UFUNCTION()
 		void Stepe6c5WP1Clicked();
 
 	UFUNCTION()
@@ -126,9 +123,6 @@ protected:
 		void Stepe6c5BP2ToBackClicked();
 
 	UFUNCTION()
-		void Stepe6c5ToSelectVariationClicked();
-
-	UFUNCTION()
 		void Stepe6WP1Clicked();
 
 	UFUNCTION()
@@ -151,10 +145,6 @@ protected:
 
 	UFUNCTION()
 		void Stepe6BP2ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6ToSelectVariationClicked();
-
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepZeroToOne;

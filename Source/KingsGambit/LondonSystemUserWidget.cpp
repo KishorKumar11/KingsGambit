@@ -134,3 +134,132 @@ void ULondonSystemUserWidget::StepThreeToTwoClicked()
 	//White's Bishop back to its original position
 	TrainerController->Move(TrainerController->WhiteBishops[0], TrainerController->WhiteBishops[0]->OriginalSpawnLocation);
 }
+
+void ULondonSystemUserWidget::StepThreeToSelect_VariationClicked()
+{
+}
+
+void ULondonSystemUserWidget::StepSelectVariationToThreeClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6ToSelectVariationClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5WP1Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5WP1ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5WP2Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5WP2ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5BP1Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5BP1ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5BP2Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5BP2ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5ToSelectVariationClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6WP1Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6WP1ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6WP2Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6WP2ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6BP1Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6BP1ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6BP2Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6BP2ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6ToSelectVariationClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6c5Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepe6Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6WP1Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6WP1ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6WP2Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6WP2ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6BP1Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6BP1ToBackClicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6BP2Clicked()
+{
+}
+
+void ULondonSystemUserWidget::Stepg6BP2ToBackClicked()
+{
+}
+
