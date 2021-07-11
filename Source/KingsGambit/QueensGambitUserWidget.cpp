@@ -239,6 +239,25 @@ void UQueensGambitUserWidget::StepSlavDefenceClicked()
 	SlavDefense->SetVisibility(ESlateVisibility::Visible);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
+
+	StepSDTxt->SetVisibility(ESlateVisibility::Visible);
+	StepSD1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepSDWP1->SetVisibility(ESlateVisibility::Visible);
+	StepSDWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepSDWP2->SetVisibility(ESlateVisibility::Visible);
+	StepSDWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepSDWP3->SetVisibility(ESlateVisibility::Visible);
+	StepSDWP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepSDBP1->SetVisibility(ESlateVisibility::Visible);
+	StepSDBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepSDBP2->SetVisibility(ESlateVisibility::Visible);
+	StepSDBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepSDBP3->SetVisibility(ESlateVisibility::Visible);
+	StepSDBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepSDToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	SD_Main->SetVisibility(ESlateVisibility::Visible);
+	SD_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	SD_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepAlbinCounterGambitClicked()
@@ -248,6 +267,23 @@ void UQueensGambitUserWidget::StepAlbinCounterGambitClicked()
 	SlavDefense->SetVisibility(ESlateVisibility::Hidden);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Visible);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
+
+	StepACTxt->SetVisibility(ESlateVisibility::Visible);
+	StepAC1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepACWP1->SetVisibility(ESlateVisibility::Visible);
+	StepACWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepACWP2->SetVisibility(ESlateVisibility::Visible);
+	StepACWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepACBP1->SetVisibility(ESlateVisibility::Visible);
+	StepACBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepACBP2->SetVisibility(ESlateVisibility::Visible);
+	StepACBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepACBP3->SetVisibility(ESlateVisibility::Visible);
+	StepACBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepACToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	AC_Main->SetVisibility(ESlateVisibility::Visible);
+	AC_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	AC_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepQueensGambitAcceptedClicked()
@@ -257,6 +293,25 @@ void UQueensGambitUserWidget::StepQueensGambitAcceptedClicked()
 	SlavDefense->SetVisibility(ESlateVisibility::Hidden);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Visible);
+
+	StepQGATxt->SetVisibility(ESlateVisibility::Visible);
+	StepQGA1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepQGAWP1->SetVisibility(ESlateVisibility::Visible);
+	StepQGAWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepQGAWP2->SetVisibility(ESlateVisibility::Visible);
+	StepQGAWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepQGAWP3->SetVisibility(ESlateVisibility::Visible);
+	StepQGAWP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepQGABP1->SetVisibility(ESlateVisibility::Visible);
+	StepQGABP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepQGABP2->SetVisibility(ESlateVisibility::Visible);
+	StepQGABP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepQGABP3->SetVisibility(ESlateVisibility::Visible);
+	StepQGABP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepQGAToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	QGA_Main->SetVisibility(ESlateVisibility::Visible);
+	QGA_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	QGA_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepSDWP1Clicked()

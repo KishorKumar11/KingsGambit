@@ -203,6 +203,27 @@ void UItalianGameUserWidget::GiuocoVariationClicked()
 	GiuocoPiano->SetVisibility(ESlateVisibility::Visible);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepGPTxt->SetVisibility(ESlateVisibility::Visible);
+	StepGP1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepGPWP1->SetVisibility(ESlateVisibility::Visible);
+	StepGPWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepGPWP2->SetVisibility(ESlateVisibility::Visible);
+	StepGPWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepGPWP3->SetVisibility(ESlateVisibility::Visible);
+	StepGPWP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepGPBP1->SetVisibility(ESlateVisibility::Visible);
+	StepGPBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepGPBP2->SetVisibility(ESlateVisibility::Visible);
+	StepGPBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepGPBP3->SetVisibility(ESlateVisibility::Visible);
+	StepGPBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepGPBP4->SetVisibility(ESlateVisibility::Visible);
+	StepGPBP4ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepGPToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	GP_Main->SetVisibility(ESlateVisibility::Visible);
+	GP_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	GP_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::TwoKnightsDefenseVariationClicked()
@@ -212,6 +233,25 @@ void UItalianGameUserWidget::TwoKnightsDefenseVariationClicked()
 	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Visible);
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepTKDTxt->SetVisibility(ESlateVisibility::Visible);
+	StepTKD1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepTKDWP1->SetVisibility(ESlateVisibility::Visible);
+	StepTKDWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepTKDWP2->SetVisibility(ESlateVisibility::Visible);
+	StepTKDWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepTKDWP3->SetVisibility(ESlateVisibility::Visible);
+	StepTKDWP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepTKDBP1->SetVisibility(ESlateVisibility::Visible);
+	StepTKDBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepTKDBP2->SetVisibility(ESlateVisibility::Visible);
+	StepTKDBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepTKDBP3->SetVisibility(ESlateVisibility::Visible);
+	StepTKDBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepTKDToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	TKD_Main->SetVisibility(ESlateVisibility::Visible);
+	TKD_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	TKD_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::HungarianDefenseVariationClicked()
@@ -221,6 +261,23 @@ void UItalianGameUserWidget::HungarianDefenseVariationClicked()
 	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
 	HungarianDefense->SetVisibility(ESlateVisibility::Visible);
+
+	StepHDTxt->SetVisibility(ESlateVisibility::Visible);
+	StepHD1Txt->SetVisibility(ESlateVisibility::Visible);
+	StepHDWP1->SetVisibility(ESlateVisibility::Visible);
+	StepHDWP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepHDWP2->SetVisibility(ESlateVisibility::Visible);
+	StepHDWP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepHDBP1->SetVisibility(ESlateVisibility::Visible);
+	StepHDBP1ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepHDBP2->SetVisibility(ESlateVisibility::Visible);
+	StepHDBP2ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepHDBP3->SetVisibility(ESlateVisibility::Visible);
+	StepHDBP3ToBack->SetVisibility(ESlateVisibility::Hidden);
+	StepHDToSelectVariation->SetVisibility(ESlateVisibility::Visible);
+	HD_Main->SetVisibility(ESlateVisibility::Visible);
+	HD_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
+	HD_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepGPWP1Clicked()

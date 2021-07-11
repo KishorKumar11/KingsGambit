@@ -261,7 +261,7 @@ protected:
 		class UCanvasPanel* ExplanationPanel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		class UCanvasPanel* LondonSystemBasic;
+		class UCanvasPanel* KIDBasic;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UCanvasPanel* SelectVariation;
