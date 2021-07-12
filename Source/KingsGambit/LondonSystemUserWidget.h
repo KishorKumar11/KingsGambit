@@ -177,7 +177,13 @@ protected:
 		UButton* Stepe6c5Variation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* g6ToSelectVariation;
+		UButton* Stepg6ToSelectVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* Stepe6ToSelectVariation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* Stepe6c5ToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Stepg6WP1;

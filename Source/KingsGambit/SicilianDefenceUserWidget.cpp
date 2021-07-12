@@ -30,53 +30,53 @@ void USicilianDefenceUserWidget::NativeConstruct()
 	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::MainMenuButtonClicked);
 	StepThreeToVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToVariationClicked);
 
-	//StepNVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1Clicked);
-	//StepNVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1ToBackClicked);
-	//StepNVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP2Clicked);
-	//StepNVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP2ToBackClicked);
-	//StepNVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP3Clicked);
-	//StepNVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP3ToBackClicked);
-	//StepNVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP1Clicked);
-	//StepNVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP1ToBackClicked);
-	//StepNVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP2Clicked);
-	//StepNVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP2ToBackClicked);
-	//StepNVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP3Clicked);
-	//StepNVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP3ToBackClicked);
-	//StepNVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVToSelectVariationClicked);
+	StepNVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1Clicked);
+	StepNVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1ToBackClicked);
+	StepNVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP2Clicked);
+	StepNVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP2ToBackClicked);
+	StepNVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP3Clicked);
+	StepNVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP3ToBackClicked);
+	StepNVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP1Clicked);
+	StepNVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP1ToBackClicked);
+	StepNVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP2Clicked);
+	StepNVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP2ToBackClicked);
+	StepNVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP3Clicked);
+	StepNVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVBP3ToBackClicked);
+	StepNVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVToSelectVariationClicked);
 
-	//StepDVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP1Clicked);
-	//StepDVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP1ToBackClicked);
-	//StepDVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP2Clicked);
-	//StepDVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP2ToBackClicked);
-	//StepDVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP3Clicked);
-	//StepDVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepADWP3ToBackClicked);
-	//StepDVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP1Clicked);
-	//StepDVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP1ToBackClicked);
-	//StepDVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP2Clicked);
-	//StepDVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP2ToBackClicked);
-	//StepDVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP3Clicked);
-	//StepDVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP3ToBackClicked);
-	//StepDVBP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP4Clicked);
-	//StepDVBP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP4ToBackClicked);
-	//StepDVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::DVToSelectVariationClicked);
+	StepDVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP1Clicked);
+	StepDVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP1ToBackClicked);
+	StepDVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP2Clicked);
+	StepDVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP2ToBackClicked);
+	StepDVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP3Clicked);
+	StepDVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVWP3ToBackClicked);
+	StepDVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP1Clicked);
+	StepDVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP1ToBackClicked);
+	StepDVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP2Clicked);
+	StepDVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP2ToBackClicked);
+	StepDVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP3Clicked);
+	StepDVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP3ToBackClicked);
+	StepDVBP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP4Clicked);
+	StepDVBP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVBP4ToBackClicked);
+	StepDVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepDVToSelectVariationClicked);
 
-	//StepCVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP1Clicked);
-	//StepCVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP1ToBackClicked);
-	//StepCVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP2Clicked);
-	//StepCVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP2ToBackClicked);
-	//StepCVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP3Clicked);
-	//StepCVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP3ToBackClicked);
-	//StepCVWP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP4Clicked);
-	//StepCVWP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP4ToBackClicked);
-	//StepCVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP1Clicked);
-	//StepCVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP1ToBackClicked);
-	//StepCVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP2Clicked);
-	//StepCVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP2ToBackClicked);
-	//StepCVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP3Clicked);
-	//StepCVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP3ToBackClicked);
-	//StepCVBP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP4Clicked);
-	//StepCVBP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP4ToBackClicked);
-	//StepCVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::CVToSelectVariationClicked);
+	StepCVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP1Clicked);
+	StepCVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP1ToBackClicked);
+	StepCVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP2Clicked);
+	StepCVWP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP2ToBackClicked);
+	StepCVWP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP3Clicked);
+	StepCVWP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP3ToBackClicked);
+	StepCVWP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP4Clicked);
+	StepCVWP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVWP4ToBackClicked);
+	StepCVBP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP1Clicked);
+	StepCVBP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP1ToBackClicked);
+	StepCVBP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP2Clicked);
+	StepCVBP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP2ToBackClicked);
+	StepCVBP3->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP3Clicked);
+	StepCVBP3ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP3ToBackClicked);
+	StepCVBP4->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP4Clicked);
+	StepCVBP4ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVBP4ToBackClicked);
+	StepCVToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepCVToSelectVariationClicked);
 }
 
 void USicilianDefenceUserWidget::PauseButtonClicked()
@@ -634,6 +634,78 @@ void USicilianDefenceUserWidget::StepCVWP4Clicked()
 }
 
 void USicilianDefenceUserWidget::StepCVWP4ToBackClicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP1Clicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP1ToBackClicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP2Clicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP2ToBackClicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP3Clicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP3ToBackClicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP4Clicked()
+{
+	SDBasic->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Visible);
+}
+
+void USicilianDefenceUserWidget::StepCVBP4ToBackClicked()
 {
 	SDBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);

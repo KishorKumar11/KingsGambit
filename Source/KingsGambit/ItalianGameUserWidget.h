@@ -213,13 +213,13 @@ protected:
 		UButton* HungarianDefenseVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* GPToSelectVariation;
+		UButton* StepGPToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* TKDToSelectVariation;
+		UButton* StepTKDToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* HDToSelectVariation;
+		UButton* StepHDToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepHDWP1;

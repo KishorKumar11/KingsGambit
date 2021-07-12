@@ -36,11 +36,11 @@ protected:
 	UFUNCTION()
 	void MovesClicked();
 
-	//UFUNCTION()
-	//void SettingsButtonClicked();
+	UFUNCTION()
+	void SettingsButtonClicked();
 
-	//UFUNCTION()
-	//void CreditsButtonClicked();
+	UFUNCTION()
+	void CreditsButtonClicked();
 
 	UFUNCTION()
 	void QuitButtonClicked();
@@ -146,6 +146,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 	class UCanvasPanel* OptionsPanel;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UCanvasPanel* SettingsMenu;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+	class UCanvasPanel* CreditsMenu;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
     class UTextBlock* GuessModeTxt;

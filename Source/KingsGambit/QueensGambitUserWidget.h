@@ -63,9 +63,6 @@ protected:
 		void StepSlavDefenceClicked();
 
 	UFUNCTION()
-		void StepQueensGambitDeclinedClicked();
-
-	UFUNCTION()
 		void StepQueensGambitAcceptedClicked();
 
 	UFUNCTION()
@@ -218,13 +215,13 @@ protected:
 		UButton* StepQueensGambitAccepted;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* ACToSelectVariation;
+		UButton* StepACToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* SDToSelectVariation;
+		UButton* StepSDToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* QGAToSelectVariation;
+		UButton* StepQGAToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepACWP1;

@@ -7,6 +7,7 @@
 #include "Components/TextBlock.h"
 #include "Components/VerticalBox.h"
 #include "Components/CanvasPanel.h"
+#include "Components/Image.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
 
@@ -35,45 +36,45 @@ void UQueensGambitUserWidget::NativeConstruct()
 	StepSelectVariationToThree->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::SelectVariationToThreeClicked);
 	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::MainMenuButtonClicked);
 
-	//StepSDWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP1Clicked);
-	//StepSDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP1ToBackClicked);
-	//StepSDWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP2Clicked);
-	//StepSDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP2ToBackClicked);
-	//StepSDWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP3Clicked);
-	//StepSDWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP3ToBackClicked);
-	//StepSDBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP1Clicked);
-	//StepSDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP1ToBackClicked);
-	//StepSDBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP2Clicked);
-	//StepSDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP2ToBackClicked);
-	//StepSDBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP3Clicked);
-	//StepSDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP3ToBackClicked);
-	//StepSDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDToSelectVariationClicked);
+	StepSDWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP1Clicked);
+	StepSDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP1ToBackClicked);
+	StepSDWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP2Clicked);
+	StepSDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP2ToBackClicked);
+	StepSDWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP3Clicked);
+	StepSDWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDWP3ToBackClicked);
+	StepSDBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP1Clicked);
+	StepSDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP1ToBackClicked);
+	StepSDBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP2Clicked);
+	StepSDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP2ToBackClicked);
+	StepSDBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP3Clicked);
+	StepSDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDBP3ToBackClicked);
+	StepSDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSDToSelectVariationClicked);
 
-	//StepACWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP1Clicked);
-	//StepACWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP1ToBackClicked);
-	//StepACWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP2Clicked);
-	//StepACWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP2ToBackClicked);
-	//StepACBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP1Clicked);
-	//StepACBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP1ToBackClicked);
-	//StepACBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP2Clicked);
-	//StepACBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP2ToBackClicked);
-	//StepACBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepDVBP3Clicked);
-	//StepACBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP3ToBackClicked);
-	//StepACToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::ACToSelectVariationClicked);
+	StepACWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP1Clicked);
+	StepACWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP1ToBackClicked);
+	StepACWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP2Clicked);
+	StepACWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACWP2ToBackClicked);
+	StepACBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP1Clicked);
+	StepACBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP1ToBackClicked);
+	StepACBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP2Clicked);
+	StepACBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP2ToBackClicked);
+	StepACBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP3Clicked);
+	StepACBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACBP3ToBackClicked);
+	StepACToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepACToSelectVariationClicked);
 
-	//StepQGAWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP1Clicked);
-	//StepQGAWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP1ToBackClicked);
-	//StepQGAWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP2Clicked);
-	//StepQGAWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP2ToBackClicked);
-	//StepQGAWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP3Clicked);
-	//StepQGAWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP3ToBackClicked);
-	//StepQGABP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP1Clicked);
-	//StepQGABP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP1ToBackClicked);
-	//StepQGABP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP2Clicked);
-	//StepQGABP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP2ToBackClicked);
-	//StepQGABP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP3Clicked);
-	//StepQGABP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP3ToBackClicked);
-	//StepQGAToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::QGAToSelectVariationClicked);
+	StepQGAWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP1Clicked);
+	StepQGAWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP1ToBackClicked);
+	StepQGAWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP2Clicked);
+	StepQGAWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP2ToBackClicked);
+	StepQGAWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP3Clicked);
+	StepQGAWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAWP3ToBackClicked);
+	StepQGABP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP1Clicked);
+	StepQGABP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP1ToBackClicked);
+	StepQGABP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP2Clicked);
+	StepQGABP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP2ToBackClicked);
+	StepQGABP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP3Clicked);
+	StepQGABP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGABP3ToBackClicked);
+	StepQGAToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepQGAToSelectVariationClicked);
 
 }
 
@@ -653,15 +654,6 @@ void UQueensGambitUserWidget::StepSlavDefenseClicked()
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
 	SlavDefense->SetVisibility(ESlateVisibility::Visible);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
-	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UQueensGambitUserWidget::StepAlbinCounterGambitClicked()
-{
-	QueensGambitBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	SlavDefense->SetVisibility(ESlateVisibility::Hidden);
-	AlbinCounterGambit->SetVisibility(ESlateVisibility::Visible);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
 }
 

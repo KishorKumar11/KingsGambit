@@ -7,6 +7,7 @@
 #include "Components/TextBlock.h"
 #include "Components/VerticalBox.h"
 #include "Components/CanvasPanel.h"
+#include "Components/Image.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
 
@@ -28,35 +29,35 @@ void UKingsIndianDefenceUserWidget::NativeConstruct()
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepThreeToTwoClicked);
 	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::MainMenuButtonClicked);
 
-	//StepPVWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP1Clicked);
-	//StepPVWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP1ToBackClicked);
-	//StepPVWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP2Clicked);
-	//StepPVWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVWP2ToBackClicked);
-	//StepPVBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP1Clicked);
-	//StepPVBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP1ToBackClicked);
-	//StepPVBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP2Clicked);
-	//StepPVBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVBP2ToBackClicked);
-	//StepPVToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepPVToSelectVariationClicked);
+	StepPVWP1->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVWP1Clicked);
+	StepPVWP1ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVWP1ToBackClicked);
+	StepPVWP2->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVWP2Clicked);
+	StepPVWP2ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVWP2ToBackClicked);
+	StepPVBP1->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVBP1Clicked);
+	StepPVBP1ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVBP1ToBackClicked);
+	StepPVBP2->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVBP2Clicked);
+	StepPVBP2ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVBP2ToBackClicked);
+	StepPVToSelectVariation->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVToSelectVariationClicked);
 
-	//StepSVWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP1Clicked);
-	//StepSVWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP1ToBackClicked);
-	//StepSVWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP2Clicked);
-	//StepSVWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVWP2ToBackClicked);
-	//StepSVBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP1Clicked);
-	//StepSVBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP1ToBackClicked);
-	//StepSVBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP2Clicked);
-	//StepSVBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepSVBP2ToBackClicked);
-	//StepSVToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::SVToSelectVariationClicked);
+	StepSVWP1->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVWP1Clicked);
+	StepSVWP1ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVWP1ToBackClicked);
+	StepSVWP2->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVWP2Clicked);
+	StepSVWP2ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVWP2ToBackClicked);
+	StepSVBP1->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVBP1Clicked);
+	StepSVBP1ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVBP1ToBackClicked);
+	StepSVBP2->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVBP2Clicked);
+	StepSVBP2ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVBP2ToBackClicked);
+	StepSVToSelectVariation->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSVToSelectVariationClicked);
 
-	//StepFPAWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP1Clicked);
-	//StepFPAWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP1ToBackClicked);
-	//StepFPAWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP2Clicked);
-	//StepFPAWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPAWP2ToBackClicked);
-	//StepFPABP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP1Clicked);
-	//StepFPABP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP1ToBackClicked);
-	//StepFPABP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP2Clicked);
-	//StepFPABP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepFPABP2ToBackClicked);
-	//StepFPAToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::FPAToSelectVariationClicked);
+	StepFPAWP1->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPAWP1Clicked);
+	StepFPAWP1ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPAWP1ToBackClicked);
+	StepFPAWP2->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPAWP2Clicked);
+	StepFPAWP2ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPAWP2ToBackClicked);
+	StepFPABP1->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPABP1Clicked);
+	StepFPABP1ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPABP1ToBackClicked);
+	StepFPABP2->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPABP2Clicked);
+	StepFPABP2ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPABP2ToBackClicked);
+	StepFPAToSelectVariation->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFPAToSelectVariationClicked);
 }
 
 void UKingsIndianDefenceUserWidget::PauseButtonClicked()

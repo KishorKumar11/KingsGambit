@@ -7,6 +7,7 @@
 #include "Components/TextBlock.h"
 #include "Components/VerticalBox.h"
 #include "Components/CanvasPanel.h"
+#include "Components/Image.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
 
@@ -28,35 +29,35 @@ void ULondonSystemUserWidget::NativeConstruct()
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::StepThreeToTwoClicked);
 	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::MainMenuButtonClicked);
 
-	//Stepg6WP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6WP1Clicked);
-	//Stepg6WP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6WP1ToBackClicked);
-	//Stepg6WP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6WP2Clicked);
-	//Stepg6WP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6WP2ToBackClicked);
-	//Stepg6BP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6BP1Clicked);
-	//Stepg6BP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6BP1ToBackClicked);
-	//Stepg6BP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6BP2Clicked);
-	//Stepg6BP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6BP2ToBackClicked);
-	//Stepg6ToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepg6ToSelectVariationClicked);
+	Stepg6WP1->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6WP1Clicked);
+	Stepg6WP1ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6WP1ToBackClicked);
+	Stepg6WP2->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6WP2Clicked);
+	Stepg6WP2ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6WP2ToBackClicked);
+	Stepg6BP1->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6BP1Clicked);
+	Stepg6BP1ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6BP1ToBackClicked);
+	Stepg6BP2->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6BP2Clicked);
+	Stepg6BP2ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6BP2ToBackClicked);
+	Stepg6ToSelectVariation->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6ToSelectVariationClicked);
 
-	//Stepe6WP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6WP1Clicked);
-	//Stepe6WP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6WP1ToBackClicked);
-	//Stepe6WP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6WP2Clicked);
-	//Stepe6WP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6WP2ToBackClicked);
-	//Stepe6BP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6BP1Clicked);
-	//Stepe6BP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6BP1ToBackClicked);
-	//Stepe6BP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6BP2Clicked);
-	//Stepe6BP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6BP2ToBackClicked);
-	//Stepe6ToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::e6ToSelectVariationClicked);
+	Stepe6WP1->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6WP1Clicked);
+	Stepe6WP1ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6WP1ToBackClicked);
+	Stepe6WP2->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6WP2Clicked);
+	Stepe6WP2ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6WP2ToBackClicked);
+	Stepe6BP1->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6BP1Clicked);
+	Stepe6BP1ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6BP1ToBackClicked);
+	Stepe6BP2->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6BP2Clicked);
+	Stepe6BP2ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6BP2ToBackClicked);
+	Stepe6ToSelectVariation->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6ToSelectVariationClicked);
 
-	//Stepe6c5WP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5WP1Clicked);
-	//Stepe6c5WP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5WP1ToBackClicked);
-	//Stepe6c5WP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5WP2Clicked);
-	//Stepe6c5WP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5WP2ToBackClicked);
-	//Stepe6c5BP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5BP1Clicked);
-	//Stepe6c5BP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5BP1ToBackClicked);
-	//Stepe6c5BP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5BP2Clicked);
-	//Stepe6c5BP2ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::Stepe6c5BP2ToBackClicked);
-	//Stepe6c5ToSelectVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::e6c5ToSelectVariationClicked);
+	Stepe6c5WP1->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5WP1Clicked);
+	Stepe6c5WP1ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5WP1ToBackClicked);
+	Stepe6c5WP2->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5WP2Clicked);
+	Stepe6c5WP2ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5WP2ToBackClicked);
+	Stepe6c5BP1->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5BP1Clicked);
+	Stepe6c5BP1ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5BP1ToBackClicked);
+	Stepe6c5BP2->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5BP2Clicked);
+	Stepe6c5BP2ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5BP2ToBackClicked);
+	Stepe6c5ToSelectVariation->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepe6c5ToSelectVariationClicked);
 }
 
 void ULondonSystemUserWidget::PauseButtonClicked()

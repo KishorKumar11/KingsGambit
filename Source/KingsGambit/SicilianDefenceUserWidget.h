@@ -57,9 +57,6 @@ protected:
 		void StepSelectVariationToThreeClicked();
 
 	UFUNCTION()
-		void StepVariationToMainMenuClicked();
-
-	UFUNCTION()
 		void NajdorfVariationClicked();
 
 	UFUNCTION()
@@ -177,6 +174,30 @@ protected:
 		void StepCVWP4ToBackClicked();
 
 	UFUNCTION()
+		void StepCVBP1Clicked();
+
+	UFUNCTION()
+		void StepCVBP1ToBackClicked();
+
+	UFUNCTION()
+		void StepCVBP2Clicked();
+
+	UFUNCTION()
+		void StepCVBP2ToBackClicked();
+
+	UFUNCTION()
+		void StepCVBP3Clicked();
+
+	UFUNCTION()
+		void StepCVBP3ToBackClicked();
+
+	UFUNCTION()
+		void StepCVBP4Clicked();
+
+	UFUNCTION()
+		void StepCVBP4ToBackClicked();
+
+	UFUNCTION()
 		void StepCVToSelectVariationClicked();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
@@ -213,13 +234,13 @@ protected:
 		UButton* ClassicalVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* CVToSelectVariation;
+		UButton* StepCVToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* NVToSelectVariation;
+		UButton* StepNVToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* DVToSelectVariation;
+		UButton* StepDVToSelectVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepCVWP1;
@@ -280,6 +301,24 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepDVWP2ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepDVWP3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepDVWP3ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepDVBP1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepDVBP1ToBack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepDVBP2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* StepDVBP2ToBack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepDVBP3;
