@@ -9,9 +9,11 @@ A 3D chess game brought to you by Unreal Engine 4. The game not only provides us
 Moreover, users are allowed to pause and navigate throughout the game with ease and settings options are provided to users to adjust the music volume and modify the screen resolution. Ultimately, the game is designed to help users achieve a great knowledge in chess and to relax themselves from day to day loaded lifestyle.
 
 Documentation:
+
 https://docs.google.com/document/d/1beOyvtbNEGYNWUt3eZeQQ41H9DH2tvUeTfTCP20eYVg/edit?usp=sharing
 
 Credits:
+
 https://github.com/yilmazfatih6/chess
 
 https://simplifychess.com/homepage/index.html
