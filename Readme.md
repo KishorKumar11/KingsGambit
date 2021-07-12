@@ -13,3 +13,4 @@ https://docs.google.com/document/d/1beOyvtbNEGYNWUt3eZeQQ41H9DH2tvUeTfTCP20eYVg/
 
 Credits:
 https://github.com/yilmazfatih6/chess
+https://simplifychess.com/homepage/index.html
