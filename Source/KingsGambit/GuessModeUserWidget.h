@@ -10,6 +10,7 @@ class UButton;
 class UBorder;
 class UTextBlock;
 class UImage;
+class UCanvasPanel;
 
 /**
  * Inherits from PauseMenuUserWidget because pause menu elements remain the same
@@ -37,20 +38,15 @@ protected:
 		void OKToMovesModeClicked();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* MovesButton;
+		UButton* ManualButton;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* OKToMovesMode;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		class UCanvasPanel* OptionsPanel;
+		class UBorder* UserGuide_1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		class UBorder* UserGuide;
+		UCanvasPanel* GuessModeHUD;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		class UVerticalBox* UserGuideInterface;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UImage* GuessImage;
 };

@@ -27,11 +27,15 @@ void UGuessModeUserWidget::NativeConstruct()
 void UGuessModeUserWidget::PauseButtonClicked()
 {
 	Super::PauseButtonClicked();
+
+	GuessModeHUD->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UGuessModeUserWidget::ResumeButtonClicked()
 {
 	Super::ResumeButtonClicked();
+
+	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UGuessModeUserWidget::MainMenuButtonClicked()
@@ -47,8 +51,10 @@ void UGuessModeUserWidget::QuitButtonClicked()
 void UGuessModeUserWidget::OKToMovesModeClicked()
 {
 	UGameplayStatics::SetGamePaused(GetWorld(), false);
-	UserGuide->SetVisibility(ESlateVisibility::Hidden);
-	UserGuideInterface->SetVisibility(ESlateVisibility::Hidden);
+	UserGuide_1->SetVisibility(ESlateVisibility::Hidden);
+
+	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
+	ManualButton->SetVisibility(ESlateVisibility::Visible);
 }
 
 
