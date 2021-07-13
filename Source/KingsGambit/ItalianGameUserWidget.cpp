@@ -27,49 +27,49 @@ void UItalianGameUserWidget::NativeConstruct()
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepThreeToTwoClicked);
-	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::MainMenuButtonClicked);
+	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::MainMenuButtonClicked);
 
-	//StepGPWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP1Clicked);
-	//StepGPWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP1ToBackClicked);
-	//StepGPWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP2Clicked);
-	//StepGPWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP2ToBackClicked);
-	//StepGPWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP3Clicked);
-	//StepGPWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPWP3ToBackClicked);
-	//StepGPBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP1Clicked);
-	//StepGPBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP1ToBackClicked);
-	//StepGPBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP2Clicked);
-	//StepGPBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP2ToBackClicked);
-	//StepGPBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3Clicked);
-	//StepGPBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3ToBackClicked);
-	//StepGPBP4->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3Clicked);
-	//StepGPBP4ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPBP3ToBackClicked);
-	//StepGPToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepGPToSelectVariationClicked);
+	StepGPWP1->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP1Clicked);
+	StepGPWP1ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP1ToBackClicked);
+	StepGPWP2->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP2Clicked);
+	StepGPWP2ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP2ToBackClicked);
+	StepGPWP3->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP3Clicked);
+	StepGPWP3ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP3ToBackClicked);
+	StepGPBP1->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP1Clicked);
+	StepGPBP1ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP1ToBackClicked);
+	StepGPBP2->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP2Clicked);
+	StepGPBP2ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP2ToBackClicked);
+	StepGPBP3->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP3Clicked);
+	StepGPBP3ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP3ToBackClicked);
+	StepGPBP4->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP3Clicked);
+	StepGPBP4ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPBP3ToBackClicked);
+	StepGPToSelectVariation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPToSelectVariationClicked);
 
-	//StepTKDWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP1Clicked);
-	//StepTKDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP1ToBackClicked);
-	//StepTKDWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2Clicked);
-	//StepTKDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2ToBackClicked);
-	//StepTKDWP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2Clicked);
-	//StepTKDWP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDWP2ToBackClicked);
-	//StepTKDBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP1Clicked);
-	//StepTKDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP1ToBackClicked);
-	//StepTKDBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP2Clicked);
-	//StepTKDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP2ToBackClicked);
-	//StepTKDBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepDVBP3Clicked);
-	//StepTKDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepTKDBP3ToBackClicked);
-	//StepTKDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::TKDToSelectVariationClicked);
+	StepTKDWP1->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDWP1Clicked);
+	StepTKDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDWP1ToBackClicked);
+	StepTKDWP2->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDWP2Clicked);
+	StepTKDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDWP2ToBackClicked);
+	StepTKDWP3->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDWP2Clicked);
+	StepTKDWP3ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDWP2ToBackClicked);
+	StepTKDBP1->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDBP1Clicked);
+	StepTKDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDBP1ToBackClicked);
+	StepTKDBP2->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDBP2Clicked);
+	StepTKDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDBP2ToBackClicked);
+	StepTKDBP3->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDBP3Clicked);
+	StepTKDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDBP3ToBackClicked);
+	StepTKDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTKDToSelectVariationClicked);
 
-	//StepHDWP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP1Clicked);
-	//StepHDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP1ToBackClicked);
-	//StepHDWP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP2Clicked);
-	//StepHDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDWP2ToBackClicked);
-	//StepHDBP1->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP1Clicked);
-	//StepHDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP1ToBackClicked);
-	//StepHDBP2->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP2Clicked);
-	//StepHDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP2ToBackClicked);
-	//StepHDBP3->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP3Clicked);
-	//StepHDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::StepHDBP3ToBackClicked);
-	//StepHDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UQueensGambitUserWidget::HDToSelectVariationClicked);
+	StepHDWP1->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDWP1Clicked);
+	StepHDWP1ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDWP1ToBackClicked);
+	StepHDWP2->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDWP2Clicked);
+	StepHDWP2ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDWP2ToBackClicked);
+	StepHDBP1->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDBP1Clicked);
+	StepHDBP1ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDBP1ToBackClicked);
+	StepHDBP2->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDBP2Clicked);
+	StepHDBP2ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDBP2ToBackClicked);
+	StepHDBP3->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDBP3Clicked);
+	StepHDBP3ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDBP3ToBackClicked);
+	StepHDToSelectVariation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepHDToSelectVariationClicked);
 }
 
 void UItalianGameUserWidget::PauseButtonClicked()
@@ -98,6 +98,12 @@ void UItalianGameUserWidget::QuitButtonClicked()
 
 void UItalianGameUserWidget::StepZeroToOneClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
 	StepZeroToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
@@ -112,6 +118,12 @@ void UItalianGameUserWidget::StepZeroToOneClicked()
 
 void UItalianGameUserWidget::StepOneToZeroClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
 	StepZeroToOne->SetVisibility(ESlateVisibility::Visible);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
@@ -125,6 +137,13 @@ void UItalianGameUserWidget::StepOneToZeroClicked()
 
 void UItalianGameUserWidget::StepOneToTwoClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -140,6 +159,13 @@ void UItalianGameUserWidget::StepOneToTwoClicked()
 
 void UItalianGameUserWidget::StepTwoToOneClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
 	StepOneTxt->SetVisibility(ESlateVisibility::Visible);
@@ -155,10 +181,16 @@ void UItalianGameUserWidget::StepTwoToOneClicked()
 
 void UItalianGameUserWidget::StepTwoToThreeClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Visible);
+	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Visible);
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Visible);
 
@@ -168,12 +200,18 @@ void UItalianGameUserWidget::StepTwoToThreeClicked()
 
 void UItalianGameUserWidget::StepThreeToTwoClicked()
 {
+	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
+	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
+	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Visible);
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 
 	//White's Bishop back to its original position
 	TrainerController->Move(TrainerController->WhiteBishops[1], TrainerController->WhiteBishops[1]->OriginalSpawnLocation);
@@ -186,6 +224,16 @@ void UItalianGameUserWidget::StepThreeToSelect_VariationClicked()
 	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
+
+	GiuocoPianoVariation->SetVisibility(ESlateVisibility::Visible);
+	TwoKnightsDefenseVariation->SetVisibility(ESlateVisibility::Visible);
+	HungarianDefenseVariation->SetVisibility(ESlateVisibility::Visible);
+	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepSelectVariationToThreeClicked()

@@ -238,12 +238,6 @@ void URuyLopezUserWidget::StepThreeToSelect_VariationClicked()
 	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
-	
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
 }
 
 void URuyLopezUserWidget::StepSelectVariationToThreeClicked()

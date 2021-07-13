@@ -222,6 +222,16 @@ void UQueensGambitUserWidget::StepThreeToSelectVariationClicked()
 	SlavDefense->SetVisibility(ESlateVisibility::Hidden);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
+
+	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
+
+	StepSlavDefense->SetVisibility(ESlateVisibility::Visible);
+	StepAlbinCounterGambit->SetVisibility(ESlateVisibility::Visible);
+	StepQueensGambitAccepted->SetVisibility(ESlateVisibility::Visible);
+	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::SelectVariationToThreeClicked()
@@ -648,12 +658,5 @@ void UQueensGambitUserWidget::StepQGAToSelectVariationClicked()
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
 }
 
-void UQueensGambitUserWidget::StepSlavDefenseClicked()
-{
-	QueensGambitBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	SlavDefense->SetVisibility(ESlateVisibility::Visible);
-	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
-	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
-}
+
 

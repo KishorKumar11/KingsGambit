@@ -105,6 +105,12 @@ void USicilianDefenceUserWidget::QuitButtonClicked()
 
 void USicilianDefenceUserWidget::StepZeroToOneClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
 	StepZeroToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
@@ -119,6 +125,12 @@ void USicilianDefenceUserWidget::StepZeroToOneClicked()
 
 void USicilianDefenceUserWidget::StepOneToZeroClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroToOne->SetVisibility(ESlateVisibility::Visible);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
@@ -132,6 +144,12 @@ void USicilianDefenceUserWidget::StepOneToZeroClicked()
 
 void USicilianDefenceUserWidget::StepOneToTwoClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
 	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -146,6 +164,12 @@ void USicilianDefenceUserWidget::StepOneToTwoClicked()
 
 void USicilianDefenceUserWidget::StepTwoToOneClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
 	StepOneToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
 	StepOneTxt->SetVisibility(ESlateVisibility::Visible);
@@ -160,6 +184,12 @@ void USicilianDefenceUserWidget::StepTwoToOneClicked()
 
 void USicilianDefenceUserWidget::StepTwoToThreeClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -173,6 +203,12 @@ void USicilianDefenceUserWidget::StepTwoToThreeClicked()
 
 void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 {
+	SDBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Najdorf->SetVisibility(ESlateVisibility::Hidden);
+	Dragon->SetVisibility(ESlateVisibility::Hidden);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
+
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Visible);

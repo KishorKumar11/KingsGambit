@@ -27,7 +27,7 @@ void ULondonSystemUserWidget::NativeConstruct()
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::StepThreeToTwoClicked);
-	StepThreeToMainMenu->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::MainMenuButtonClicked);
+	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::MainMenuButtonClicked);
 
 	Stepg6WP1->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6WP1Clicked);
 	Stepg6WP1ToBack->OnClicked.AddUniqueDynamic(this, &ULondonSystemUserWidget::Stepg6WP1ToBackClicked);
@@ -86,6 +86,12 @@ void ULondonSystemUserWidget::QuitButtonClicked()
 
 void ULondonSystemUserWidget::StepZeroToOneClicked()
 {
+	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Withg6->SetVisibility(ESlateVisibility::Hidden);
+	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
+	Withe6->SetVisibility(ESlateVisibility::Hidden);
+
 	StepZeroToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
@@ -98,6 +104,12 @@ void ULondonSystemUserWidget::StepZeroToOneClicked()
 
 void ULondonSystemUserWidget::StepOneToZeroClicked()
 {
+	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Withg6->SetVisibility(ESlateVisibility::Hidden);
+	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
+	Withe6->SetVisibility(ESlateVisibility::Hidden);
+
 	StepZeroToOne->SetVisibility(ESlateVisibility::Visible);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
@@ -110,6 +122,12 @@ void ULondonSystemUserWidget::StepOneToZeroClicked()
 
 void ULondonSystemUserWidget::StepOneToTwoClicked()
 {
+	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Withg6->SetVisibility(ESlateVisibility::Hidden);
+	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
+	Withe6->SetVisibility(ESlateVisibility::Hidden);
+
 	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -127,6 +145,12 @@ void ULondonSystemUserWidget::StepOneToTwoClicked()
 
 void ULondonSystemUserWidget::StepTwoToOneClicked()
 {
+	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Withg6->SetVisibility(ESlateVisibility::Hidden);
+	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
+	Withe6->SetVisibility(ESlateVisibility::Hidden);
+
 	StepOneToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
 	StepOneTxt->SetVisibility(ESlateVisibility::Visible);
@@ -142,10 +166,16 @@ void ULondonSystemUserWidget::StepTwoToOneClicked()
 
 void ULondonSystemUserWidget::StepTwoToThreeClicked()
 {
+	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Withg6->SetVisibility(ESlateVisibility::Hidden);
+	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
+	Withe6->SetVisibility(ESlateVisibility::Hidden);
+
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Visible);
+	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Visible);
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Visible);
 
@@ -155,12 +185,18 @@ void ULondonSystemUserWidget::StepTwoToThreeClicked()
 
 void ULondonSystemUserWidget::StepThreeToTwoClicked()
 {
+	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	Withg6->SetVisibility(ESlateVisibility::Hidden);
+	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
+	Withe6->SetVisibility(ESlateVisibility::Hidden);
+
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Visible);
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToMainMenu->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 
 	//White's Bishop back to its original position
 	TrainerController->Move(TrainerController->WhiteBishops[0], TrainerController->WhiteBishops[0]->OriginalSpawnLocation);
@@ -173,6 +209,16 @@ void ULondonSystemUserWidget::StepThreeToSelect_VariationClicked()
 	Withg6->SetVisibility(ESlateVisibility::Hidden);
 	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
 	Withe6->SetVisibility(ESlateVisibility::Hidden);
+
+	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
+
+	Stepg6Variation->SetVisibility(ESlateVisibility::Visible);
+	Stepe6Variation->SetVisibility(ESlateVisibility::Visible);
+	Stepe6c5Variation->SetVisibility(ESlateVisibility::Visible);
+	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 void ULondonSystemUserWidget::StepSelectVariationToThreeClicked()

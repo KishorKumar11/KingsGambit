@@ -219,9 +219,6 @@ protected:
 		UButton* StepThreeToTwo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepThreeToMainMenu;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepThreeToVariation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))

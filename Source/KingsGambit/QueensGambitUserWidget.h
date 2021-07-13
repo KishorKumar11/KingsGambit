@@ -75,9 +75,6 @@ protected:
 		void StepQGAToSelectVariationClicked();
 
 	UFUNCTION()
-		void StepSlavDefenseClicked();
-
-	UFUNCTION()
 		void StepAlbinCounterGambitClicked();
 
 	UFUNCTION()

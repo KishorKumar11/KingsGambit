@@ -201,7 +201,7 @@ protected:
 		UButton* StepThreeToTwo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepThreeToMainMenu;
+		UButton* StepThreeToSelect_Variation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* GiuocoPianoVariation;
