@@ -40,9 +40,6 @@ protected:
 	void SettingsButtonClicked();
 
 	UFUNCTION()
-	void CreditsButtonClicked();
-
-	UFUNCTION()
 	void QuitButtonClicked();
 
 	UFUNCTION()
@@ -149,9 +146,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 	class UCanvasPanel* SettingsMenu;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-	class UCanvasPanel* CreditsMenu;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
     class UTextBlock* GuessModeTxt;

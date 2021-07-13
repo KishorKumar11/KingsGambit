@@ -20,7 +20,6 @@ void UMainMenuUserWidget::NativeConstruct()
 	MainMenuButton->OnClicked.AddUniqueDynamic(this, &UMainMenuUserWidget::MainMenuButtonClicked);
 	GuessButton->OnClicked.AddUniqueDynamic(this, &UMainMenuUserWidget::GuessButtonClicked);
 	SettingsButton->OnClicked.AddUniqueDynamic(this, &UMainMenuUserWidget::SettingsButtonClicked);
-	CreditsButton->OnClicked.AddUniqueDynamic(this, &UMainMenuUserWidget::CreditsButtonClicked);
 
 	MovesButton->OnClicked.AddUniqueDynamic(this, &UMainMenuUserWidget::MovesClicked);
 	NotationsButton->OnClicked.AddUniqueDynamic(this, &UMainMenuUserWidget::NotationsClicked);
@@ -45,7 +44,6 @@ void UMainMenuUserWidget::TrainerButtonClicked()
 	KingsGambitTitle->SetVisibility(ESlateVisibility::Hidden);
 	TrainerMenu->SetVisibility(ESlateVisibility::Visible);
 	SettingsMenu->SetVisibility(ESlateVisibility::Hidden);
-	CreditsMenu->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UMainMenuUserWidget::QuitButtonClicked()
@@ -59,7 +57,6 @@ void UMainMenuUserWidget::GuessButtonClicked()
 	KingsGambitTitle->SetVisibility(ESlateVisibility::Hidden);
 	OptionsPanel->SetVisibility(ESlateVisibility::Visible);
 	SettingsMenu->SetVisibility(ESlateVisibility::Hidden);
-	CreditsMenu->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UMainMenuUserWidget::NotationsClicked()
@@ -68,7 +65,6 @@ void UMainMenuUserWidget::NotationsClicked()
 	KingsGambitTitle->SetVisibility(ESlateVisibility::Hidden);
 	OptionsPanel->SetVisibility(ESlateVisibility::Hidden);
 	SettingsMenu->SetVisibility(ESlateVisibility::Hidden);
-	CreditsMenu->SetVisibility(ESlateVisibility::Hidden);
 
 	UGameplayStatics::OpenLevel(GetWorld(), "GuessModeBoard1");
 	RemoveFromParent();
@@ -80,7 +76,6 @@ void UMainMenuUserWidget::MovesClicked()
 	KingsGambitTitle->SetVisibility(ESlateVisibility::Hidden);
 	OptionsPanel->SetVisibility(ESlateVisibility::Hidden);
 	SettingsMenu->SetVisibility(ESlateVisibility::Hidden);
-	CreditsMenu->SetVisibility(ESlateVisibility::Hidden);
 
 	UGameplayStatics::OpenLevel(GetWorld(), "GuessModeBoard");
 	RemoveFromParent();
@@ -92,16 +87,6 @@ void UMainMenuUserWidget::SettingsButtonClicked()
 	KingsGambitTitle->SetVisibility(ESlateVisibility::Hidden);
 	OptionsPanel->SetVisibility(ESlateVisibility::Hidden);
 	SettingsMenu->SetVisibility(ESlateVisibility::Visible);
-	CreditsMenu->SetVisibility(ESlateVisibility::Hidden);
-}
-
-void UMainMenuUserWidget::CreditsButtonClicked()
-{
-	MainMenu->SetVisibility(ESlateVisibility::Hidden);
-	KingsGambitTitle->SetVisibility(ESlateVisibility::Hidden);
-	OptionsPanel->SetVisibility(ESlateVisibility::Hidden);
-	SettingsMenu->SetVisibility(ESlateVisibility::Hidden);
-	CreditsMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UMainMenuUserWidget::MainMenuButtonClicked()
@@ -110,7 +95,6 @@ void UMainMenuUserWidget::MainMenuButtonClicked()
 	KingsGambitTitle->SetVisibility(ESlateVisibility::Visible);
 	TrainerMenu->SetVisibility(ESlateVisibility::Hidden);
 	SettingsMenu->SetVisibility(ESlateVisibility::Hidden);
-	CreditsMenu->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void UMainMenuUserWidget::QueensGambitButtonClicked()
