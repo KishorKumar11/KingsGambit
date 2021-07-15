@@ -398,10 +398,16 @@ void UQueensGambitUserWidget::StepSDBP3ToBackClicked()
 void UQueensGambitUserWidget::StepSDToSelectVariationClicked()
 {
 	QueensGambitBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	SlavDefense->SetVisibility(ESlateVisibility::Visible);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
+	SlavDefense->SetVisibility(ESlateVisibility::Hidden);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
+
+	StepSlavDefense->SetVisibility(ESlateVisibility::Visible);
+	StepAlbinCounterGambit->SetVisibility(ESlateVisibility::Visible);
+	StepQueensGambitAccepted->SetVisibility(ESlateVisibility::Visible);
+	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepACWP1Clicked()
@@ -501,6 +507,12 @@ void UQueensGambitUserWidget::StepACToSelectVariationClicked()
 	SlavDefense->SetVisibility(ESlateVisibility::Hidden);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
+
+	StepSlavDefense->SetVisibility(ESlateVisibility::Visible);
+	StepAlbinCounterGambit->SetVisibility(ESlateVisibility::Visible);
+	StepQueensGambitAccepted->SetVisibility(ESlateVisibility::Visible);
+	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepQGAWP1Clicked()
@@ -618,6 +630,12 @@ void UQueensGambitUserWidget::StepQGAToSelectVariationClicked()
 	SlavDefense->SetVisibility(ESlateVisibility::Hidden);
 	AlbinCounterGambit->SetVisibility(ESlateVisibility::Hidden);
 	QueensGambitAccepted->SetVisibility(ESlateVisibility::Hidden);
+
+	StepSlavDefense->SetVisibility(ESlateVisibility::Visible);
+	StepAlbinCounterGambit->SetVisibility(ESlateVisibility::Visible);
+	StepQueensGambitAccepted->SetVisibility(ESlateVisibility::Visible);
+	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
+	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
 
 

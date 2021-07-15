@@ -23,17 +23,13 @@ void URuyLopezUserWidget::NativeConstruct()
 	QuitButton->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::QuitButtonClicked);
 	
 	StepZeroToOne->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepZeroToOneClicked);
-	
 	StepOneToZero->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepOneToZeroClicked);
 	StepOneToTwo->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepOneToTwoClicked);
-	
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepTwoToThreeClicked);
-	
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepThreeToTwoClicked);	
 	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepThreeToSelect_VariationClicked);	
 
-	EVNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVNextClicked);
 	StepEVWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP1Clicked);
 	StepEVWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP1ToBackClicked);
 	StepEVWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVWP2Clicked);
@@ -48,8 +44,8 @@ void URuyLopezUserWidget::NativeConstruct()
 	StepEVBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP3ToBackClicked);
 	StepEVBP4->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP4Clicked);
 	StepEVBP4ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVBP4ToBackClicked);
+	StepEVToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVToSelectVariationClicked);
 
-	ADNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADNextClicked);
 	StepADWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1Clicked);
 	StepADWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP1ToBackClicked);
 	StepADWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADWP2Clicked);
@@ -62,8 +58,8 @@ void URuyLopezUserWidget::NativeConstruct()
 	StepADBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP2ToBackClicked);
 	StepADBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3Clicked);
 	StepADBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADBP3ToBackClicked);
+	StepADToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADToSelectVariationClicked);
 
-	CDNext->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDNextClicked);
 	StepCDWP1->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1Clicked);
 	StepCDWP1ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP1ToBackClicked);
 	StepCDWP2->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDWP2Clicked);
@@ -74,13 +70,9 @@ void URuyLopezUserWidget::NativeConstruct()
 	StepCDBP2ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP2ToBackClicked);
 	StepCDBP3->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3Clicked);
 	StepCDBP3ToBack->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDBP3ToBackClicked);
-
-	StepEVToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepEVToSelectVariationClicked);
-	StepADToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepADToSelectVariationClicked);
 	StepCDToSelectVariation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepCDToSelectVariationClicked);
 
 	StepSelectVariationToThree->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepSelectVariationToThreeClicked);
-	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepThreeToSelect_VariationClicked);
 	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::MainMenuButtonClicked);
 
 	StepExchangeVariationtoStepFour->OnClicked.AddUniqueDynamic(this, &URuyLopezUserWidget::StepExchangeVariationtoStepFourClicked);
@@ -252,7 +244,7 @@ void URuyLopezUserWidget::StepSelectVariationToThreeClicked()
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Visible);
 
-	TrainerController->Move(TrainerController->WhiteBishops[1], FVector(1600.f, 400.f, 0.5f));
+	//TrainerController->Move(TrainerController->WhiteBishops[1], FVector(1600.f, 400.f, 0.5f));
 }
 
 /////////////////////////// THE EXCHANGE VARIATION ////////////////////////////////////
@@ -271,45 +263,13 @@ void URuyLopezUserWidget::StepExchangeVariationtoStepFourClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
 
-	TheExchangeVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
-
 	EVTxt->SetVisibility(ESlateVisibility::Visible);
 	EV1Txt->SetVisibility(ESlateVisibility::Visible);
 	EV2Txt->SetVisibility(ESlateVisibility::Visible);
 	EV_Main->SetVisibility(ESlateVisibility::Visible);
 	EV_WP->SetVisibility(ESlateVisibility::Visible);
 	EV_BP->SetVisibility(ESlateVisibility::Visible);
-}
-
-void URuyLopezUserWidget::StepEVNextClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Visible);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepEVWP1->SetVisibility(ESlateVisibility::Visible);
-	StepEVWP2->SetVisibility(ESlateVisibility::Visible);
-	StepEVWP3->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP1->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP2->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP3->SetVisibility(ESlateVisibility::Visible);
-	StepEVBP4->SetVisibility(ESlateVisibility::Visible);
-	EV_WP->SetVisibility(ESlateVisibility::Visible);
-	EV_BP->SetVisibility(ESlateVisibility::Visible);
 	StepEVToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-
-	EVTxt->SetVisibility(ESlateVisibility::Hidden);
-	EV1Txt->SetVisibility(ESlateVisibility::Hidden);
-	EV2Txt->SetVisibility(ESlateVisibility::Hidden);
-	EV_Main->SetVisibility(ESlateVisibility::Hidden);
-	EV_WP->SetVisibility(ESlateVisibility::Hidden);
-	EV_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void URuyLopezUserWidget::StepEVWP1Clicked()
@@ -727,26 +687,7 @@ void URuyLopezUserWidget::StepArkhangelskDefensetoStep12Clicked()
 	AD_Main->SetVisibility(ESlateVisibility::Visible);
 	AD_WP->SetVisibility(ESlateVisibility::Visible);
 	AD_BP->SetVisibility(ESlateVisibility::Visible);
-}
-
-void URuyLopezUserWidget::StepADNextClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Visible);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepADBP1->SetVisibility(ESlateVisibility::Visible);
-	StepADBP2->SetVisibility(ESlateVisibility::Visible);
-	StepADBP3->SetVisibility(ESlateVisibility::Visible);
-	StepADWP1->SetVisibility(ESlateVisibility::Visible);
-	StepADWP2->SetVisibility(ESlateVisibility::Visible);
-	StepADWP3->SetVisibility(ESlateVisibility::Visible);
 	StepADToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-	AD_WP->SetVisibility(ESlateVisibility::Visible);
-	AD_BP->SetVisibility(ESlateVisibility::Visible);
-	AD_Main->SetVisibility(ESlateVisibility::Visible);
 }
 
 void URuyLopezUserWidget::StepADWP1Clicked()
@@ -1118,29 +1059,10 @@ void URuyLopezUserWidget::StepTheClosedDefenseto20Clicked()
 
 	CDTxt->SetVisibility(ESlateVisibility::Visible);
 	CD1Txt->SetVisibility(ESlateVisibility::Visible);
-	CDNext->SetVisibility(ESlateVisibility::Visible);
 	CD_Main->SetVisibility(ESlateVisibility::Visible);
-}
-
-void URuyLopezUserWidget::StepCDNextClicked()
-{
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Visible);
-
-	StepCDBP1->SetVisibility(ESlateVisibility::Visible);
-	StepCDBP2->SetVisibility(ESlateVisibility::Visible);
-	StepCDBP3->SetVisibility(ESlateVisibility::Visible);
-	StepCDWP1->SetVisibility(ESlateVisibility::Visible);
-	StepCDWP2->SetVisibility(ESlateVisibility::Visible);
+	CD_WP->SetVisibility(ESlateVisibility::Visible);
+	CD_BP->SetVisibility(ESlateVisibility::Visible);
 	StepCDToSelectVariation->SetVisibility(ESlateVisibility::Visible);
-
-	CDTxt->SetVisibility(ESlateVisibility::Hidden);
-	CD1Txt->SetVisibility(ESlateVisibility::Hidden);
-	CD_WP->SetVisibility(ESlateVisibility::Hidden);
-	CD_BP->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void URuyLopezUserWidget::StepCDWP1Clicked()
