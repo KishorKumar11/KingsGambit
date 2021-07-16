@@ -27,7 +27,13 @@ void UKingsIndianDefenceUserWidget::NativeConstruct()
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepThreeToTwoClicked);
-	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::MainMenuButtonClicked);
+	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::MainMenuButtonClicked);
+	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepThreeToSelect_VariationClicked);
+
+	StepSelectVariationToThree->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSelectVariationToThreeClicked);
+	StepPetrosianVariation->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPetrosianVariationClicked);
+	StepSamischVariation->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepSamischVariationClicked);
+	StepFourPawnsAttack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepFourPawnsAttackClicked);
 
 	StepPVWP1->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVWP1Clicked);
 	StepPVWP1ToBack->OnClicked.AddUniqueDynamic(this, &UKingsIndianDefenceUserWidget::StepPVWP1ToBackClicked);

@@ -30,6 +30,11 @@ void USicilianDefenceUserWidget::NativeConstruct()
 	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::MainMenuButtonClicked);
 	StepThreeToVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepThreeToVariationClicked);
 
+	StepSelectVariationToThree->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepSelectVariationToThreeClicked);
+	NajdorfVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::NajdorfVariationClicked);
+	DragonVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::DragonVariationClicked);
+	ClassicalVariation->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::ClassicalVariationClicked);
+
 	StepNVWP1->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1Clicked);
 	StepNVWP1ToBack->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP1ToBackClicked);
 	StepNVWP2->OnClicked.AddUniqueDynamic(this, &USicilianDefenceUserWidget::StepNVWP2Clicked);
@@ -753,10 +758,10 @@ void USicilianDefenceUserWidget::StepCVBP4ToBackClicked()
 void USicilianDefenceUserWidget::StepCVToSelectVariationClicked()
 {
 	SDBasic->SetVisibility(ESlateVisibility::Hidden);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
+	SelectVariation->SetVisibility(ESlateVisibility::Visible);
 	Najdorf->SetVisibility(ESlateVisibility::Hidden);
 	Dragon->SetVisibility(ESlateVisibility::Hidden);
-	Classical->SetVisibility(ESlateVisibility::Visible);
+	Classical->SetVisibility(ESlateVisibility::Hidden);
 }
 
 

@@ -27,7 +27,13 @@ void UItalianGameUserWidget::NativeConstruct()
 	StepTwoToOne->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTwoToOneClicked);
 	StepTwoToThree->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepTwoToThreeClicked);
 	StepThreeToTwo->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepThreeToTwoClicked);
-	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::MainMenuButtonClicked);
+	StepVariationToMainMenu->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::MainMenuButtonClicked);
+	StepThreeToSelect_Variation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepThreeToSelect_VariationClicked);
+
+	StepSelectVariationToThree->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepSelectVariationToThreeClicked);
+	GiuocoPianoVariation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::GiuocoVariationClicked);
+	TwoKnightsDefenseVariation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::TwoKnightsDefenseVariationClicked);
+	HungarianDefenseVariation->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::HungarianDefenseVariationClicked);
 
 	StepGPWP1->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP1Clicked);
 	StepGPWP1ToBack->OnClicked.AddUniqueDynamic(this, &UItalianGameUserWidget::StepGPWP1ToBackClicked);
