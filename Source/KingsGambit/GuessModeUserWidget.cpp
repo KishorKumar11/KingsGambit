@@ -55,6 +55,48 @@ void UGuessModeUserWidget::OKToMovesModeClicked()
 
 	GuessModeHUD->SetVisibility(ESlateVisibility::Visible);
 	ManualButton->SetVisibility(ESlateVisibility::Visible);
+
+	SetLevel(1);
+}
+
+void UGuessModeUserWidget::SetLevel(int32 level)
+{
+	switch (level) {
+	case 1:
+		TrainerController->ResetAllPieces();
+
+		TrainerController->Move(TrainerController->WhitePawns[4], FVector(1200.f, 1600.f, 0.5f));
+
+		Lvl1->SetVisibility(ESlateVisibility::Visible);
+
+		break;
+
+	case 2:
+		//Reset pieces moved from lvl 1
+		TrainerController->ResetAllPieces();
+
+		break;
+
+	case 3:
+		//Reset Pieces moved from lvl 2
+		TrainerController->ResetAllPieces();
+
+		break;
+
+	case 4:
+		//Reset Pieces moved from lvl 3
+		TrainerController->ResetAllPieces();
+
+		break;
+
+	case 5:
+		TrainerController->ResetAllPieces();
+
+		break;
+
+	default:
+		return;
+	}
 }
 
 

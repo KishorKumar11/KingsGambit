@@ -37,6 +37,9 @@ protected:
 	UFUNCTION()
 		void OKToMovesModeClicked();
 
+	UFUNCTION(BlueprintCallable)
+		void SetLevel(int32 level);
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* ManualButton;
 
@@ -48,5 +51,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UCanvasPanel* GuessModeHUD;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UCanvasPanel* Lvl1;
 
 };
