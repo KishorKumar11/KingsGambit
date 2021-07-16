@@ -37,6 +37,15 @@ protected:
 	UFUNCTION()
 		void OKToMovesModeClicked();
 
+	UFUNCTION()
+		void OKToMovesMode1Clicked();
+
+	UFUNCTION()
+		void ManualButtonClicked();
+
+	UFUNCTION(BlueprintCallable)
+		void ResetLevels();
+
 	UFUNCTION(BlueprintCallable)
 		void SetLevel(int32 level);
 
@@ -47,12 +56,36 @@ protected:
 		UButton* OKToMovesMode;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* OKToMovesMode_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* GameOverToMenu;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UButton* YouWonToMenu_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UBorder* UserGuide_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UBorder* UserGuide_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UCanvasPanel* GuessModeHUD;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UCanvasPanel* Lvl1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UCanvasPanel* Lvl2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UCanvasPanel* Lvl3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UCanvasPanel* Lvl4;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		UCanvasPanel* Lvl5;
 
 };
