@@ -237,9 +237,9 @@ void UKingsIndianDefenceUserWidget::StepThreeToSelect_VariationClicked()
 	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
 	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 
-	PetrosianVariation->SetVisibility(ESlateVisibility::Visible);
-	SamischVariation->SetVisibility(ESlateVisibility::Visible);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
+	StepPetrosianVariation->SetVisibility(ESlateVisibility::Visible);
+	StepSamischVariation->SetVisibility(ESlateVisibility::Visible);
+	StepFourPawnsAttack->SetVisibility(ESlateVisibility::Visible);
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 }
