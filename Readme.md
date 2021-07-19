@@ -29,6 +29,9 @@ https://www.youtube.com/watch?v=S1W87483hQI&t=47s
 https://www.youtube.com/watch?v=OEtx1ek3-h8
 
 Pictures/Wallpapers:
+
 https://www.wallpaperflare.com/search?wallpaper=fantasy++backgrounds+desktop
+
 https://wallpaperaccess.com/cool-chess
+
 https://www.shutterstock.com/search/game+background
