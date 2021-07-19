@@ -20,8 +20,11 @@ https://simplifychess.com/homepage/index.html
 
 Music:
 https://www.youtube.com/watch?v=Jmv5pTyz--I (Stranger things theme)
+
 https://www.youtube.com/watch?v=gF73gPQQsR4 (Invincible theme by John Paesano)
+
 https://www.youtube.com/watch?v=S1W87483hQI&t=47s
+
 https://www.youtube.com/watch?v=OEtx1ek3-h8
 
 Pictures/Wallpapers:
