@@ -200,6 +200,8 @@ void USicilianDefenceUserWidget::StepThreeToVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::StepSelectVariationToThreeClicked()
@@ -235,6 +237,8 @@ void USicilianDefenceUserWidget::NajdorfVariationClicked()
 	NV_Main->SetVisibility(ESlateVisibility::Visible);
 	NV_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	NV_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::DragonVariationClicked()
@@ -251,6 +255,8 @@ void USicilianDefenceUserWidget::DragonVariationClicked()
 	DV_Main->SetVisibility(ESlateVisibility::Visible);
 	DV_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	DV_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_1->SetVisibility(ESlateVisibility::Visible);
 }
 
 void USicilianDefenceUserWidget::ClassicalVariationClicked()
@@ -267,6 +273,8 @@ void USicilianDefenceUserWidget::ClassicalVariationClicked()
 	CV_Main->SetVisibility(ESlateVisibility::Visible);
 	CV_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	CV_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_2->SetVisibility(ESlateVisibility::Visible);
 }
 
 ///////////////////////////// NAJDORF VARIATION ////////////////////////////////////
@@ -285,6 +293,8 @@ void USicilianDefenceUserWidget::StepNVToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 ///////////////////////////// DRAGON VARIATION ////////////////////////////////////
@@ -303,6 +313,8 @@ void USicilianDefenceUserWidget::StepDVToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 ///////////////////////////// CLASSICAL VARIATION ////////////////////////////////////
@@ -321,6 +333,8 @@ void USicilianDefenceUserWidget::StepCVToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 

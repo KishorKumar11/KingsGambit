@@ -194,6 +194,8 @@ void URuyLopezUserWidget::StepThreeToSelect_VariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void URuyLopezUserWidget::StepSelectVariationToThreeClicked()
@@ -227,6 +229,8 @@ void URuyLopezUserWidget::StepExchangeVariationtoStepFourClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Hidden);
 
+	BackgroundBlur->SetVisibility(ESlateVisibility::Visible);
+
 	EVTxt->SetVisibility(ESlateVisibility::Visible);
 	EV1Txt->SetVisibility(ESlateVisibility::Visible);
 	EV2Txt->SetVisibility(ESlateVisibility::Visible);
@@ -256,6 +260,8 @@ void URuyLopezUserWidget::StepEVToSelectVariationClicked()
 	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
 	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 
 	EV_WP->SetVisibility(ESlateVisibility::Hidden);
 	EV_BP->SetVisibility(ESlateVisibility::Hidden);
@@ -289,6 +295,8 @@ void URuyLopezUserWidget::StepArkhangelskDefensetoStep12Clicked()
 	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
 
+	BackgroundBlur_1->SetVisibility(ESlateVisibility::Visible);
+
 	ADTxt->SetVisibility(ESlateVisibility::Visible);
 	AD1Txt->SetVisibility(ESlateVisibility::Visible);
 	AD2Txt->SetVisibility(ESlateVisibility::Visible);
@@ -319,6 +327,8 @@ void URuyLopezUserWidget::StepADToSelectVariationClicked()
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
 	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
 
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+
 	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
 	AD_WP->SetVisibility(ESlateVisibility::Hidden);
 	AD_BP->SetVisibility(ESlateVisibility::Hidden);
@@ -345,6 +355,8 @@ void URuyLopezUserWidget::StepTheClosedDefenseto20Clicked()
 	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariationTxt->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Hidden);
+
+	BackgroundBlur_2->SetVisibility(ESlateVisibility::Visible);
 
 	CDTxt->SetVisibility(ESlateVisibility::Visible);
 	CD1Txt->SetVisibility(ESlateVisibility::Visible);
@@ -374,6 +386,8 @@ void URuyLopezUserWidget::StepCDToSelectVariationClicked()
 	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
 	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 
 	CD_WP->SetVisibility(ESlateVisibility::Hidden);
 	CD_BP->SetVisibility(ESlateVisibility::Hidden);

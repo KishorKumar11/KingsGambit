@@ -163,6 +163,8 @@ void UQueensGambitUserWidget::StepThreeToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	QGBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::SelectVariationToThreeClicked()
@@ -176,13 +178,14 @@ void UQueensGambitUserWidget::StepSlavDefenceClicked()
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
 	SlavDefense->SetVisibility(ESlateVisibility::Visible);
 
-
 	StepSDTxt->SetVisibility(ESlateVisibility::Visible);
 	StepSD1Txt->SetVisibility(ESlateVisibility::Visible);
 	StepSDToSelectVariation->SetVisibility(ESlateVisibility::Visible);
 	SD_Main->SetVisibility(ESlateVisibility::Visible);
 	SD_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	SD_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepAlbinCounterGambitClicked()
@@ -199,6 +202,8 @@ void UQueensGambitUserWidget::StepAlbinCounterGambitClicked()
 	AC_Main->SetVisibility(ESlateVisibility::Visible);
 	AC_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	AC_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_1->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepQueensGambitAcceptedClicked()
@@ -215,6 +220,8 @@ void UQueensGambitUserWidget::StepQueensGambitAcceptedClicked()
 	QGA_Main->SetVisibility(ESlateVisibility::Visible);
 	QGA_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	QGA_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_2->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepSDToSelectVariationClicked()
@@ -231,6 +238,8 @@ void UQueensGambitUserWidget::StepSDToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	QGBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepACToSelectVariationClicked()
@@ -247,6 +256,8 @@ void UQueensGambitUserWidget::StepACToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	QGBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UQueensGambitUserWidget::StepQGAToSelectVariationClicked()
@@ -263,6 +274,8 @@ void UQueensGambitUserWidget::StepQGAToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	QGBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 

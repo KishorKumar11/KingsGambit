@@ -201,6 +201,10 @@ void ULondonSystemUserWidget::StepThreeToSelect_VariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	LSBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void ULondonSystemUserWidget::StepSelectVariationToThreeClicked()
@@ -226,6 +230,8 @@ void ULondonSystemUserWidget::Stepg6ToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible); 
 	LSBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void ULondonSystemUserWidget::Stepe6ToSelectVariationClicked()
@@ -242,6 +248,8 @@ void ULondonSystemUserWidget::Stepe6ToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	LSBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void ULondonSystemUserWidget::Stepg6Clicked()
@@ -258,6 +266,8 @@ void ULondonSystemUserWidget::Stepg6Clicked()
 	g6_Main->SetVisibility(ESlateVisibility::Visible);
 	g6_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	g6_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur->SetVisibility(ESlateVisibility::Visible);
 }
 
 void ULondonSystemUserWidget::Stepe6c5Clicked()
@@ -274,6 +284,8 @@ void ULondonSystemUserWidget::Stepe6c5Clicked()
 	e6c5_Main->SetVisibility(ESlateVisibility::Visible);
 	e6c5_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	e6c5_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_1->SetVisibility(ESlateVisibility::Visible);
 }
 
 void ULondonSystemUserWidget::Stepe6Clicked()
@@ -290,6 +302,8 @@ void ULondonSystemUserWidget::Stepe6Clicked()
 	e6_Main->SetVisibility(ESlateVisibility::Visible);
 	e6_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	e6_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_2->SetVisibility(ESlateVisibility::Visible);
 }
 
 void ULondonSystemUserWidget::Stepe6c5ToSelectVariationClicked()
@@ -306,4 +320,6 @@ void ULondonSystemUserWidget::Stepe6c5ToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	LSBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }

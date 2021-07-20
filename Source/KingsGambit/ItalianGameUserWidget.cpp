@@ -204,6 +204,8 @@ void UItalianGameUserWidget::StepThreeToSelect_VariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	IGBG_Variation->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepSelectVariationToThreeClicked()
@@ -229,6 +231,8 @@ void UItalianGameUserWidget::GiuocoVariationClicked()
 	GP_Main->SetVisibility(ESlateVisibility::Visible);
 	GP_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	GP_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::TwoKnightsDefenseVariationClicked()
@@ -245,6 +249,8 @@ void UItalianGameUserWidget::TwoKnightsDefenseVariationClicked()
 	TKD_Main->SetVisibility(ESlateVisibility::Visible);
 	TKD_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	TKD_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_1->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::HungarianDefenseVariationClicked()
@@ -261,6 +267,8 @@ void UItalianGameUserWidget::HungarianDefenseVariationClicked()
 	HD_Main->SetVisibility(ESlateVisibility::Visible);
 	HD_WHITEMOVES->SetVisibility(ESlateVisibility::Visible);
 	HD_BLACKMOVES->SetVisibility(ESlateVisibility::Visible);
+
+	BackgroundBlur_2->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepGPToSelectVariationClicked()
@@ -270,6 +278,8 @@ void UItalianGameUserWidget::StepGPToSelectVariationClicked()
 	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepTKDToSelectVariationClicked()
@@ -279,6 +289,8 @@ void UItalianGameUserWidget::StepTKDToSelectVariationClicked()
 	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDToSelectVariationClicked()
@@ -288,6 +300,8 @@ void UItalianGameUserWidget::StepHDToSelectVariationClicked()
 	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
 	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
+	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
 
 
