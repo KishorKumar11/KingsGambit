@@ -66,136 +66,10 @@ protected:
 		void ClassicalVariationClicked();
 
 	UFUNCTION()
-		void StepNVWP1Clicked();
-
-	UFUNCTION()
-		void StepNVWP1ToBackClicked();
-
-	UFUNCTION()
-		void StepNVWP2Clicked();
-
-	UFUNCTION()
-		void StepNVWP2ToBackClicked();
-
-	UFUNCTION()
-		void StepNVWP3Clicked();
-
-	UFUNCTION()
-		void StepNVWP3ToBackClicked();
-
-	UFUNCTION()
-		void StepNVBP1Clicked();
-
-	UFUNCTION()
-		void StepNVBP1ToBackClicked();
-
-	UFUNCTION()
-		void StepNVBP2Clicked();
-
-	UFUNCTION()
-		void StepNVBP2ToBackClicked();
-
-	UFUNCTION()
-		void StepNVBP3Clicked();
-
-	UFUNCTION()
-		void StepNVBP3ToBackClicked();
-
-	UFUNCTION()
 		void StepNVToSelectVariationClicked();
 
 	UFUNCTION()
-		void StepDVWP1Clicked();
-
-	UFUNCTION()
-		void StepDVWP1ToBackClicked();
-
-	UFUNCTION()
-		void StepDVWP2Clicked();
-
-	UFUNCTION()
-		void StepDVWP2ToBackClicked();
-
-	UFUNCTION()
-		void StepDVWP3Clicked();
-
-	UFUNCTION()
-		void StepDVWP3ToBackClicked();
-
-	UFUNCTION()
-		void StepDVBP1Clicked();
-
-	UFUNCTION()
-		void StepDVBP1ToBackClicked();
-
-	UFUNCTION()
-		void StepDVBP2Clicked();
-
-	UFUNCTION()
-		void StepDVBP2ToBackClicked();
-
-	UFUNCTION()
-		void StepDVBP3Clicked();
-
-	UFUNCTION()
-		void StepDVBP3ToBackClicked();
-
-	UFUNCTION()
-		void StepDVBP4Clicked();
-
-	UFUNCTION()
-		void StepDVBP4ToBackClicked();
-
-	UFUNCTION()
 		void StepDVToSelectVariationClicked();
-
-	UFUNCTION()
-		void StepCVWP1Clicked();
-
-	UFUNCTION()
-		void StepCVWP1ToBackClicked();
-
-	UFUNCTION()
-		void StepCVWP2Clicked();
-
-	UFUNCTION()
-		void StepCVWP2ToBackClicked();
-
-	UFUNCTION()
-		void StepCVWP3Clicked();
-
-	UFUNCTION()
-		void StepCVWP3ToBackClicked();
-
-	UFUNCTION()
-		void StepCVWP4Clicked();
-
-	UFUNCTION()
-		void StepCVWP4ToBackClicked();
-
-	UFUNCTION()
-		void StepCVBP1Clicked();
-
-	UFUNCTION()
-		void StepCVBP1ToBackClicked();
-
-	UFUNCTION()
-		void StepCVBP2Clicked();
-
-	UFUNCTION()
-		void StepCVBP2ToBackClicked();
-
-	UFUNCTION()
-		void StepCVBP3Clicked();
-
-	UFUNCTION()
-		void StepCVBP3ToBackClicked();
-
-	UFUNCTION()
-		void StepCVBP4Clicked();
-
-	UFUNCTION()
-		void StepCVBP4ToBackClicked();
 
 	UFUNCTION()
 		void StepCVToSelectVariationClicked();
@@ -238,132 +112,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepDVToSelectVariation;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP3ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP4;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVWP4ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP3ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP4;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepCVBP4ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVWP3ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP3ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP4;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepDVBP4ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVWP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVWP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVWP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVWP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVWP3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVWP3ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVBP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVBP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVBP2; 
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVBP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVBP3;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* StepNVBP3ToBack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepSelectVariationToThree;
@@ -415,6 +163,21 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UImage* DV_BLACKMOVES;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* SDBG_Variation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepZeroTxt;

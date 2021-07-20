@@ -167,6 +167,21 @@ protected:
 		class UImage* CD_Main;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* RLBG_Variation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepZeroTxt;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))

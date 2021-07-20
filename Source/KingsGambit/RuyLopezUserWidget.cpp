@@ -8,6 +8,7 @@
 #include "Components/VerticalBox.h"
 #include "Components/CanvasPanel.h"
 #include "Components/Image.h"
+#include "Components/BackgroundBlur.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
 
@@ -192,6 +193,7 @@ void URuyLopezUserWidget::StepThreeToSelect_VariationClicked()
 	StepTheClosedDefenseto20->SetVisibility(ESlateVisibility::Visible);
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
+	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
 }
 
 void URuyLopezUserWidget::StepSelectVariationToThreeClicked()
@@ -253,6 +255,7 @@ void URuyLopezUserWidget::StepEVToSelectVariationClicked()
 	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
+	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
 
 	EV_WP->SetVisibility(ESlateVisibility::Hidden);
 	EV_BP->SetVisibility(ESlateVisibility::Hidden);
@@ -314,6 +317,7 @@ void URuyLopezUserWidget::StepADToSelectVariationClicked()
 	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
+	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
 
 	StepADToSelectVariation->SetVisibility(ESlateVisibility::Hidden);
 	AD_WP->SetVisibility(ESlateVisibility::Hidden);
@@ -369,6 +373,7 @@ void URuyLopezUserWidget::StepCDToSelectVariationClicked()
 	TheClosedDefenseTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 	SelectVariationToThreetxt->SetVisibility(ESlateVisibility::Visible);
+	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
 
 	CD_WP->SetVisibility(ESlateVisibility::Hidden);
 	CD_BP->SetVisibility(ESlateVisibility::Hidden);

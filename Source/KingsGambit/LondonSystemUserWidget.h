@@ -74,78 +74,6 @@ protected:
 	UFUNCTION()
 		void Stepe6Clicked();
 
-	UFUNCTION()
-		void Stepg6WP1Clicked();
-
-	UFUNCTION()
-		void Stepg6WP1ToBackClicked();
-
-	UFUNCTION()
-		void Stepg6WP2Clicked();
-
-	UFUNCTION()
-		void Stepg6WP2ToBackClicked();
-
-	UFUNCTION()
-		void Stepg6BP1Clicked();
-
-	UFUNCTION()
-		void Stepg6BP1ToBackClicked();
-
-	UFUNCTION()
-		void Stepg6BP2Clicked();
-
-	UFUNCTION()
-		void Stepg6BP2ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6c5WP1Clicked();
-
-	UFUNCTION()
-		void Stepe6c5WP1ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6c5WP2Clicked();
-
-	UFUNCTION()
-		void Stepe6c5WP2ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6c5BP1Clicked();
-
-	UFUNCTION()
-		void Stepe6c5BP1ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6c5BP2Clicked();
-
-	UFUNCTION()
-		void Stepe6c5BP2ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6WP1Clicked();
-
-	UFUNCTION()
-		void Stepe6WP1ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6WP2Clicked();
-
-	UFUNCTION()
-		void Stepe6WP2ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6BP1Clicked();
-
-	UFUNCTION()
-		void Stepe6BP1ToBackClicked();
-
-	UFUNCTION()
-		void Stepe6BP2Clicked();
-
-	UFUNCTION()
-		void Stepe6BP2ToBackClicked();
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepZeroToOne;
 
@@ -184,78 +112,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* Stepe6c5ToSelectVariation;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6WP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6WP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6WP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6WP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6BP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6BP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6BP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepg6BP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5WP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5WP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5WP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5WP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5BP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5BP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5BP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6c5BP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6WP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6WP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6WP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6WP2ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6BP1;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6BP1ToBack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6BP2;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
-		UButton* Stepe6BP2ToBack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UButton* StepSelectVariationToThree;
@@ -307,6 +163,21 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		class UImage* e6_BLACKMOVES;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UImage* LSBG_Variation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
+		class UBackgroundBlur* BackgroundBlur_2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* StepZeroTxt;
