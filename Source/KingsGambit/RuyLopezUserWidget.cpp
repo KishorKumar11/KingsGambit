@@ -194,6 +194,7 @@ void URuyLopezUserWidget::StepThreeToSelect_VariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	RLBG_Variation->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }

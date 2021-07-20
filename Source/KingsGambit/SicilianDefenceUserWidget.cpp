@@ -161,6 +161,8 @@ void USicilianDefenceUserWidget::StepTwoToThreeClicked()
 
 	//Black's Pawn Moves 2 steps forward
 	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1200.f, 1200.f, 0.5f));
+	//White's Pawn Moves 2 steps forward
+	TrainerController->Move(TrainerController->WhitePawns[3], FVector(-5000.f, -5000.f, 0.5f));
 }
 
 void USicilianDefenceUserWidget::StepThreeToTwoClicked()
@@ -200,6 +202,7 @@ void USicilianDefenceUserWidget::StepThreeToVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
@@ -293,6 +296,7 @@ void USicilianDefenceUserWidget::StepNVToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
@@ -313,6 +317,7 @@ void USicilianDefenceUserWidget::StepDVToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
@@ -333,6 +338,7 @@ void USicilianDefenceUserWidget::StepCVToSelectVariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	SDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }

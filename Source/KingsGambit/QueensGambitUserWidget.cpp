@@ -162,6 +162,7 @@ void UQueensGambitUserWidget::StepThreeToSelectVariationClicked()
 	StepQueensGambitAccepted->SetVisibility(ESlateVisibility::Visible);
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 	QGBG_Variation->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);

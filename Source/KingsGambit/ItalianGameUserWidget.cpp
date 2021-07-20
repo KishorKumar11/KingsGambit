@@ -204,6 +204,7 @@ void UItalianGameUserWidget::StepThreeToSelect_VariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	IGBG_Variation->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
@@ -280,6 +281,7 @@ void UItalianGameUserWidget::StepGPToSelectVariationClicked()
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepTKDToSelectVariationClicked()
@@ -291,6 +293,7 @@ void UItalianGameUserWidget::StepTKDToSelectVariationClicked()
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UItalianGameUserWidget::StepHDToSelectVariationClicked()
@@ -302,6 +305,7 @@ void UItalianGameUserWidget::StepHDToSelectVariationClicked()
 	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
 

@@ -218,6 +218,7 @@ void UKingsIndianDefenceUserWidget::StepThreeToSelect_VariationClicked()
 	StepSelectVariationToThree->SetVisibility(ESlateVisibility::Visible);
 	StepVariationToMainMenu->SetVisibility(ESlateVisibility::Visible);
 	KIDBG_Variation->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
 }
@@ -240,6 +241,7 @@ void UKingsIndianDefenceUserWidget::StepPVToSelectVariationClicked()
 	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepSVToSelectVariationClicked()
@@ -251,6 +253,7 @@ void UKingsIndianDefenceUserWidget::StepSVToSelectVariationClicked()
 	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepFPAToSelectVariationClicked()
@@ -262,6 +265,7 @@ void UKingsIndianDefenceUserWidget::StepFPAToSelectVariationClicked()
 	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	BackgroundBlur_0->SetVisibility(ESlateVisibility::Visible);
+	SelectVariationTxt->SetVisibility(ESlateVisibility::Visible);
 }
 
 void UKingsIndianDefenceUserWidget::StepPetrosianVariationClicked()
