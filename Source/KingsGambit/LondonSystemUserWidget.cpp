@@ -67,11 +67,6 @@ void ULondonSystemUserWidget::QuitButtonClicked()
 
 void ULondonSystemUserWidget::StepZeroToOneClicked()
 {
-	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
 
 	StepZeroToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -85,15 +80,11 @@ void ULondonSystemUserWidget::StepZeroToOneClicked()
 
 void ULondonSystemUserWidget::StepOneToZeroClicked()
 {
-	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
 
 	StepZeroToOne->SetVisibility(ESlateVisibility::Visible);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
+	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
 
 	//White's Pawn back to its original position
@@ -103,11 +94,6 @@ void ULondonSystemUserWidget::StepOneToZeroClicked()
 
 void ULondonSystemUserWidget::StepOneToTwoClicked()
 {
-	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
 
 	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
@@ -126,11 +112,6 @@ void ULondonSystemUserWidget::StepOneToTwoClicked()
 
 void ULondonSystemUserWidget::StepTwoToOneClicked()
 {
-	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
 
 	StepOneToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
@@ -147,11 +128,6 @@ void ULondonSystemUserWidget::StepTwoToOneClicked()
 
 void ULondonSystemUserWidget::StepTwoToThreeClicked()
 {
-	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
@@ -166,11 +142,6 @@ void ULondonSystemUserWidget::StepTwoToThreeClicked()
 
 void ULondonSystemUserWidget::StepThreeToTwoClicked()
 {
-	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
@@ -187,13 +158,6 @@ void ULondonSystemUserWidget::StepThreeToSelect_VariationClicked()
 {
 	LondonSystemBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
-
-	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 
 	Stepg6Variation->SetVisibility(ESlateVisibility::Visible);
 	Stepe6Variation->SetVisibility(ESlateVisibility::Visible);
@@ -210,9 +174,6 @@ void ULondonSystemUserWidget::StepSelectVariationToThreeClicked()
 {
 	LondonSystemBasic->SetVisibility(ESlateVisibility::Visible);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	Withg6->SetVisibility(ESlateVisibility::Hidden);
-	Withe6c5->SetVisibility(ESlateVisibility::Hidden);
-	Withe6->SetVisibility(ESlateVisibility::Hidden);
 }
 
 void ULondonSystemUserWidget::Stepg6ToSelectVariationClicked()
