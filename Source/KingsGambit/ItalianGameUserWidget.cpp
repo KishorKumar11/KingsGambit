@@ -67,11 +67,6 @@ void UItalianGameUserWidget::QuitButtonClicked()
 
 void UItalianGameUserWidget::StepZeroToOneClicked()
 {
-	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepZeroToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -87,15 +82,11 @@ void UItalianGameUserWidget::StepZeroToOneClicked()
 
 void UItalianGameUserWidget::StepOneToZeroClicked()
 {
-	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepZeroToOne->SetVisibility(ESlateVisibility::Visible);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
+	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
 
 	//White's Pawn back to its original position
@@ -106,13 +97,6 @@ void UItalianGameUserWidget::StepOneToZeroClicked()
 
 void UItalianGameUserWidget::StepOneToTwoClicked()
 {
-	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -128,13 +112,6 @@ void UItalianGameUserWidget::StepOneToTwoClicked()
 
 void UItalianGameUserWidget::StepTwoToOneClicked()
 {
-	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
 	StepOneTxt->SetVisibility(ESlateVisibility::Visible);
@@ -143,18 +120,13 @@ void UItalianGameUserWidget::StepTwoToOneClicked()
 	StepTwoTxt->SetVisibility(ESlateVisibility::Hidden);
 
 	//White's Knight back to its original position
-	TrainerController->Move(TrainerController->WhiteKnights[1], TrainerController->WhitePawns[1]->OriginalSpawnLocation);
+	TrainerController->Move(TrainerController->WhiteKnights[1], TrainerController->WhiteKnights[1]->OriginalSpawnLocation);
 	//Black's  back to its original position
-	TrainerController->Move(TrainerController->BlackKnights[0], TrainerController->BlackPawns[0]->OriginalSpawnLocation);
+	TrainerController->Move(TrainerController->BlackKnights[0], TrainerController->BlackKnights[0]->OriginalSpawnLocation);
 }
 
 void UItalianGameUserWidget::StepTwoToThreeClicked()
 {
-	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
@@ -169,11 +141,6 @@ void UItalianGameUserWidget::StepTwoToThreeClicked()
 
 void UItalianGameUserWidget::StepThreeToTwoClicked()
 {
-	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
@@ -190,13 +157,6 @@ void UItalianGameUserWidget::StepThreeToSelect_VariationClicked()
 {
 	ItalianGameBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Visible); 
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 
 	GiuocoPianoVariation->SetVisibility(ESlateVisibility::Visible);
 	TwoKnightsDefenseVariation->SetVisibility(ESlateVisibility::Visible);
@@ -213,9 +173,7 @@ void UItalianGameUserWidget::StepSelectVariationToThreeClicked()
 {
 	ItalianGameBasic->SetVisibility(ESlateVisibility::Visible);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	GiuocoPiano->SetVisibility(ESlateVisibility::Hidden);
-	TwoKnightsDefense->SetVisibility(ESlateVisibility::Hidden);
-	HungarianDefense->SetVisibility(ESlateVisibility::Hidden);
+
 }
 
 void UItalianGameUserWidget::GiuocoVariationClicked()
