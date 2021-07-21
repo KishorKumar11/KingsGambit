@@ -69,11 +69,6 @@ void URuyLopezUserWidget::QuitButtonClicked()
 
 void URuyLopezUserWidget::StepZeroToOneClicked()
 {
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
 	
 	StepZeroToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -88,15 +83,10 @@ void URuyLopezUserWidget::StepZeroToOneClicked()
 void URuyLopezUserWidget::StepOneToZeroClicked()
 {
 
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
 	StepZeroToOne->SetVisibility(ESlateVisibility::Visible);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
+	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
 
 	TrainerController->Move(TrainerController->WhitePawns[4], TrainerController->WhitePawns[4]->OriginalSpawnLocation);
@@ -105,11 +95,6 @@ void URuyLopezUserWidget::StepOneToZeroClicked()
 
 void URuyLopezUserWidget::StepOneToTwoClicked()
 {
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
@@ -124,11 +109,6 @@ void URuyLopezUserWidget::StepOneToTwoClicked()
 
 void URuyLopezUserWidget::StepTwoToOneClicked()
 {
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepOneToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
@@ -143,11 +123,6 @@ void URuyLopezUserWidget::StepTwoToOneClicked()
 
 void URuyLopezUserWidget::StepTwoToThreeClicked()
 {
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
@@ -161,17 +136,13 @@ void URuyLopezUserWidget::StepTwoToThreeClicked()
 
 void URuyLopezUserWidget::StepThreeToTwoClicked()
 {
-	RuyLopezBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
 	StepTwoTxt->SetVisibility(ESlateVisibility::Visible);
 	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
+	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 
 	TrainerController->Move(TrainerController->WhiteBishops[1], TrainerController->WhiteBishops[1]->OriginalSpawnLocation);
 }
@@ -180,13 +151,6 @@ void URuyLopezUserWidget::StepThreeToSelect_VariationClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 	
 	StepExchangeVariationtoStepFour->SetVisibility(ESlateVisibility::Visible);
 	StepArkhangelskDefensetoStep12->SetVisibility(ESlateVisibility::Visible);
@@ -203,13 +167,6 @@ void URuyLopezUserWidget::StepSelectVariationToThreeClicked()
 {
 	RuyLopezBasic->SetVisibility(ESlateVisibility::Visible);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	TheExchangeVariation->SetVisibility(ESlateVisibility::Hidden);
-	ArkhangelskDefense->SetVisibility(ESlateVisibility::Hidden);
-	TheClosedDefense->SetVisibility(ESlateVisibility::Hidden);
-
-	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Visible);
-	StepThreeToTwo->SetVisibility(ESlateVisibility::Visible);
-	StepThreeTxt->SetVisibility(ESlateVisibility::Visible);
 
 	//TrainerController->Move(TrainerController->WhiteBishops[1], FVector(1600.f, 400.f, 0.5f));
 }
