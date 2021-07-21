@@ -182,6 +182,8 @@ void USicilianDefenceUserWidget::StepThreeToTwoClicked()
 
 	//Black's Pawn Moves 2 steps forward
 	TrainerController->Move(TrainerController->BlackPawns[2], FVector(1600.f, 800.f, 0.5f));
+	//White's Pawn Moves 2 steps forward
+	TrainerController->Move(TrainerController->WhitePawns[3], FVector(1200.f, 1200.f, 0.5f));
 }
 
 void USicilianDefenceUserWidget::StepThreeToVariationClicked()
