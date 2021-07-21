@@ -67,11 +67,6 @@ void UKingsIndianDefenceUserWidget::QuitButtonClicked()
 
 void UKingsIndianDefenceUserWidget::StepZeroToOneClicked()
 {
-	KIDBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	StepZeroToOne->SetVisibility(ESlateVisibility::Hidden);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Hidden);
@@ -87,15 +82,11 @@ void UKingsIndianDefenceUserWidget::StepZeroToOneClicked()
 
 void UKingsIndianDefenceUserWidget::StepOneToZeroClicked()
 {
-	KIDBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	StepZeroToOne->SetVisibility(ESlateVisibility::Visible);
 	StepZeroTxt->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
+	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneTxt->SetVisibility(ESlateVisibility::Hidden);
 
 	//White's Pawn back to its original position
@@ -106,11 +97,6 @@ void UKingsIndianDefenceUserWidget::StepOneToZeroClicked()
 
 void UKingsIndianDefenceUserWidget::StepOneToTwoClicked()
 {
-	KIDBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	StepOneToTwo->SetVisibility(ESlateVisibility::Hidden);
 	StepOneToZero->SetVisibility(ESlateVisibility::Hidden);
@@ -128,11 +114,6 @@ void UKingsIndianDefenceUserWidget::StepOneToTwoClicked()
 
 void UKingsIndianDefenceUserWidget::StepTwoToOneClicked()
 {
-	KIDBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	StepOneToTwo->SetVisibility(ESlateVisibility::Visible);
 	StepOneToZero->SetVisibility(ESlateVisibility::Visible);
@@ -150,11 +131,6 @@ void UKingsIndianDefenceUserWidget::StepTwoToOneClicked()
 
 void UKingsIndianDefenceUserWidget::StepTwoToThreeClicked()
 {
-	KIDBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Hidden);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Hidden);
@@ -176,11 +152,6 @@ void UKingsIndianDefenceUserWidget::StepTwoToThreeClicked()
 
 void UKingsIndianDefenceUserWidget::StepThreeToTwoClicked()
 {
-	KIDBasic->SetVisibility(ESlateVisibility::Visible);
-	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
 
 	StepTwoToThree->SetVisibility(ESlateVisibility::Visible);
 	StepTwoToOne->SetVisibility(ESlateVisibility::Visible);
@@ -196,7 +167,7 @@ void UKingsIndianDefenceUserWidget::StepThreeToTwoClicked()
 	//White's Pawn back to its original position
 	TrainerController->Move(TrainerController->WhitePawns[4], TrainerController->WhitePawns[4]->OriginalSpawnLocation);
 	//Black's Pawn back to its original position
-	TrainerController->Move(TrainerController->WhitePawns[3], TrainerController->WhitePawns[3]->OriginalSpawnLocation);
+	TrainerController->Move(TrainerController->BlackPawns[3], TrainerController->BlackPawns[3]->OriginalSpawnLocation);
 
 }
 
@@ -204,13 +175,6 @@ void UKingsIndianDefenceUserWidget::StepThreeToSelect_VariationClicked()
 {
 	KIDBasic->SetVisibility(ESlateVisibility::Hidden);
 	SelectVariation->SetVisibility(ESlateVisibility::Visible);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
-
-	StepThreeToTwo->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeTxt->SetVisibility(ESlateVisibility::Hidden);
-	StepThreeToSelect_Variation->SetVisibility(ESlateVisibility::Hidden);
 
 	StepPetrosianVariation->SetVisibility(ESlateVisibility::Visible);
 	StepSamischVariation->SetVisibility(ESlateVisibility::Visible);
@@ -227,9 +191,7 @@ void UKingsIndianDefenceUserWidget::StepSelectVariationToThreeClicked()
 {
 	KIDBasic->SetVisibility(ESlateVisibility::Visible);
 	SelectVariation->SetVisibility(ESlateVisibility::Hidden);
-	PetrosianVariation->SetVisibility(ESlateVisibility::Hidden);
-	SamischVariation->SetVisibility(ESlateVisibility::Hidden);
-	FourPawnsAttack->SetVisibility(ESlateVisibility::Hidden);
+
 }
 
 void UKingsIndianDefenceUserWidget::StepPVToSelectVariationClicked()
